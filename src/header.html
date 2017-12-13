@@ -8,35 +8,42 @@
     <header class="main-header">
         <nav class="main-header__main-nav">
             <a class="main-header__logo">
-                <img src="https://placehold.it/105x21" alt="pitercss conference" width="105" height="21">
+                <img src="https://placehold.it/105x21" alt="pitercss_conf" width="105" height="21">
             </a>
-            <span class="main-header__time">June 2017</span>
-            <a class="main-header__buy  btn" href="">1699 ₽</a>
+            <time class="main-header__time" datetime="2017-06-16 10:00">
+                June
+                <span>16th,</span>
+                2017
+            </time>
+            <div class="main-header__place">
+                <b>Saint Petersburg</b>
+                <br>Benoit Farm.
+            </div>
+            <a class="main-header__buy" href="#">1699 ₽</a>
+            <span class="main-header__price-in-other-currencies">≈ 28,34 US$ or 26,74 €</span>
             <ul class="main-header__menu-list">
                 <li class="main-header__menu-item  main-header__menu-item--active">
                     <a class="main-header__menu-link">About</a>
                 </li>
                 <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="">Speakers</a>
+                    <a class="main-header__menu-link" href="#">Speakers</a>
                 </li>
                 <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="">Photos</a>
+                    <a class="main-header__menu-link" href="#">Photos</a>
                 </li>
                 <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="">Blog</a>
+                    <a class="main-header__menu-link" href="#">Blog</a>
                 </li>
                 <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="">Other</a>
+                    <a class="main-header__menu-link" href="#">Other</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main-content">
         <section class="summary">
-            <span class="summary__date">16.06</span>
-            <h1 class="summary__heading">
-                First International Conference of Web-developers in Russia
-            </h1>
+            <time class="summary__date" datetime="2017-06-16 10:00">16.06</time>
+            <h1 class="summary__heading">First International Conference of Web-developers in Russia</h1>
             <table class="summary__table">
                 <tr class="summary__table-row">
                     <th class="summary__table-heading">Day</th>
@@ -50,12 +57,12 @@
                 </tr>
             </table>
         </section>
-        <section class="mission">
-            <h2 class="main-content__heading">
+        <section class="section  section--mission">
+            <h2 class="section__heading">
                 Mission
-                <span class="main-content__subheading">and Lifestyle</span>
+                <span class="section__subheading">and Lifestyle</span>
             </h2>
-            <p class="mission__paragraph">pitercss conference provides the opportunity to be part of the global frontend development community</p>
+            <p class="section__paragraph">pitercss conference provides the opportunity to be part of the global frontend development community</p>
         </section>
     </main>
 </body>
