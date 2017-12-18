@@ -56,6 +56,7 @@ gulp.task('svg', () => {
 gulp.task('copy', () => {
     return gulp.src([
             'src/*',
+            'src/fonts/*',
             '!src/img/*',
             '!src/css/*',
             '!src/*.html'
@@ -101,6 +102,7 @@ gulp.task('watch:css', () => {
 gulp.task('watch:copy', () => {
     return gulp.watch([
         'src/*',
+        'src/fonts/*',
         '!src/img/*',
         '!src/css/*',
         '!src/*.html'

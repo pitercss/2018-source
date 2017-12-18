@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'gotham pro';
+    font-weight: 400;
+    font-style: normal;
+    src:
+        local('gotham pro'),
+        url('../fonts/gotham-pro.woff') format('woff'),
+        url('../fonts/gotham-pro.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'gotham pro';
+    font-weight: 700;
+    font-style: normal;
+    src:
+        local('gotham pro'),
+        url('../fonts/gotham-pro-bold.woff') format('woff'),
+        url('../fonts/gotham-pro-bold.woff2') format('woff2');
+}
+
+body {
+    min-width: 375px;
+    margin: 0;
+
+    font-family: 'gotham pro', 'verdana', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #303B40;
+    background: white;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  border: 0;
+}
+
+.main-header {
+    margin-top: 12px;
+}
+
+.main-header__main-nav {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.main-header__logo-container {
+    display: flex;
+    margin-left: 5.5%;
+
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.main-header__time {
+    margin-left: 38px;
+
+    font-size: 7px;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+
+    color: #1E1F1D;
+}
+
+.main-header__days {
+    display: none;
+}
+
+.main-header__place {
+    display: none;
+}
+
+.main-header__buy {
+    margin-top: 2px;
+    margin-right: 5%;
+}
+
+.main-header__btn {
+    position: relative;
+
+    display: block;
+    padding-left: 60px;
+    padding-right: 29px;
+
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2.5;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    background: #FF0195;
+}
+
+.main-header__btn:focus,
+.main-header__btn:hover {
+    background: #FF42B0;
+    outline: none;
+}
+
+.main-header__btn::before {
+    content: '';
+
+    position: absolute;
+    top: 13px;
+    left: 26px;
+
+    width: 22px;
+    height: 13px;
+
+    background: transparent url('../img/icon-ticket.svg') no-repeat 0 0;
+    background-size: contain;
+}
+
+.main-header__price-in-other-currencies {
+    display: none;
+}
+
+.main-header__menu-list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-top: 13px;
+    padding-top: 15px;
+    padding-right: 5.5%;
+    padding-bottom: 15px;
+    padding-left: 5.5%;
+
+    border-top: 1px solid rgba(48, 59, 64, 0.2);
+}
+
+.main-header__menu-item {
+    margin-right: 0.5%;
+    padding-top: 7px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+
+    list-style: none;
+}
+
+.main-header__menu-item--active {
+    background: #00E2B5;
+}
+
+.main-header__menu-item--active .main-header__menu-link {
+    color: white;
+}
+
+.main-header__menu-item--active .main-header__menu-link:hover {
+    color: white;
+}
+
+.main-header__menu-link {
+    display: block;
+    line-height: 1;
+
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #303B40;
+}
+
+.main-header__menu-link:focus {
+    outline: 1px solid #00E2B5;
+}
+
+.main-header__menu-link:hover {
+    color: #FF0195;
+}
