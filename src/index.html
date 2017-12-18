@@ -260,63 +260,63 @@
                 Make Your Badge
                 <span class="section__subheading">
                     With Personal Color ID
-                    <span class="section__color-id">#DF665D</span>
+                    <span class="color-id">#DF665D</span>
                 </span>
             </h2>
             <form class="form" action="#" method="post">
                 <fieldset class="form__fieldset">
                     <legend class="visually-hidden">Personal Information</legend>
-                    <label class="form__label  form__label--personal-information">
-                        First Name
-                        <input class="form__input" type="text" name="first-name">
-                    </label>
-                    <label class="form__label  form__label--personal-information">
-                        Last Name
-                        <input class="form__input" type="text" name="last-name">
-                    </label>
-                    <label class="form__label  form__label--personal-information">
-                        Company
-                        <input class="form__input" type="text" name="company">
-                    </label>
-                    <label class="form__label  form__label--personal-information">
-                        E-mail
-                        <input class="form__input" type="email" name="email">
-                    </label>
-                    <aside class="preview">
-                        <table class="preview__info">
-                            <tr class="visually-hidden">
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Company</th>
-                                <th>Personal Color</th>
-                            </tr>
-                            <tr>
-                                <td class="preview__cell">Konstantin</td>
-                                <td class="preview__cell">Konstantinopolskiy</td>
-                                <td class="preview__cell">JetBrains</td>
-                                <td class="preview__cell">#DF665D</td>
-                            </tr>
-                        </table>
-                        <a class="preview__link" href="#">Add Sticker</a>
-                        <div class="preview__personal-color"></div>
-                    </aside>
+                    <div class="form__group">
+                        <label class="form__label  form__label--personal-information" for="first-name">First Name</label>
+                        <input class="form__input" type="text" name="first-name" id="first-name" required>
+                        <label class="form__label  form__label--personal-information" for="last-name">Last Name</label>
+                        <input class="form__input" type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label  form__label--personal-information" for="company">Company</label>
+                        <input class="form__input" type="text" name="company" id="company">
+                        <label class="form__label  form__label--personal-information" for="email">E-mail</label>
+                        <input class="form__input" type="email" name="email" id="email" required>
+                    </div>
                 </fieldset>
+                <section class="preview">
+                    <table class="preview__info">
+                        <tr class="visually-hidden">
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Company</th>
+                            <th>Personal Color</th>
+                        </tr>
+                        <tr>
+                            <td class="preview__cell">Konstantin</td>
+                            <td class="preview__cell">Konstantinopolskiy</td>
+                            <td class="preview__cell">JetBrains</td>
+                            <td class="preview__cell">#DF665D</td>
+                        </tr>
+                    </table>
+                    <a class="preview__link" href="#">Add Sticker</a>
+                    <div class="preview__personal-color"></div>
+                </section>
                 <fieldset class="form__fieldset">
                     <legend class="visually-hidden">Payment</legend>
-                    <label class="form__label  form__label--payment">
-                        <span class="visually-hidden">Yandex Kassa</span>
-                        <input class="form__radio" type="radio" name="payment-option" value="yandex">
-                    </label>
-                    <label class="form__label  form__label--payment">
-                        <span class="visually-hidden">PayPal</span>
-                        <input class="form__radio" type="radio" name="payment-option" value="paypal">
-                    </label>
-                    <a class="form__link" href="#">About cashless payment</a>
-                    <label class="form__label">
-                        <span class="visually-hidden">Code</span>
-                        <input class="form__input" type="text" name="code">
-                    </label>
-                    <button class="form__button" type="submit">Buy ticket for 1699 ₽</button>
+                    <div class="form__group">
+                        <label class="form__label  form__label--payment" for="yandex">
+                            <span class="visually-hidden">Yandex Kassa</span>
+                        </label>
+                        <input class="form__radio" type="radio" name="payment-option" id="yandex" value="yandex">
+                        <label class="form__label  form__label--payment" for="paypal">
+                            <span class="visually-hidden">PayPal</span>
+                        </label>
+                        <input class="form__radio" type="radio" name="payment-option" id="paypal" value="paypal">
+                        <a class="form__link" href="#">About cashless payment</a>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="code">
+                            <span class="visually-hidden">Code</span>
+                        </label>
+                        <input class="form__input" type="text" name="code" id="code">
+                        <button class="form__button" type="submit">Buy ticket for 1699 ₽</button>
+                    </div>
                     <aside class="price-info">
                         <table class="price-info__table">
                             <tr>
