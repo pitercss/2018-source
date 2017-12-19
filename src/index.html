@@ -291,35 +291,70 @@
                 <fieldset class="form__fieldset">
                     <legend class="visually-hidden">Personal Information</legend>
                     <div class="form__group">
-                        <label class="form__label  form__label--personal-information" for="first-name">First Name</label>
-                        <input class="form__input" type="text" name="first-name" id="first-name" required>
-                        <label class="form__label  form__label--personal-information" for="last-name">Last Name</label>
-                        <input class="form__input" type="text" name="last-name" id="last-name" required>
+                        <div class="form__field">
+                            <label class="form__label  form__label--personal-information" for="first-name">First Name</label>
+                            <input class="form__input" type="text" name="first-name" id="first-name" required>
+                            <p class="form__error">Here's the error description.</p>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label  form__label--personal-information" for="last-name">Last Name</label>
+                            <input class="form__input" type="text" name="last-name" id="last-name" required>
+                            <p class="form__error">Here's the error description.</p>
+                        </div>
                     </div>
                     <div class="form__group">
-                        <label class="form__label  form__label--personal-information" for="company">Company</label>
-                        <input class="form__input" type="text" name="company" id="company">
-                        <label class="form__label  form__label--personal-information" for="email">E-mail</label>
-                        <input class="form__input" type="email" name="email" id="email" required>
+                        <div class="form__field">
+                            <label class="form__label  form__label--personal-information" for="company">Company</label>
+                            <input class="form__input" type="text" name="company" id="company">
+                            <p class="form__error">Here's the error description.</p>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label  form__label--personal-information" for="email">E-mail</label>
+                            <input class="form__input" type="email" name="email" id="email" required>
+                            <p class="form__error">Here's the error description.</p>
+                        </div>
                     </div>
                 </fieldset>
                 <section class="preview">
-                    <table class="preview__info">
-                        <tr class="visually-hidden">
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Company</th>
-                            <th>Personal Color</th>
-                        </tr>
-                        <tr>
-                            <td class="preview__cell">Konstantin</td>
-                            <td class="preview__cell">Konstantinopolskiy</td>
-                            <td class="preview__cell">JetBrains</td>
-                            <td class="preview__cell">#DF665D</td>
-                        </tr>
-                    </table>
-                    <a class="preview__link" href="#">Add Sticker</a>
-                    <div class="preview__personal-color"></div>
+                    <div class="preview__card">
+                        <table class="preview__info">
+                            <tr class="visually-hidden">
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Company</th>
+                                <th>Personal Color</th>
+                            </tr>
+                            <tr class="preview__table-row">
+                                <td class="preview__cell  preview__cell--name">Konstantin</td>
+                                <td class="preview__cell  preview__cell--name">Konstantinopolskiy</td>
+                                <td class="preview__cell  preview__cell--company">Jet Brains</td>
+                                <td class="preview__cell">#DF665D</td>
+                            </tr>
+                        </table>
+                        <p class="preview__card-tip">
+                            Till here is nothing entered, your color is
+                            <span class="preview__card-tip-color">#FFFF</span>
+                        </p>
+                        <ul class="preview__stickers-list">
+                            <li class="preview__stickers-item">
+                                <img src="https://placehold.it/50x50" alt="Sticker">
+                            </li>
+                            <li class="preview__stickers-item">
+                                <img src="https://placehold.it/60x60" alt="Sticker">
+                            </li>
+                            <li class="preview__stickers-item">
+                                <img src="https://placehold.it/70x70" alt="Sticker">
+                            </li>
+                            <li class="preview__stickers-item">
+                                <img src="https://placehold.it/80x80" alt="Sticker">
+                            </li>
+                            <li class="preview__stickers-item">
+                                <img src="https://placehold.it/90x90" alt="Sticker">
+                            </li>
+                        </ul>
+                        <a class="preview__link" href="#">Add Sticker</a>
+                        <div class="preview__personal-color"></div>
+                    </div>
                 </section>
                 <fieldset class="form__fieldset">
                     <legend class="visually-hidden">Payment</legend>
