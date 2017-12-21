@@ -74,6 +74,11 @@ body {
     flex-direction: column;
 }
 
+.main-header__logo img {
+    width: 106px;
+    height: 22px;
+}
+
 .main-header__time {
     margin-left: 38px;
 
@@ -997,6 +1002,7 @@ body {
 
     width: 100%;
 
+    background: white;
     border: 2px solid #303B40;
 }
 
@@ -1014,7 +1020,7 @@ body {
         translateX(-50%)
         rotate(-45deg);
 
-    background: #F8F8F8;
+    background: white;
     border-top: 2px solid #303B40;
     border-right: 2px solid #303B40;
 }
@@ -1481,4 +1487,148 @@ body {
 
 .footer__logo-link:focus {
     outline: 1px solid #00E2B5;
+}
+
+@media (min-width: 720px) {
+    .main-header__main-nav {
+        width: 81%;
+        margin-right: auto;
+        margin-left: auto;
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .main-header__logo-container {
+        max-width: 31%;
+        height: 31px;
+        margin-left: 0;
+
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .main-header__logo img {
+        width: 89px;
+        height: 19px;
+    }
+
+    .main-header__time {
+        margin-left: 31px;
+
+        line-height: 1;
+    }
+
+    .main-header__days {
+        display: inline;
+    }
+
+    .main-header__place {
+        display: block;
+    }
+
+    .main-header__place-link {
+        position: relative;
+
+        display: inline-block;
+        max-width: 59px;
+        padding-bottom: 8px;
+
+        font-size: 7px;
+        line-height: 1.7;
+        letter-spacing: -0.1px;
+        text-decoration: none;
+
+        color: #1E1F1D;
+        border: 1px solid transparent;
+    }
+
+    .main-header__place-link::before {
+        content: '';
+
+        position: absolute;
+        top: -1px;
+        left: -11px;
+
+        width: 9px;
+        height: 17px;
+
+        background: url(../img/icon-place.svg) no-repeat 0 1px;
+        background-size: 6px;
+        border: 1px solid transparent;
+    }
+
+    .main-header__place-link:focus {
+        border-color: #00E2B5;
+        outline: none;
+    }
+
+    .main-header__place-link:focus::before {
+        border-color: #00E2B5;
+        border-right-color: white;
+    }
+
+    .main-header__place-link:hover {
+        color: #FF0195;
+    }
+
+    .main-header__buy {
+        margin: 0;
+
+        order: 1;
+    }
+
+    .main-header__btn {
+        padding-left: 38px;
+        padding-right: 16px;
+
+        font-size: 10px;
+        line-height: 2.4;
+        letter-spacing: -0.1px;
+    }
+
+    .main-header__btn::before {
+        top: 8px;
+        left: 15px;
+
+        width: 16px;
+        height: 9px;
+    }
+
+    .main-header__price-in-other-currencies {
+        display: block;
+        margin-top: 4px;
+
+        font-size: 7px;
+        line-height: 1;
+        letter-spacing: 0.1px;
+
+        color: #FF0195;
+    }
+
+    .main-header__menu-list {
+        display: flex;
+        width: auto;
+        margin: 0;
+        margin-left: auto;
+        padding-top: 6px;
+        padding-right: 2%;
+        padding-bottom: 0px;
+        padding-left: 2%;
+
+        align-self: flex-start;
+
+        font-size: 8px;
+
+        border: none;
+    }
+
+    .main-header__menu-item--active {
+        border-radius: 10px;
+    }
+
+    .summary {
+        margin-top: 8px;
+        border-top: 1px solid #D6D8D9;
+    }
 }
