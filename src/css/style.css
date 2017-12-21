@@ -1628,7 +1628,53 @@ body {
     }
 
     .summary {
+        position: relative;
+
+        min-height: 281px;
         margin-top: 8px;
+        padding-top: 43px;
+        padding-right: 9%;
+        padding-bottom: 24px;
+        padding-left: 9%;
+
+        font-size: 43px;
+
+        background: #00E2B5 url('../img/hand@2x.png') no-repeat 84% 44px;
+        background-size: 172px;
         border-top: 1px solid #D6D8D9;
+    }
+
+    .summary__heading {
+        margin-right: 34%;
+        margin-left: 9%;
+
+        font-size: 43px;
+        line-height: 1.15;
+        letter-spacing: -2.3px;
+    }
+
+    .summary__table {
+        position: absolute;
+        top: 92px;
+        right: -6%;
+
+        transform: rotate(-90deg);
+    }
+
+    .summary__table-heading {
+        min-width: 111px;
+
+        font-size: 12px;
+        line-height: 1.9;
+        letter-spacing: 0.2px;
+    }
+
+    .summary__table-heading:first-child,
+    .summary__table-data:first-child {
+        min-width: 55px;
+    }
+
+    .summary__table-data {
+        min-width: 111px;
     }
 }
