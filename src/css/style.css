@@ -1677,4 +1677,35 @@ body {
     .summary__table-data {
         min-width: 111px;
     }
+
+    .section {
+        margin-top: 40px;
+        margin-right: 9%;
+        margin-left: 9%;
+    }
+
+    .section--mission {
+        padding-right: 3%;
+        padding-bottom: 76px;
+        padding-left: 28%;
+
+        background: url('../img/yellow.png') no-repeat 5% 2px;
+        background-size: 148px;
+    }
+
+    .section__heading {
+        font-size: 43px;
+    }
+
+    .section__subheading {
+        font-size: 8px;
+        line-height: 3;
+    }
+
+    .section__paragraph {
+        margin-top: 11px;
+
+        font-size: 17px;
+        letter-spacing: -0.3px;
+    }
 }
