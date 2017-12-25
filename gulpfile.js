@@ -100,7 +100,7 @@ gulp.task('watch:html', () => {
 });
 
 gulp.task('watch:css', () => {
-    return gulp.watch('src/css/*.css', gulp.series('css'));
+    return gulp.watch('src/css/**/*.css', gulp.series('css'));
 });
 
 gulp.task('watch:copy', () => {

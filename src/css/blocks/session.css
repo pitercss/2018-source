@@ -2,7 +2,7 @@
     position: relative;
 
     display: flex;
-    margin-top: 15px;
+    min-height: 70px;
 
     justify-content: space-between;
     flex-wrap: wrap;
@@ -73,7 +73,7 @@
 .session__toggle {
     position: absolute;
     right: 1px;
-    bottom: 14px;
+    bottom: 28px;
 
     width: 14px;
     height: 14px;
@@ -125,7 +125,7 @@
 .session__info {
     width: 73%;
     margin-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 27px;
 
     letter-spacing: 0.1px;
 }
@@ -159,4 +159,96 @@
 .session__link:focus {
     border-bottom: none;
     outline: 1px solid #00E2B5;
+}
+
+@media (min-width: 720px) {
+    .session {
+        min-height: 64px;
+        margin-left: 9%;
+    }
+
+    .session:first-of-type {
+        margin-top: 25px;
+    }
+
+    .session--closed .session__topic {
+        display: block;
+    }
+
+    .session__heading {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .session--closed .session__heading {
+        margin-top: 13px;
+    }
+
+    .session__time {
+        width: 18%;
+
+        font-size: 13px;
+        letter-spacing: -0.7px;
+    }
+
+    .session--closed .session__time {
+        width: 20%;
+    }
+
+    .session__speaker {
+        margin-top: 2px;
+
+        font-size: 13px;
+    }
+
+    .session__topic {
+        margin-top: 7px;
+
+        font-size: 10px;
+        letter-spacing: -0.1px;
+    }
+
+    .session--closed .session__topic {
+        margin-top: 8px;
+    }
+
+    .session__toggle {
+        right: 2px;
+        bottom: 25px;
+    }
+
+    .session__toggle--hide {
+        top: 59px;
+    }
+
+    .session__speaker-photo {
+        margin-top: -9px;
+    }
+
+    .session__info {
+        width: 82%;
+        margin-top: 6px;
+        padding-bottom: 14px;
+    }
+
+    .session__description {
+        width: 59%;
+        margin-top: 0;
+
+        font-size: 7px;
+        line-height: 1.6;
+        letter-spacing: 0.05px;
+    }
+
+    .session__link {
+        margin-top: 16px;
+        margin-left: -4px;
+        padding: 4px;
+
+        font-size: 7px;
+        line-height: 1.2;
+        letter-spacing: 0.1px;
+
+        border-bottom: none;
+    }
 }

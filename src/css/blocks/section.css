@@ -32,7 +32,7 @@
 }
 
 .section--gallery {
-    margin-top: 53px;
+    margin-top: 40px;
 }
 
 .section--badge {
@@ -92,5 +92,18 @@
 
         font-size: 17px;
         letter-spacing: -0.3px;
+    }
+
+    .section--schedule {
+        margin-top: 38px;
+    }
+
+
+    .section--schedule .section__subheading {
+        line-height: 1;
+    }
+
+    .section--gallery {
+        margin-top: 52px;
     }
 }
