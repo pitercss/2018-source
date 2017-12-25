@@ -7,6 +7,8 @@ const rsync = require('gulp-rsync');
 const sync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const svgmin = require('gulp-svgmin');
+const plumber = require('gulp-plumber');
+const concat = require('gulp-concat');
 
 // HTML
 
@@ -25,7 +27,9 @@ gulp.task('html', () => {
 // CSS
 
 gulp.task('css', () => {
-    return gulp.src('src/css/*.css')
+    return gulp.src('src/css/**/*.css')
+        .pipe(plumber())
+        .pipe(concat('style.css'))
         .pipe(postcss([autoprefixer]))
         .pipe(csso())
         .pipe(gulp.dest('dest/css'))

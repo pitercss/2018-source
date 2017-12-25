@@ -1,0 +1,12 @@
+.color-id {
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 6px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    color: white;
+    background: #DF665D;
+    border-radius: 20px;
+}

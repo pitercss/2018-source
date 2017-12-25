@@ -1,0 +1,39 @@
+.speakers__caption {
+    margin: 0;
+    margin-top: 21px;
+
+    font-size: 21px;
+    letter-spacing: -0.3px;
+}
+
+.speakers__description {
+    margin: 0;
+    margin-top: 6px;
+
+    letter-spacing: 0.1px;
+}
+
+.speakers__btn {
+    display: block;
+    margin-top: 13px;
+
+    font-weight: bold;
+    line-height: 2.2;
+    text-decoration: none;
+    text-align: center;
+
+    color: #FF0195;
+    border: 2px solid #FF0195;
+}
+
+.speakers__btn:focus {
+    box-shadow:
+        0 0 0 2px white,
+        0 0 0 4px #00E2B5;
+    outline: none;
+}
+
+.speakers__btn:hover {
+    color: white;
+    background: #FF0195;
+}

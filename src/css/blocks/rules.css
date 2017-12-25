@@ -1,0 +1,48 @@
+.rules {
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+.rules__wrapper {
+    padding-top: 11px;
+    padding-right: 6%;
+    padding-bottom: 20px;
+    padding-left: 6%;
+
+    text-align: left;
+
+    background: #F8F8F8;
+}
+
+.rules__caption {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+.rules__description {
+    margin: 0;
+}
+
+.rules__link {
+    display: inline-block;
+    margin-top: 15px;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    color: #FF0195;
+    border-bottom: 1px solid rgba(255, 1, 149, 0.2);
+}
+
+.rules__link:focus {
+    border-bottom-color: transparent;
+    outline: 1px solid #00E2B5;
+}
+
+.rules__link:hover {
+    border-bottom-color: rgba(255, 1, 149, 0.3);
+}

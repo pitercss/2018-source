@@ -1,0 +1,286 @@
+.header {
+    margin-top: 12px;
+}
+
+.header__nav {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.header__logo-container {
+    display: flex;
+    margin-left: 5.5%;
+
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.header__logo img {
+    width: 106px;
+    height: 22px;
+}
+
+.header__time {
+    margin-left: 38px;
+
+    font-size: 7px;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+
+    color: #1E1F1D;
+}
+
+.header__days {
+    display: none;
+}
+
+.header__place {
+    display: none;
+}
+
+.header__buy {
+    margin-top: 2px;
+    margin-right: 5%;
+}
+
+.header__btn {
+    position: relative;
+
+    display: block;
+    padding-left: 60px;
+    padding-right: 29px;
+
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2.5;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    background: #FF0195;
+}
+
+.header__btn:focus {
+    box-shadow:
+        0 0 0 2px white,
+        0 0 0 4px #00E2B5;
+    outline: none;
+}
+
+.header__btn:hover {
+    background: #FF42B0;
+}
+
+.header__btn::before {
+    content: '';
+
+    position: absolute;
+    top: 13px;
+    left: 26px;
+
+    width: 22px;
+    height: 13px;
+
+    background: transparent url('../img/icon-ticket.svg') no-repeat 0 0;
+    background-size: contain;
+}
+
+.header__price-in-other-currencies {
+    display: none;
+}
+
+.header__menu-list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-top: 13px;
+    padding-top: 15px;
+    padding-right: 5.5%;
+    padding-bottom: 16px;
+    padding-left: 5.5%;
+
+    border-top: 1px solid rgba(48, 59, 64, 0.2);
+}
+
+.header__menu-item {
+    margin-right: 0.5%;
+    padding-top: 7px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+
+    list-style: none;
+}
+
+.header__menu-item--active {
+    background: #00E2B5;
+}
+
+.header__menu-item--active .header__menu-link {
+    color: white;
+}
+
+.header__menu-item--active .header__menu-link:hover {
+    color: white;
+}
+
+.header__menu-link {
+    display: block;
+    line-height: 1;
+
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #303B40;
+}
+
+.header__menu-link:focus {
+    outline: 1px solid #00E2B5;
+}
+
+.header__menu-link:hover {
+    color: #FF0195;
+}
+
+@media (min-width: 720px) {
+    .header__nav {
+        width: 81%;
+        margin-right: auto;
+        margin-left: auto;
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .header__logo-container {
+        max-width: 31%;
+        height: 31px;
+        margin-left: 0;
+
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .header__logo img {
+        width: 89px;
+        height: 19px;
+    }
+
+    .header__time {
+        margin-left: 31px;
+
+        line-height: 1;
+    }
+
+    .header__days {
+        display: inline;
+    }
+
+    .header__place {
+        display: block;
+    }
+
+    .header__place-link {
+        position: relative;
+
+        display: inline-block;
+        max-width: 59px;
+        padding-bottom: 8px;
+
+        font-size: 7px;
+        line-height: 1.7;
+        letter-spacing: -0.1px;
+        text-decoration: none;
+
+        color: #1E1F1D;
+        border: 1px solid transparent;
+    }
+
+    .header__place-link::before {
+        content: '';
+
+        position: absolute;
+        top: -1px;
+        left: -11px;
+
+        width: 9px;
+        height: 17px;
+
+        background: url('../img/icon-place.svg') no-repeat 0 1px;
+        background-size: 6px;
+        border: 1px solid transparent;
+    }
+
+    .header__place-link:focus {
+        border-color: #00E2B5;
+        outline: none;
+    }
+
+    .header__place-link:focus::before {
+        border-color: #00E2B5;
+        border-right-color: white;
+    }
+
+    .header__place-link:hover {
+        color: #FF0195;
+    }
+
+    .header__buy {
+        margin: 0;
+
+        order: 1;
+    }
+
+    .header__btn {
+        padding-left: 38px;
+        padding-right: 16px;
+
+        font-size: 10px;
+        line-height: 2.4;
+        letter-spacing: -0.1px;
+    }
+
+    .header__btn::before {
+        top: 8px;
+        left: 15px;
+
+        width: 16px;
+        height: 9px;
+    }
+
+    .header__price-in-other-currencies {
+        display: block;
+        margin-top: 4px;
+
+        font-size: 7px;
+        line-height: 1;
+        letter-spacing: 0.1px;
+
+        color: #FF0195;
+    }
+
+    .header__menu-list {
+        display: flex;
+        width: auto;
+        margin: 0;
+        margin-left: auto;
+        padding-top: 6px;
+        padding-right: 2%;
+        padding-bottom: 0px;
+        padding-left: 2%;
+
+        align-self: flex-start;
+
+        font-size: 8px;
+
+        border: none;
+    }
+
+    .header__menu-item--active {
+        border-radius: 10px;
+    }
+}

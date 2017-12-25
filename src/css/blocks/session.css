@@ -1,0 +1,162 @@
+.session {
+    position: relative;
+
+    display: flex;
+    margin-top: 15px;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border-top: 1px solid #00E2B5;
+}
+
+.session:first-of-type {
+    margin-top: 23px;
+}
+
+.session--closed .session__topic,
+.session--closed .session__speaker-photo,
+.session--closed .session__info {
+    display: none;
+}
+
+.session__heading {
+    width: 100%;
+    margin-top: 13px;
+}
+
+.session--closed .session__heading {
+    width: 90%;
+}
+
+.session__time {
+    font-weight: bold;
+    font-size: 15px;
+
+    color: #00E2B5;
+}
+
+.session--closed .session__container {
+    cursor: pointer;
+}
+
+.session__container:focus {
+    outline: 1px solid #00E2B5;
+}
+
+.session--closed .session__container:hover {
+    color: #FF0195;
+}
+
+.session__speaker {
+    margin: 0;
+    margin-top: 4px;
+
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.session--closed .session__speaker {
+    margin-top: 2px;
+}
+
+.session__topic {
+    margin: 0;
+    margin-top: 10px;
+
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.1px;
+}
+
+.session__toggle {
+    position: absolute;
+    right: 1px;
+    bottom: 14px;
+
+    width: 14px;
+    height: 14px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.session__toggle:focus {
+    outline: 1px solid #00E2B5;
+}
+
+.session__toggle::before,
+.session__toggle::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 6px;
+
+    width: 2px;
+    height: 14px;
+
+    background: #FF0195;
+}
+
+.session__toggle::before {
+    transform: rotate(90deg);
+}
+
+.session__toggle--hide {
+    top: 42px;
+}
+
+.session__toggle--hide::before {
+    transform: rotate(45deg);
+}
+
+.session__toggle--hide::after {
+    transform: rotate(-45deg);
+}
+
+.session__speaker-photo {
+    margin-top: 15px;
+}
+
+.session__info {
+    width: 73%;
+    margin-top: 5px;
+    padding-bottom: 10px;
+
+    letter-spacing: 0.1px;
+}
+
+.session__description {
+    width: 90%;
+    margin: 0;
+    margin-top: 5px;
+
+    letter-spacing: -0.2px;
+}
+
+.session__link {
+    display: inline-block;
+    margin-top: 9px;
+
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.1px;
+    text-transform: lowercase;
+    text-decoration: none;
+
+    color: #FF0195;
+    border-bottom: 1px solid rgba(255, 1, 149, 0.2);
+}
+
+.session__link:hover {
+    border-bottom-color: rgba(255, 1, 149, 0.3);
+}
+
+.session__link:focus {
+    border-bottom: none;
+    outline: 1px solid #00E2B5;
+}

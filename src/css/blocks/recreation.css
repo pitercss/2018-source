@@ -1,0 +1,24 @@
+.recreation {
+    display: flex;
+    margin-top: 15px;
+
+    letter-spacing: -0.1px;
+
+    color: #00E2B5;
+    border-top: 1px solid #00E2B5;
+}
+
+.recreation__time {
+    width: 14%;
+    margin-top: 11px;
+
+    font-weight: bold;
+}
+
+.recreation__heading {
+    margin: 0;
+    margin-top: 11px;
+
+    font-size: 12px;
+    text-transform: lowercase;
+}

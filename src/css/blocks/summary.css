@@ -1,0 +1,111 @@
+.summary {
+    min-height: 315px;
+    padding-top: 20px;
+    padding-right: 15%;
+    padding-bottom: 47px;
+    padding-left: 5%;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+
+    color: white;
+    background: #00E2B5 url('../img/hand.png') no-repeat 90% 100%;
+}
+
+.summary__heading {
+    margin: 0;
+    margin-top: 12px;
+
+    font-size: 36px;
+}
+
+.summary__table {
+    margin-top: 27px;
+
+    border-collapse: collapse;
+}
+
+.summary__table tbody {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.summary__table-row:first-child {
+    order: 1;
+}
+
+.summary__table-heading {
+    min-width: 113px;
+    padding: 0;
+
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    text-align: left;
+}
+
+.summary__table-heading:first-child,
+.summary__table-data:first-child {
+    min-width: 50px;
+}
+
+.summary__table-data {
+    min-width: 113px;
+    padding: 0;
+}
+
+@media (min-width: 720px) {
+    .summary {
+        position: relative;
+
+        min-height: 281px;
+        margin-top: 8px;
+        padding-top: 43px;
+        padding-right: 9%;
+        padding-bottom: 24px;
+        padding-left: 9%;
+
+        font-size: 43px;
+
+        background: #00E2B5 url('../img/hand@2x.png') no-repeat 84% 44px;
+        background-size: 172px;
+        border-top: 1px solid #D6D8D9;
+    }
+
+    .summary__heading {
+        margin-right: 34%;
+        margin-left: 9%;
+
+        font-size: 43px;
+        line-height: 1.15;
+        letter-spacing: -2.3px;
+    }
+
+    .summary__table {
+        position: absolute;
+        top: 92px;
+        right: -6%;
+
+        transform: rotate(-90deg);
+    }
+
+    .summary__table-heading {
+        min-width: 111px;
+
+        font-size: 12px;
+        line-height: 1.9;
+        letter-spacing: 0.2px;
+    }
+
+    .summary__table-heading:first-child,
+    .summary__table-data:first-child {
+        min-width: 55px;
+    }
+
+    .summary__table-data {
+        min-width: 111px;
+    }
+}

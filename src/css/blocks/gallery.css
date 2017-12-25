@@ -1,0 +1,73 @@
+.gallery {
+    position: relative;
+
+    width: 335px;
+    margin-top: 29px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+.gallery__btn {
+    position: absolute;
+    top: 109px;
+
+    width: 32px;
+    height: 32px;
+
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+}
+
+.gallery__btn:focus {
+    outline: 1px solid #00E2B5;
+}
+
+.gallery__btn::before {
+    content: '';
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 12px;
+    height: 12px;
+
+    background: url('../img/icon-arrow.svg') no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.gallery__btn--back::before {
+    transform: rotate(180deg);
+}
+
+.gallery__btn--forward {
+    right: 0;
+}
+
+.gallery__image--hide-on-mobile {
+    display: none;
+}
+
+.gallery__link {
+    display: inline-block;
+    margin-top: 17px;
+
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+
+    color: #FF0195;
+    border-bottom: 1px solid rgba(255, 1, 149, 0.2);
+}
+
+.gallery__link:hover {
+    border-bottom-color: rgba(255, 1, 149, 0.3);
+}
+
+.gallery__link:focus {
+    border-bottom: none;
+    outline: 1px solid #00E2B5;
+}
