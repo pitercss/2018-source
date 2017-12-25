@@ -6,12 +6,14 @@
     margin-right: auto;
     margin-left: auto;
 
+    font-size: 0;
     text-align: center;
 }
 
 .gallery__btn {
     position: absolute;
     top: 109px;
+    z-index: 1;
 
     width: 32px;
     height: 32px;
@@ -34,8 +36,12 @@
     width: 12px;
     height: 12px;
 
-    background: url('../img/icon-arrow.svg') no-repeat 50% 50%;
+    background: transparent url('../img/icon-arrow.svg') no-repeat 50% 50%;
     background-size: contain;
+}
+
+.gallery__btn--back {
+    left: 0;
 }
 
 .gallery__btn--back::before {
@@ -46,15 +52,37 @@
     right: 0;
 }
 
+.gallery__image {
+    display: block;
+
+    background: #00E2B5;
+}
+
+.gallery__image:focus {
+    outline: 3px solid #00E2B5;
+}
+
+.gallery__image img {
+    width: 335px;
+    height: auto;
+}
+
+.gallery__image img:hover {
+
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
 .gallery__image--hide-on-mobile {
     display: none;
 }
 
 .gallery__link {
     display: inline-block;
-    margin-top: 17px;
+    margin-top: 22px;
 
     font-weight: bold;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: -0.1px;
     text-decoration: none;
@@ -70,4 +98,63 @@
 .gallery__link:focus {
     border-bottom: none;
     outline: 1px solid #00E2B5;
+}
+
+@media (min-width: 720px) {
+    .gallery {
+        display: flex;
+        width: 587px;
+        margin-top: 17px;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .gallery__btn {
+        display: none;
+    }
+
+    .gallery__image {
+        margin-bottom: 12px;
+    }
+
+    .gallery__image img {
+        width: auto;
+        height: 187px;
+    }
+
+    .gallery__image--hide-on-mobile {
+        display: block;
+    }
+
+    .gallery__container {
+        display: flex;
+        width: 187px;
+        height: 187px;
+
+        justify-content: center;
+    }
+
+    .gallery__link {
+        display: flex;
+        width: 86px;
+        margin-top: 0;
+
+        align-items: center;
+
+        font-size: 13px;
+        line-height: 1.4;
+
+        border-bottom: none;
+    }
+
+    .gallery__link:hover {
+        text-decoration: underline solid rgba(255, 1, 149, 0.5);
+        text-decoration-skip: ink;
+    }
+
+    .gallery__link:focus {
+        outline: 2px solid #00E2B5;
+    }
 }

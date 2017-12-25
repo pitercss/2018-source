@@ -119,6 +119,8 @@
 }
 
 .session__speaker-photo {
+    width: 75px;
+    height: 75px;
     margin-top: 15px;
 }
 
@@ -178,6 +180,8 @@
     .session__heading {
         display: flex;
         margin-top: 15px;
+
+        align-items: flex-start;
     }
 
     .session--closed .session__heading {
@@ -222,6 +226,8 @@
     }
 
     .session__speaker-photo {
+        width: 75px;
+        height: 75px;
         margin-top: -9px;
     }
 
