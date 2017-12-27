@@ -171,3 +171,93 @@
     background: transparent url('../img/logo-footer.svg') no-repeat 0 0;
     background-size: contain;
 }
+
+@media (min-width: 720px) {
+    .preview {
+        margin-top: -59px;
+
+        background: none;
+    }
+
+    .preview__card {
+        top: 0;
+
+        width: 187px;
+        background-position:
+            13px 31px,
+            43px 43px;
+        background-size:
+            30px,
+            62px;
+    }
+
+    .preview__card::before {
+        top: 17px;
+
+        width: 11px;
+        height: 11px;
+
+        background: linear-gradient(to right, #F8F8F8 50%, #F8F8F8 50%, #00E2B5 50%, #00E2B5 50%);
+    }
+
+    .preview__info {
+        margin-top: 85px;
+        margin-left: 9px;
+    }
+
+    .preview__cell {
+        margin-left: 32px;
+
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .preview__cell--name {
+        margin-left: 0;
+
+        font-size: 13px;
+        line-height: 1.1;
+    }
+
+    .preview__cell--company {
+        margin-top: 2px;
+    }
+
+    .preview__card--empty .preview__card-tip {
+        width: 105px;
+        min-height: 57px;
+        margin-top: 85px;
+        margin-left: 45px;
+
+        font-size: 10px;
+    }
+
+    .preview__stickers-list--show {
+        width: 160px;
+        margin-top: 7px;
+    }
+
+    .preview__stickers-item {
+        height: 70px;
+    }
+
+    .preview__link {
+        margin-top: 25px;
+        margin-left: 13px;
+
+        font-size: 7px;
+    }
+
+    .preview__personal-color {
+        height: 71px;
+        margin-top: 10px;
+    }
+
+    .preview__personal-color::before {
+        top: -34px;
+        right: 14px;
+
+        width: 21px;
+        height: 20px;
+    }
+}
