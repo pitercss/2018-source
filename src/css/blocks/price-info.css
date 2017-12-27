@@ -34,6 +34,8 @@
 
 .price-info__table tbody {
     display: flex;
+
+    justify-content: space-between;
 }
 
 .price-info__table-row {
@@ -107,4 +109,56 @@
 
 .price-info__close::after {
     transform: rotate(-45deg);
+}
+
+@media (min-width: 720px) {
+    .price-info {
+        margin-top: 13px;
+        margin-left: 4px;
+    }
+
+    .price-info__table::before {
+        top: -6px;
+        left: 66%;
+
+        width: 6px;
+        height: 6px;
+    }
+
+    .price-info__table-row:last-child {
+        width: 27%;
+    }
+
+    .price-info__cell {
+        padding-top: 2px;
+        padding-left: 6px;
+    }
+
+    .price-info__cell--date {
+        padding-top: 11px;
+
+        font-size: 7px;
+    }
+
+    .price-info__cell--price {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .price-info__close {
+        top: 8px;
+        right: 7px;
+
+        width: 8px;
+        height: 8px;
+        padding: 0;
+    }
+
+    .price-info__close::before,
+    .price-info__close::after {
+        right: 4px;
+
+        width: 1px;
+        height: 8px;
+    }
 }

@@ -372,12 +372,11 @@
     }
 
     .form__warning {
-        margin: 0;
-        margin-top: 5px;
+        margin-top: -3px;
+        margin-left: 6px;
 
-        font-size: 12px;
-        letter-spacing: -0.25px;
-        text-transform: initial;
-        text-align: center;
+        font-size: 7px;
+        letter-spacing: 0;
+        text-align: left;
     }
 }
