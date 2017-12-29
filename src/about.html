@@ -59,21 +59,22 @@
         </nav>
     </header>
     <main class="page">
-        <h1>h1 what we expect and other text</h1>
-        <h2>h2 sponsoring Front-Trends, you'll reach thousands of web developers</h2>
+        <h1>H1 what we expect and other text</h1>
+        <h2>H2 sponsoring Front-Trends, you'll reach thousands of web developers</h2>
         <h3>H3 front-Trends is one of Europe’s most established annual conferences for professional front-end developers</h3>
         <h4>H4 sometext content</h4>
+        <p class="hide-mobile">There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
         <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
         <p class="lead">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all).</p>
-        <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
-        <a href="#" class="js-hide">I`m just a small link, please don`t kill me</a>
+        <p class="hide-desktop">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness.</p>
+        <a href="#" class="hide">I`m just a small link, please don`t kill me</a>
         <div class="cols">
             <p class="small">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
-            <p class="small js-hide">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
+            <p class="small hide-mobile">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
         </div>
         <p class="bold">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
         <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
-        <p class="mark">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation.</p>
+        <p><span>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation.</span></p>
 
         <blockquote>By sponsoring Front-Trends, you'll reach thousands of professional developers, both at the event and online once videos areposted
             <cite>John Doe</cite>
@@ -86,7 +87,6 @@
             By sponsoring Front-Trends, you'll reach thousands of professional developers, both at the event and online once videos areposted
             <cite>John Doe</cite>
         </blockquote>
-
         <figure>
             <picture>
                 <img  src="http://placehold.it/336x225" alt="Coding" width="336" height="225">
@@ -136,7 +136,7 @@
                     </ul>
                 </li>
             </ul>
-            <ul>
+            <ul class="hide-mobile">
                 <li><strong>Brevity:</strong>give it a catchy name and try to describe the main plot in a couple of paragraphs instead of writing the whole text. Two main questions to answer: why this topic and why do you want to talk about it.</li>
                 <li><strong>Brevity:</strong>give it a catchy name and try to describe the main plot in a couple of paragraphs instead of writing the whole text. Two main questions to answer: why this topic and why do you want to talk about it.</li>
             </ul>
@@ -173,32 +173,33 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="#" class="js-hide">ок, get tickets</a>
-
+            <a href="#" class="hide-mobile">ок, get tickets</a>
             <div class="cols">
                 <div class="cols__item">
                     <h2>Term_Responsibility</h2>
                     <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
                 </div>
-                <div class="cols__item js-hide">
+                <div class="cols__item hide-mobile">
                     <h2>Term_Audio / Video Recording</h2>
                     <p>The participant acknowledges that they may not engage in damage claims against the Conference Organizer should the holding of the Conference be hindered or prevented by unexpected political or economic events</p>
                 </div>
-                <a href="#">just link</a>
+                <a class="hide-mobile" href="#">just link</a>
             </div>
-        <div class="cols">
-            <p>.block {height:var(--ht);
-                text-align: center;
-                line-height: var(--ht);
-                color: var(--white);
-                display: inline-block;
-                width: var(--boxWidth);
-                border: 5px solid rgba(255,255,255,0.4);
-                background: var(--bg);
-                margin-bottom: calc(var(--ht)/4);
-                {
+        <div class="cols dark-block">
+            <p>.block {
+            height:var(--ht);
+            text-align: center;
+            line-height: var(--ht);
+            color: var(--white);
+            display: inline-block;
+            width: var(--boxWidth);
+            border: 5px solid rgba(255,255,255,0.4);
+            background: var(--bg);
+            margin-bottom: calc(var(--ht)/4);
+            {
             </p>
-            <p class="js-hide">.block {height:var(--ht);
+            <!-- </p> -->
+            <p class="hide-mobile">.block {height:var(--ht);
                 text-align: center;
                 line-height: var(--ht);
                 color: var(--white);
@@ -211,11 +212,11 @@
             </p>
         </div>
 
-        <h1>h1 what we expect and other text</h1>
-        <h2>h2 sponsoring Front-Trends, you'll reach thousands of web developers</h2>
+        <h1>H1 what we expect and other text</h1>
+        <h2>H2 sponsoring Front-Trends, you'll reach thousands of web developers</h2>
         <h3>H3 front-Trends is one of Europe’s most established annual conferences for professional front-end developers</h3>
         <h4>H4 sometext content</h4>
-        <p class="js-hide">There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
+        <p class="hide-mobile">There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
         <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.</p>
         <div class="cols">
             <ol>
@@ -261,8 +262,7 @@
                 </li>
             </ul>
         </div>
-
-        <div class="js-hide">
+        <div class="hide-mobile">
             <img src="https://placehold.it/335x250" alt="Last conference" width="149" height="149">
             <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.Building user interfaces on the web is hard, because the web, and thus CSS, was inherently made for documents. Because UIs fundamentally are not documents, we've seen a mindset shift towards building component-based system.</p>
             <p>The rise of JavaScript frameworks like React, Ember and recently Angular 2, the effort of the W3C to standardize a web-native component system, pattern libraries and styleguides being considered 'the right way to build web applications' and many other things have illuminated this revolution – we are now in the "Component Age".</p>
@@ -274,16 +274,15 @@
         <div class="slider">
             <button class="slider__prev" type="button"><span class="visually-hidden">Предыдущий</span></button>
             <figure class="slider__item js-active">
-                <img class="slider__image" src="http://placehold.it/334x250" width="334" height="250" alt="Coding">
+                <img class="slider__image" src="http://placehold.it/336x250" width="336" height="250" alt="Coding">
                 <figcaption class="slider__note">Title of picture or something info</figcaption>
             </figure>
-            <figure class="slider__item">
-                <img class="slider__image" src="http://placehold.it/334x250" width="334" height="250" alt="Coding">
+            <figure class="slider__item js-hide">
+                <img class="slider__image" src="http://placehold.it/336x250" width="336" height="250" alt="Coding">
                 <figcaption class="slider__note">Title of picture or something info</figcaption>
             </figure>
             <button class="slider__next" type="button"><span class="visually-hidden">Следующий</span></button>
         </div>
-
     </main>
     <footer class="footer">
         <div class="footer__content">
