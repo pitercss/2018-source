@@ -121,6 +121,9 @@ body {
     line-height: 1;
     color: #ff0195;
     padding-bottom: 5px;
+}
+
+.page a:hover {
     background-image: linear-gradient(#ffffff 0%, #ffffff 95%, rgba(255,1,149,0.2) 95%, rgba(255,1,149,0.2) 100%);
 }
 
@@ -209,6 +212,10 @@ body {
     margin-bottom: 20px;
 }
 
+.page figure img {
+        width: 100%;
+    }
+
 .page  ol {
     padding-left: 15px;
     margin: 0;
@@ -239,6 +246,12 @@ body {
     padding-left: 15px;
 }
 
+.page .cols {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .page .cols > ul > li {
     position: relative;
 }
@@ -252,7 +265,6 @@ body {
     width: 6px;
     height: 6px;
     background-color: #00e2b5;
-
 }
 
 .page table {
@@ -327,23 +339,20 @@ body {
 
 .page .slider__prev {
     position: absolute;
-    top: 125px;
-    /*bottom: 0;*/
     left: 0;
     width: 16px;
     height: 16px;
-    background-color: #000000;
+    background-color: #000000b2;
     border: none;
     cursor: pointer;
 }
 
 .page .slider__next {
     position: absolute;
-    top: 125px;
-    right: 1px;
+    right: 0;
     width: 16px;
     height: 16px;
-    background-color: #000000;
+    background-color: #000000b2;
     border: none;
     cursor: pointer;
 }
@@ -357,6 +366,239 @@ body {
     padding-top: 10px;
 }
 
-.page .slider__image {
+.page img {
     display: block;
+}
+
+@media (min-width: 720px) {
+    .page .hide-mobile {
+        display: block;
+    }
+
+    .page .hide-desktop {
+        display: none;
+    }
+
+    .page {
+        max-width: 720px;
+        margin: 0 auto;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .page__content {
+        width: 421px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .page h1 {
+        font-size: 43px;
+    }
+
+    .page h2 {
+        font-size: 17px;
+    }
+
+    .page h3 {
+        font-size: 13px;
+    }
+
+    .page h4 {
+        font-size: 10px;
+        letter-spacing: normal;
+    }
+
+    .page p{
+        font-size: 10px;
+    }
+
+    .page .lead {
+        font-size: 17px;
+    }
+
+    .page .cols .small {
+        font-size: 7px;
+        line-height: 1.7;
+        margin: 0;
+        margin-bottom: 10px;
+        width: 201px;
+    }
+
+    .page blockquote:first-of-type {
+        font-size: 17px;
+    }
+
+    .page blockquote:first-of-type cite{
+        font-size: 13px;
+    }
+
+    .page blockquote:nth-of-type(2) {
+        font-size: 13px;
+    }
+
+    .page blockquote:nth-of-type(2) cite {
+        font-size: 10px;
+    }
+
+    .page blockquote:nth-of-type(3) {
+        font-size: 10px;
+    }
+
+    .page blockquote:nth-of-type(3) cite{
+        font-size: 8px;
+    }
+
+    .page figure {
+        width: 640px;
+        margin-bottom: 35px;
+    }
+
+    .page figcaption {
+        font-size: 7px;
+        line-height: 1.7;
+    }
+
+    .page ol {
+        width: 150px;
+        font-size: 10px;
+        line-height: 2.4;
+    }
+
+    .page ul {
+        width: 150px;
+        font-size: 10px;
+        line-height: 2.4;
+    }
+
+
+    .page  ol ul {
+        font-size: 7px;
+        line-height: 2.1;
+    }
+
+    .page  ul ul {
+        font-size: 7px;
+        line-height: 2.1;
+    }
+
+    .page ul  {
+        width: 150px;
+        font-size: 10px;
+    }
+
+    .page .cols ul:nth-child(3) {
+        width: 260px;
+        font-weight: 400;
+        margin-right: 65px;
+    }
+
+    .page .cols > ul > li::before {
+        width: 3px;
+        height: 3px;
+        top: 7px;
+    }
+
+    .page strong {
+        line-height: 2.4;
+    }
+
+    .page table {
+        width: 275px;
+        position: relative;
+
+    }
+
+    .page table tr th  {
+        font-size: 10px;
+        line-height: 2.4;
+    }
+
+    .page table tr:first-child th {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .page table td {
+        font-size: 10px;
+        line-height: 2.4;
+    }
+
+    .page table tr:first-child th:not(:first-child) {
+        padding-right: 0;
+    }
+
+    .page .page__content table + a {
+        position: absolute;
+        top: 40px;
+        right: 18px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 10px;
+        font-weight: 700;
+        background-color: #ffffff;
+        color: #ff0195;
+        background-image: none;
+        outline: 2px solid #ff0195;
+    }
+
+    .page .page__content table + a:hover {
+        background-color: #ff42b0;
+        outline: 2px solid #ff42b0;
+        color: #ffffff;
+    }
+
+    .page .page__content table + a:active {
+        background-color: #ec058c;
+        outline: 2px solid #ec058c;
+
+    }
+
+    .page .cols__item {
+        width: 203px;
+        margin-bottom: 50px;
+    }
+
+    .page .cols__item h2 {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .page .cols__item + a {
+        position: absolute;
+        right: -65px;
+        font-size: 10px;
+    }
+
+    .page .dark-block p {
+        width: 310px;
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .page .description img:first-child {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 7px;
+    }
+
+    .page .description img:nth-child(4) {
+        float: right;
+        margin-left: 29px;
+
+    }
+
+    .page .slider figure {
+        width: 421px;
+    }
+
+    .page .slider__prev {
+        top: 105px;
+    }
+
+    .page .slider__next {
+        top: 105px;
+    }
 }
