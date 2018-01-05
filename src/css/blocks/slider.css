@@ -1,0 +1,43 @@
+.slider {
+    position: relative;
+}
+
+.slider__prev {
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #000000b2;
+    border: none;
+    cursor: pointer;
+}
+
+.slider__next {
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #000000b2;
+    border: none;
+    cursor: pointer;
+}
+
+.slider__note {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+@media (min-width: 720px) {
+    .slider figure {
+        width: 421px;
+    }
+
+    .slider__prev {
+        top: 105px;
+    }
+
+    .slider__next {
+        top: 105px;
+    }
+}

@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: content-box;
+}
+
+body {
+    min-width: 375px;
+    margin: 0;
+    font-family: 'gotham pro', 'verdana', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #303B40;
+    background: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.js-hide {
+    display: none;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .hide-mobile {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+}
