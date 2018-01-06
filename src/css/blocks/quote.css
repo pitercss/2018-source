@@ -51,26 +51,30 @@
 
 @media (min-width: 720px) {
     .quote {
-        font-size: 10px;
+        font-size: 20px;
+        padding-bottom: 80px;
     }
 
     .quote cite{
-        font-size: 8px;
+        font-size: 16px;
     }
 
     .quote--lead  {
-        font-size: 17px;
+        font-size: 34px;
+        padding-bottom: 50px;
+        padding-top: 35px;
     }
 
     .quote--lead  cite{
-        font-size: 13px;
+        font-size: 26px;
     }
 
     .quote--medium {
-        font-size: 13px;
+        font-size: 26px;
+        padding-bottom: 60px;
     }
 
     .quote--medium cite {
-        font-size: 10px;
+        font-size: 20px;
     }
 }

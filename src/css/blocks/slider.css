@@ -5,8 +5,8 @@
 .slider__prev {
     position: absolute;
     left: 0;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     background-color: #000000b2;
     border: none;
     cursor: pointer;
@@ -15,8 +15,8 @@
 .slider__next {
     position: absolute;
     right: 0;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     background-color: #000000b2;
     border: none;
     cursor: pointer;
@@ -27,17 +27,21 @@
     padding-top: 10px;
 }
 
-
 @media (min-width: 720px) {
+
+    .slider {
+        margin-top: 40px;
+    }
+
     .slider figure {
-        width: 421px;
+        width: 840px;
     }
 
     .slider__prev {
-        top: 105px;
+        top: 225px;
     }
 
     .slider__next {
-        top: 105px;
+        top: 225px;
     }
 }
