@@ -234,11 +234,12 @@
     text-align: center;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .form {
         display: flex;
         width: 82%;
-        margin-right: 68px;
+        margin-top: 12px;
+        margin-right: 136px;
         margin-left: auto;
 
         flex-wrap: wrap;
@@ -246,110 +247,114 @@
     }
 
     .form__fieldset {
-        width: 49%;
+        width: 49.5%;
         margin: 0;
     }
 
     .form__fieldset:first-child {
         width: 49%;
-        margin-top: 3px;
+        margin-top: 6px;
     }
 
     .form__group {
         display: flex;
-        margin-top: 12px;
+        margin-top: 24px;
 
         justify-content: space-between;
     }
 
     .form__field {
-        width: 49%;
+        width: 48%;
     }
 
     .form__label {
         margin-top: 0;
-        margin-left: 4px;
+        margin-left: 8px;
 
-        font-size: 7px;
+        font-size: 14px;
     }
 
     .form__input {
-        margin-top: -12px;
-        margin-right: 4px;
-        margin-left: 4px;
-        padding-top: 12px;
-        padding-bottom: 5px;
+        margin-top: -24px;
+        margin-right: 11px;
+        margin-left: 11px;
+        padding-top: 24px;
+        padding-bottom: 10px;
 
-        font-size: 10px;
+        font-size: 20px;
+
+        border-bottom-width: 2px;
     }
 
     .form__input:focus {
-        margin-right: 0;
-        margin-left: 0;
-        padding-right: 4px;
-        padding-left: 4px;
+        margin-right: 3px;
+        margin-left: 3px;
+        padding-right: 8px;
+        padding-left: 8px;
     }
 
     .form__field--correct .form__input,
     .form__field--wrong .form__input {
-        background-position: 99% 13px;
-        background-size: 12px;
+        background-position: 99% 26px;
+        background-size: 24px;
     }
 
     .form__field--wrong .form__error {
-        margin-left: 4px;
+        margin-left: 8px;
 
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .form__group--payment-options {
-        margin-top: -60px;
+        margin-top: -118px;
 
         align-items: center;
     }
 
     .form__label--payment-options {
         width: 24%;
-        height: 24px;
+        height: 48px;
         margin-left: 0;
+
+        border-width: 2px;
     }
 
     .form__label--yandex {
-        margin-left: 4px;
+        margin-left: 8px;
     }
 
     .form__label--yandex svg {
-        width: 57px;
-        height: 14px;
+        width: 114px;
+        height: 28px;
     }
 
     .form__label--paypal svg {
-        width: 45px;
-        height: 14px;
-        margin-top: 2px;
+        width: 90px;
+        height: 28px;
+        margin-top: 4px;
     }
 
     .form__link {
-        font-size: 7px;
+        font-size: 14px;
         line-height: 1.5;
     }
 
     .form__group--payment-options .form__link {
         margin-top: 0;
         margin-right: auto;
-        margin-left: 13px;
-        padding-left: 14px;
+        margin-left: 26px;
+        padding-left: 28px;
     }
 
     .form__group--payment-options .form__link::before {
         top: 0;
 
-        width: 12px;
-        height: 12px;
+        width: 24px;
+        height: 24px;
     }
 
     .form__group--code {
-        margin-top: 19px;
+        margin-top: 38px;
         align-items: center;
     }
 
@@ -359,23 +364,23 @@
     }
 
     .form__field--code .form__input {
-        margin-top: 0;
-        padding-top: 5px;
+        margin-top: -8px;
+        padding-top: 10px;
     }
 
     .form__btn {
         width: 64%;
         margin-top: 0;
 
-        font-size: 13px;
+        font-size: 26px;
         line-height: 2.8;
     }
 
     .form__warning {
-        margin-top: -3px;
-        margin-left: 6px;
+        margin-top: 11px;
+        margin-left: 12px;
 
-        font-size: 7px;
+        font-size: 14px;
         letter-spacing: 0;
         text-align: left;
     }

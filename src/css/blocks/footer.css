@@ -25,13 +25,13 @@
     outline: 1px solid #00E2B5;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .footer {
         display: flex;
-        margin-top: 48px;
-        padding-top: 8px;
-        padding-right: 9%;
-        padding-left: 9%;
+        margin-top: 96px;
+        padding-top: 18px;
+        padding-right: 9.5%;
+        padding-left: 9.5%;
 
         justify-content: space-between;
         align-items: flex-end;
@@ -48,10 +48,10 @@
     .footer__logo {
         width: auto;
         margin: 0;
-        margin-bottom: 3px;
+        margin-bottom: 8px;
     }
 
     .footer__logo img {
-        width: 19px;
+        width: 38px;
     }
 }

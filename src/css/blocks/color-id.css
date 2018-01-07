@@ -11,14 +11,14 @@
     border-radius: 20px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .color-id {
-        margin-top: 12px;
-        margin-left: 1px;
-        padding-top: 6px;
-        padding-right: 9px;
-        padding-bottom: 6px;
-        padding-left: 9px;
+        margin-top: 24px;
+        margin-left: 2px;
+        padding-top: 12px;
+        padding-right: 18px;
+        padding-bottom: 12px;
+        padding-left: 18px;
 
         line-height: 1;
         letter-spacing: -0.4px;

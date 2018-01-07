@@ -88,38 +88,40 @@
     background: #B4BDC7;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .form-subscribe {
         width: 56%;
         margin-top: 0;
 
-        font-size: 10px;
+        font-size: 20px;
         letter-spacing: 0;
     }
 
     .form-subscribe__field {
         display: flex;
-        margin-top: 5px;
+        margin-top: 10px;
 
         justify-content: space-between;
     }
 
     .form-subscribe__input {
         width: auto;
+        margin-right: 4%;
 
         flex-grow: 1;
 
-        font-size: 7px;
+        font-size: 14px;
+
+        border-bottom-width: 2px;
     }
 
     .form-subscribe__btn {
-        width: auto;
-        padding-top: 0px;
-        padding-right: 8%;
-        padding-bottom: 0px;
-        padding-left: 8%;
+        width: 36%;
+        padding: 0;
 
-        font-size: 7px;
+        font-size: 14px;
         line-height: 1.8;
+
+        border-width: 2px;
     }
 }

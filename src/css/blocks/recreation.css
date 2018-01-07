@@ -23,23 +23,24 @@
     text-transform: lowercase;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .recreation {
-        min-height: 35px;
+        min-height: 70px;
         margin-left: 9%;
+
+        border-top-width: 2px;
     }
 
     .recreation__time {
         width: 18%;
-        margin-top: 12px;
+        margin-top: 24px;
 
-        font-size: 7px;
-        letter-spacing: -0.7px;
+        font-size: 14px;
     }
 
     .recreation__heading {
-        margin-top: 13px;
+        margin-top: 26px;
 
-        font-size: 7px;
+        font-size: 14px;
     }
 }

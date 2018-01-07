@@ -50,43 +50,48 @@
     fill: #FF0195;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .social {
         width: 26%;
         margin-top: 0;
 
         justify-content: space-between;
+        align-items: center;
     }
 
     .social__item {
-        margin-top: 3px;
+        margin-top: 13px;
         margin-left: 0;
     }
 
     .social__item:first-child {
         width: auto;
-        margin-top: 2px;
+        margin-top: 17px;
         margin-right: auto;
         margin-left: auto;
 
         order: 1;
 
-        font-size: 7px;
+        font-size: 14px;
     }
 
     .social__link--twitter svg {
-        width: 14px;
+        width: 28px;
+        height: 23px;
     }
 
     .social__link--vk svg {
-        width: 16px;
+        width: 32px;
+        height: 18px;
     }
 
     .social__link--facebook svg {
-        width: 7px;
+        width: 14px;
+        height: 26px;
     }
 
     .social__link--instagram svg {
-        width: 13px;
+        width: 26px;
+        height: 26px;
     }
 }

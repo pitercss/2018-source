@@ -57,55 +57,56 @@
     padding: 0;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .summary {
         position: relative;
 
-        min-height: 281px;
-        margin-top: 8px;
-        padding-top: 43px;
+        min-height: 560px;
+        margin-top: 16px;
+        padding-top: 86px;
         padding-right: 9%;
-        padding-bottom: 24px;
+        padding-bottom: 48px;
         padding-left: 9%;
 
-        font-size: 43px;
+        font-size: 86px;
 
-        background: #00E2B5 url('../img/hand@2x.png') no-repeat 84% 44px;
-        background-size: 172px;
+        background: #00E2B5 url('../img/hand@2x.png') no-repeat 84% 88px;
+        background-size: 344px;
         border-top: 1px solid #D6D8D9;
     }
 
     .summary__heading {
+        margin-top: 20px;
         margin-right: 34%;
         margin-left: 9%;
 
-        font-size: 43px;
+        font-size: 86px;
         line-height: 1.15;
-        letter-spacing: -2.3px;
+        letter-spacing: -4.6px;
     }
 
     .summary__table {
         position: absolute;
-        top: 92px;
-        right: -6%;
+        top: 211px;
+        right: -5.5%;
 
         transform: rotate(-90deg);
     }
 
     .summary__table-heading {
-        min-width: 111px;
+        min-width: 222px;
 
-        font-size: 12px;
+        font-size: 24px;
         line-height: 1.9;
-        letter-spacing: 0.2px;
+        letter-spacing: 0.4px;
     }
 
     .summary__table-heading:first-child,
     .summary__table-data:first-child {
-        min-width: 55px;
+        min-width: 110px;
     }
 
     .summary__table-data {
-        min-width: 111px;
+        min-width: 222px;
     }
 }

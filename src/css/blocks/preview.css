@@ -172,9 +172,9 @@
     background-size: contain;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
     .preview {
-        margin-top: -59px;
+        margin-top: -177px;
 
         background: none;
     }
@@ -182,82 +182,82 @@
     .preview__card {
         top: 0;
 
-        width: 187px;
+        width: 374px;
         background-position:
-            13px 31px,
-            43px 43px;
+            26px 62px,
+            86px 86px;
         background-size:
-            30px,
-            62px;
+            60px,
+            124px;
     }
 
     .preview__card::before {
-        top: 17px;
+        top: 34px;
 
-        width: 11px;
-        height: 11px;
+        width: 22px;
+        height: 22px;
 
         background: linear-gradient(to right, #F8F8F8 50%, #F8F8F8 50%, #00E2B5 50%, #00E2B5 50%);
     }
 
     .preview__info {
-        margin-top: 85px;
-        margin-left: 9px;
+        margin-top: 174px;
+        margin-left: 22px;
     }
 
     .preview__cell {
-        margin-left: 32px;
+        margin-left: 64px;
 
-        font-size: 10px;
-        line-height: 1.6;
+        font-size: 20px;
+        line-height: 1.7;
     }
 
     .preview__cell--name {
         margin-left: 0;
 
-        font-size: 13px;
+        font-size: 26px;
         line-height: 1.1;
     }
 
     .preview__cell--company {
-        margin-top: 2px;
+        margin-top: 8px;
     }
 
     .preview__card--empty .preview__card-tip {
-        width: 105px;
-        min-height: 57px;
-        margin-top: 85px;
-        margin-left: 45px;
+        width: 210px;
+        min-height: 114px;
+        margin-top: 170px;
+        margin-left: 90px;
 
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .preview__stickers-list--show {
-        width: 160px;
-        margin-top: 7px;
+        width: 320px;
+        margin-top: 14px;
     }
 
     .preview__stickers-item {
-        height: 70px;
+        height: 140px;
     }
 
     .preview__link {
-        margin-top: 25px;
-        margin-left: 13px;
+        margin-top: 51px;
+        margin-left: 26px;
 
-        font-size: 7px;
+        font-size: 14px;
     }
 
     .preview__personal-color {
-        height: 71px;
-        margin-top: 10px;
+        height: 142px;
+        margin-top: 23px;
     }
 
     .preview__personal-color::before {
-        top: -34px;
-        right: 14px;
+        top: -68px;
+        right: 28px;
 
-        width: 21px;
-        height: 20px;
+        width: 42px;
+        height: 40px;
     }
 }
