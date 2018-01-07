@@ -87,3 +87,39 @@
     color: white;
     background: #B4BDC7;
 }
+
+@media (min-width: 720px) {
+    .form-subscribe {
+        width: 56%;
+        margin-top: 0;
+
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .form-subscribe__field {
+        display: flex;
+        margin-top: 5px;
+
+        justify-content: space-between;
+    }
+
+    .form-subscribe__input {
+        width: auto;
+
+        flex-grow: 1;
+
+        font-size: 7px;
+    }
+
+    .form-subscribe__btn {
+        width: auto;
+        padding-top: 0px;
+        padding-right: 8%;
+        padding-bottom: 0px;
+        padding-left: 8%;
+
+        font-size: 7px;
+        line-height: 1.8;
+    }
+}

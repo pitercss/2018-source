@@ -137,4 +137,15 @@
 
         line-height: 1.1;
     }
+
+    .section--speakers {
+        display: flex;
+        margin-top: 52px;
+    }
+
+    .section--sponsors {
+        margin-top: 45px;
+
+        font-size: 10px;
+    }
 }

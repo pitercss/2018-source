@@ -46,3 +46,30 @@
 
     color: #B4BDC7;
 }
+
+@media (min-width: 720px) {
+    .footer-info {
+        width: auto;
+        margin: 0;
+        margin-left: 24px;
+
+        font-size: 7px;
+    }
+
+    .footer-info__list {
+        display: flex;
+    }
+
+    .footer-info__item {
+        margin-top: 8px;
+        margin-right: 14px;
+    }
+
+    .footer-info__copyright {
+        margin-top: 10px;
+    }
+
+    .footer-info__hide-on-desktop {
+        display: none;
+    }
+}
