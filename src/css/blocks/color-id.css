@@ -1,0 +1,26 @@
+.color-id {
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 6px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    color: white;
+    background: #DF665D;
+    border-radius: 20px;
+}
+
+@media (min-width: 1440px) {
+    .color-id {
+        margin-top: 24px;
+        margin-left: 2px;
+        padding-top: 12px;
+        padding-right: 18px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+
+        line-height: 1;
+        letter-spacing: -0.4px;
+    }
+}
