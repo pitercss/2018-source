@@ -1,0 +1,127 @@
+.form-subscribe {
+    margin-top: 17px;
+
+    letter-spacing: -0.3px;
+}
+
+.form-subscribe__field {
+    margin-top: -2px;
+}
+
+.form-subscribe__input {
+    width: 69%;
+    margin-right: 2%;
+    padding: 0;
+
+    font-family: 'gotham pro', 'verdana', sans-serif;
+    line-height: 2;
+
+    border: none;
+    border-bottom: 1px solid #B4BDC7;
+}
+
+.form-subscribe__input:focus {
+    border-bottom-color: transparent;
+    box-shadow:
+        0 0 0 2px white,
+        0 0 0 4px #00E2B5;
+    outline: none;
+}
+
+.form-subscribe__input:hover {
+    border-bottom-color: #00E2B5;
+}
+
+.form-subscribe__input:-moz-placeholder {
+  color: #B4BDC7;
+}
+
+.form-subscribe__input::-moz-placeholder {
+  color: #B4BDC7;
+}
+
+.form-subscribe__input::-webkit-input-placeholder {
+  color: #B4BDC7;
+}
+
+.form-subscribe__input:-ms-input-placeholder {
+  color: #B4BDC7;
+}
+
+.form-subscribe__input:hover:-moz-placeholder {
+  color: #00E2B5;
+}
+
+.form-subscribe__input:hover::-moz-placeholder {
+  color: #00E2B5;
+}
+
+.form-subscribe__input:hover::-webkit-input-placeholder {
+  color: #00E2B5;
+}
+
+.form-subscribe__input:hover:-ms-input-placeholder {
+  color: #00E2B5;
+}
+
+.form-subscribe__btn {
+    width: 28%;
+
+    font-family: 'gotham pro', 'verdana', sans-serif;
+    font-weight: bold;
+    line-height: 2;
+
+    color: #B4BDC7;
+    background: white;
+    border: 1px solid #B4BDC7;
+}
+
+.form-subscribe__btn:focus {
+    box-shadow:
+        0 0 0 2px white,
+        0 0 0 4px #00E2B5;
+    outline: none;
+}
+
+.form-subscribe__btn:hover {
+    color: white;
+    background: #B4BDC7;
+}
+
+@media (min-width: 1440px) {
+    .form-subscribe {
+        width: 56%;
+        margin-top: 0;
+
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    .form-subscribe__field {
+        display: flex;
+        margin-top: 10px;
+
+        justify-content: space-between;
+    }
+
+    .form-subscribe__input {
+        width: auto;
+        margin-right: 4%;
+
+        flex-grow: 1;
+
+        font-size: 14px;
+
+        border-bottom-width: 2px;
+    }
+
+    .form-subscribe__btn {
+        width: 36%;
+        padding: 0;
+
+        font-size: 14px;
+        line-height: 1.8;
+
+        border-width: 2px;
+    }
+}
