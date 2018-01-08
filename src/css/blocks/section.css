@@ -32,7 +32,7 @@
 }
 
 .section--gallery {
-    margin-top: 40px;
+    margin-top: 43px;
 }
 
 .section--badge {
@@ -74,7 +74,7 @@
         padding-bottom: 153px;
         padding-left: 27.5%;
 
-        background: url('../img/yellow.png') no-repeat 5% 8px;
+        background: url('../img/yellow@2x.png') no-repeat 5% 8px;
         background-size: 296px;
     }
 
@@ -105,7 +105,7 @@
     }
 
     .section--gallery {
-        margin-top: 104px;
+        margin-top: 112px;
     }
 
     .section--badge {
@@ -147,5 +147,12 @@
         margin-top: 90px;
 
         font-size: 20px;
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-width: 1440px),
+       (min-resolution: 1.5dppx) and (min-width: 1440px) {
+    .section--mission {
+        background-image: url('../img/yellow@3x.png');
     }
 }

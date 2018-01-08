@@ -1,5 +1,5 @@
 .summary {
-    min-height: 315px;
+    min-height: 382px;
     padding-top: 20px;
     padding-right: 15%;
     padding-bottom: 47px;
@@ -57,11 +57,27 @@
     padding: 0;
 }
 
+@media (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+    .summary {
+        background-image: url('../img/hand@2x.png');
+        background-size: 160px;
+    }
+}
+
+@media (min-resolution: 216dpi),
+       (min-resolution: 2dppx) {
+    .summary {
+        background-image: url('../img/hand@3x.png');
+        background-size: 160px;
+    }
+}
+
 @media (min-width: 1440px) {
     .summary {
         position: relative;
 
-        min-height: 560px;
+        min-height: 695px;
         margin-top: 16px;
         padding-top: 86px;
         padding-right: 9%;
@@ -108,5 +124,12 @@
 
     .summary__table-data {
         min-width: 222px;
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-width: 1440px),
+       (min-resolution: 1.5dppx) and (min-width: 1440px) {
+    .summary {
+        background-image: url('../img/hand@3x.png');
     }
 }

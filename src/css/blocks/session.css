@@ -2,7 +2,7 @@
     position: relative;
 
     display: flex;
-    min-height: 70px;
+    min-height: 71px;
 
     justify-content: space-between;
     flex-wrap: wrap;
@@ -11,7 +11,7 @@
 }
 
 .session:first-of-type {
-    margin-top: 23px;
+    margin-top: 24px;
 }
 
 .session--closed .session__topic,
@@ -165,7 +165,7 @@
 
 @media (min-width: 1440px) {
     .session {
-        min-height: 128px;
+        min-height: 130px;
         margin-left: 9%;
 
         border-top-width: 2px;
