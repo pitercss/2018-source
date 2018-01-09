@@ -104,7 +104,7 @@
     .gallery {
         display: flex;
         width: 1170px;
-        margin-top: 38px;
+        margin-top: 41px;
 
         flex-wrap: wrap;
         justify-content: space-between;
