@@ -21,39 +21,43 @@
     <title>pitercss_conf, June 8–9th, 2018</title>
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-header__main-nav">
-            <a class="main-header__logo">
-                <img src="https://placehold.it/105x21" alt="pitercss_conf" width="105" height="21">
-            </a>
-            <time class="main-header__time" datetime="2018-06-08 10:00">
-                June
-                <span>8–9th,</span>
-                2018
-            </time>
-            <div class="main-header__place">
-                <b>Saint Petersburg</b>
-                Benoit Farm.
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo-container">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo-header.svg" alt="pitercss_conf" width="106" height="22">
+                </a>
+                <time class="header__time" datetime="2018-06-08 10:00">
+                    June
+                    <span class="header__days">8–9th,</span>
+                    2018
+                </time>
+                <div class="header__place">
+                    <a class="header__place-link" href="#">
+                        <b>Saint Petersburg</b>
+                        Benoit Farm.
+                    </a>
+                </div>
             </div>
-            <div class="main-header__buy">
-                <a class="main-header__btn" href="#">1699 ₽</a>
-                <span class="main-header__price-in-other-currencies">≈ 28,34 US$ or 26,74 €</span>
+            <div class="header__buy">
+                <a class="header__btn" href="#">1699 ₽</a>
+                <span class="header__price-in-other-currencies">≈ 28,34 US$ or 26,74 €</span>
             </div>
-            <ul class="main-header__menu-list">
-                <li class="main-header__menu-item  main-header__menu-item--active">
-                    <a class="main-header__menu-link">About</a>
+            <ul class="header__menu-list">
+                <li class="header__menu-item  header__menu-item--active">
+                    <a class="header__menu-link" href="about.html">About</a>
                 </li>
-                <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="#">Speakers</a>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Speakers</a>
                 </li>
-                <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="#">Photos</a>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Photos</a>
                 </li>
-                <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="#">Blog</a>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Blog</a>
                 </li>
-                <li class="main-header__menu-item">
-                    <a class="main-header__menu-link" href="#">Other</a>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Other</a>
                 </li>
             </ul>
         </nav>
@@ -292,37 +296,47 @@
     </main>
     <footer class="footer">
         <div class="footer__content">
-            <form action="https://pitercss.us14.list-manage.com/subscribe/post?u=5e93eb3640317ef9257048d9c&id=e052fffa90" class="form-subscribe" method="post">
-                <label for="form-subscribe" class="form-subscribe__label">Subscribe for last news</label>
+            <form class="form-subscribe" action="https://pitercss.us14.list-manage.com/subscribe/post?u=5e93eb3640317ef9257048d9c&id=e052fffa90" method="post">
+                <label class="form-subscribe__label" for="form-subscribe">Subscribe for last news</label>
                 <div class="form-subscribe__field">
-                    <input type="email" id="form-subscribe" name="email" class="form-subscribe__input" placeholder="E-mail" required="required">
-                    <button class="form-subscribe__button" type="submit">Notify me</button>
+                    <input class="form-subscribe__input" type="email" id="form-subscribe" name="email" placeholder="E-mail" required="required">
+                    <button class="form-subscribe__btn" type="submit">Notify me</button>
                 </div>
             </form>
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link social__link--email" href="mailto:hi@pitercss.com">
-                        hi@pitercss.com
-                    </a>
+                    <a class="social__link social__link--email" href="mailto:hi@pitercss.com">hi@pitercss.com</a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--twitter" href="https://twitter.com/pitercss_conf">
                         <span class="visually-hidden">Twitter</span>
+                        <svg width="24" height="20">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--vk" href="#">
                         <span class="visually-hidden">Vkontakte</span>
+                        <svg width="25" height="14">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--facebook" href="https://www.facebook.com/pitercssconf/">
                         <span class="visually-hidden">Facebook</span>
+                        <svg width="12" height="23">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--instagram" href="https://www.instagram.com/pitercss_conf/">
                         <span class="visually-hidden">Instagram</span>
+                        <svg width="21" height="21">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-inst"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -336,10 +350,20 @@
                     <a href="#" class="footer-info__link">Privacy Policy</a>
                 </li>
             </ul>
-            <p class="footer-info__copyright">© LLC «Interactive educational technologies», 2013-2016</p>
+            <p class="footer-info__copyright">
+                ©
+                <span class="footer-info__hide-on-desktop">LLC</span>
+                «Interactive educational technologies»
+                <span class="footer-info__hide-on-desktop">,
+                    <br>2013–
+                </span>
+                2016
+            </p>
         </div>
         <div class="footer__logo">
-            <img src="http://placehold.it/40x36" alt="Logo" class="footer__logo-image" width="40" height="36">
+            <a  class="footer__logo-link" href="#">
+                <img class="footer__logo-image" src="img/logo-footer.svg" alt="pitercss_conf" width="37">
+            </a>
         </div>
     </footer>
 </body>
