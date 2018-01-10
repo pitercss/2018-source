@@ -59,7 +59,7 @@ body {
     display: none;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
     .hide-mobile {
         display: block;
     }

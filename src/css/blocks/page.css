@@ -44,11 +44,15 @@
     margin-bottom: 15px;
 }
 
-.page .page__lead{
+.page .lead{
     font-size: 21px;
     letter-spacing: -0.3px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.page .small {
+    font-size: 12px;
 }
 
 .page a {
@@ -69,6 +73,114 @@
 
 .page strong {
     font-weight: 700;
+}
+
+.page blockquote {
+    position: relative;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 35px;
+    font-weight: bold;
+}
+
+.page blockquote p {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+}
+
+.page blockquote::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 13px;
+    height: 11px;
+    background: transparent url('../img/quotes-open.svg') no-repeat 50% 50%;
+    background-size: contain;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.page blockquote p::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 11px;
+    background: transparent url('../img/quotes-closed.svg') no-repeat 50% 50%;
+    background-size: 100%;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+.page blockquote  cite {
+    font-size: 12px;
+    display: block;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.1px;
+    margin-top: 5px;
+}
+
+.page .quote-lead {
+    padding-bottom: 25px;
+}
+
+.page .quote-lead p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+}
+
+.page .quote-lead::before {
+    width: 21px;
+    height: 17px;
+    margin-left: 0;
+}
+
+.page .quote-lead p::after {
+    width: 21px;
+    height: 17px;
+}
+
+.page .quote-lead cite {
+    font-size: 18px;
+    display: block;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+    padding-top: 10px;
+}
+
+.page .quote-medium {
+    padding-bottom: 30px;
+}
+
+.page .quote-medium p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+}
+
+.page .quote-medium::before {
+    width: 15px;
+    height: 13px;
+    margin-left: 2px;
+}
+
+.page .quote-medium p::after {
+    width: 15px;
+    height: 13px;
+    margin-top: 5px;
+}
+
+.page .quote-medium cite {
+    font-size: 15px;
+    display: block;
+    font-style: normal;
+    line-height: 1.5;
 }
 
 .page figcaption {
@@ -151,16 +263,11 @@
     text-align: right;
 }
 
-.page  ol:nth-of-type(2) {
-    padding-top: 10px;
-}
-
-
 .page img {
     display: block;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
 
     .page__content {
         width: 840px;
@@ -189,12 +296,93 @@
         font-size: 20px;
     }
 
-    .page .page__lead {
+    .page .lead {
         font-size: 34px;
     }
 
+    .page .small {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .page blockquote {
+        font-size: 20px;
+        padding-bottom: 80px;
+        padding-right: 130px;
+        padding-left: 90px;
+    }
+
+    .page blockquote p {
+        font-size: 20px;
+    }
+
+    .page blockquote::before {
+        width: 26px;
+        height: 22px;
+        margin-left: 40px;
+    }
+
+    .page blockquote p::after {
+        width: 26px;
+        height: 22px;
+        margin-left: 20px;
+    }
+
+    .page blockquote cite {
+        font-size: 16px;
+    }
+
+    .page .quote-lead  {
+        padding-bottom: 50px;
+        padding-top: 35px;
+    }
+
+    .page .quote-lead  p {
+        font-size: 34px;
+    }
+
+    .page .quote-lead::before {
+        width: 42px;
+        height: 34px;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+    .page .quote-lead p::after {
+        width: 42px;
+        height: 34px;
+    }
+
+    .page .quote-lead  cite{
+        font-size: 26px;
+    }
+
+    .page .quote-medium {
+        font-size: 26px;
+        padding-bottom: 60px;
+    }
+
+    .page .quote-medium  p {
+        font-size: 26px;
+    }
+
+    .page .quote-medium::before {
+        width: 30px;
+        height: 26px;
+        margin-left: 30px;
+    }
+
+    .page .quote-medium p::after {
+        width: 30px;
+        height: 26px;
+    }
+
+    .page .quote-medium cite {
+        font-size: 20px;
+    }
+
     .page figure {
-        width: 1280px;
+        max-width: 1280px;
         margin-bottom: 35px;
     }
 
@@ -205,13 +393,11 @@
     }
 
     .page ol {
-        width: 300px;
         font-size: 20px;
         line-height: 2.4;
     }
 
     .page ul {
-        width: 300px;
         font-size: 20px;
         line-height: 2.4;
     }
@@ -279,14 +465,14 @@
         outline: 2px solid #ec058c;
     }
 
-    .page__description img:first-child {
+    .page .img-right {
+        float: right;
+        margin-left: 30px;
+    }
+
+    .page .img-left {
         float: left;
         margin-right: 30px;
         margin-bottom: 7px;
-    }
-
-    .page__description img:nth-child(4) {
-        float: right;
-        margin-left: 30px;
     }
 }
