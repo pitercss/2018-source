@@ -44,6 +44,7 @@
     margin-left: auto;
     padding-top: 20px;
     padding-bottom: 7px;
+    box-sizing: content-box;
 
     font-family: 'gotham pro', 'verdana', sans-serif;
     font-size: 15px;
@@ -234,6 +235,32 @@
     text-align: center;
 }
 
+@media (min-width: 1024px) {
+    .form {
+        display: flex;
+        width: 84%;
+        margin-right: 65px;
+        margin-left: auto;
+
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .form__fieldset {
+        width: 50%;
+        margin: 0;
+    }
+
+    .form__fieldset:first-child {
+        width: 50.5%;
+        margin-left: -0.5%;
+    }
+
+    .form__group--payment-options {
+        margin-top: 0;
+    }
+}
+
 @media (min-width: 1440px) {
     .form {
         display: flex;
@@ -252,7 +279,7 @@
     }
 
     .form__fieldset:first-child {
-        width: 49%;
+        width: 49.5%;
         margin-top: 6px;
     }
 

@@ -38,9 +38,31 @@
     background: #FF0195;
 }
 
+@media (min-width: 1024px) {
+    .speakers__block {
+        text-align: center;
+    }
+
+    .speakers__caption {
+        text-align: left;
+    }
+
+    .speakers__description {
+        text-align: left;
+    }
+
+    .speakers__btn {
+        display: inline-block;
+        padding-right: 34px;
+        padding-left: 34px;
+    }
+}
+
 @media (min-width: 1440px) {
     .speakers__block {
         width: 51%;
+
+        text-align: left;
     }
 
     .speakers__caption {
@@ -60,10 +82,7 @@
     }
 
     .speakers__btn {
-        display: inline-block;
         margin-top: 41px;
-        padding-right: 34px;
-        padding-left: 34px;
 
         font-size: 20px;
         line-height: 2.2;
