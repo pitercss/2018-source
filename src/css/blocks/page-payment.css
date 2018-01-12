@@ -3,6 +3,7 @@
     margin-left: 19px;
     padding-top: 90px;
     padding-bottom: 15px;
+    min-height: calc(100vh - 200px);
 }
 
 .page-payment__content {
@@ -26,7 +27,6 @@
     padding-right: 5px;
     padding-left: 5px;
     margin-bottom: 40px;
-
 }
 
 .page-payment__link {
@@ -90,6 +90,7 @@
 .page-payment__button {
     display: inline-block;
     vertical-align: top;
+    text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 158px;
@@ -119,4 +120,65 @@
     color: #ff0195;
     border: 2px solid #ff0195;
     background-color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+    .page-payment {
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        min-height: calc(100vh - 300px);
+    }
+
+    .page-payment__content {
+        text-align: left;
+        width: 90%;
+        padding-left: 35%;
+    }
+
+    .page-payment__social {
+        justify-content: flex-start;
+    }
+
+    .page-payment__title {
+        font-size: 86px;
+        margin-bottom: 20px;
+    }
+
+    .page-payment__description {
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        padding-right: 100px;
+        margin-top: 0;
+    }
+
+    .page-payment__link {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -0.1px;
+        align-self: flex-start;
+    }
+
+    .page-payment__description--edit-indent {
+        margin-top: 0;
+        padding-right: 230px;
+        padding-left: 0;
+    }
+
+    .page-payment__info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .page-payment__info .page-payment__description {
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .page-payment__social {
+        order: 1;
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
 }
