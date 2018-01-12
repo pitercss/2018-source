@@ -25,6 +25,10 @@
     outline: 1px solid #00E2B5;
 }
 
+.footer__logo-link:hover {
+    opacity: 0.5;
+}
+
 @media (min-width: 1440px) {
     .footer {
         display: flex;

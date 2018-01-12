@@ -1,7 +1,5 @@
 .form-subscribe {
     margin-top: 17px;
-
-    letter-spacing: -0.3px;
 }
 
 .form-subscribe__field {
@@ -94,7 +92,6 @@
         margin-top: 0;
 
         font-size: 20px;
-        letter-spacing: 0;
     }
 
     .form-subscribe__field {

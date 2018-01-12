@@ -230,7 +230,6 @@
     margin-top: 5px;
 
     font-size: 12px;
-    letter-spacing: -0.25px;
     text-transform: initial;
     text-align: center;
 }
@@ -408,7 +407,6 @@
         margin-left: 12px;
 
         font-size: 14px;
-        letter-spacing: 0;
         text-align: left;
     }
 }
