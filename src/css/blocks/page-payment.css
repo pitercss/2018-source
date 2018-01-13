@@ -1,0 +1,184 @@
+.page-payment {
+    margin-right: 19px;
+    margin-left: 19px;
+    padding-top: 90px;
+    padding-bottom: 15px;
+    min-height: calc(100vh - 200px);
+}
+
+.page-payment__content {
+    text-align: center;
+}
+
+.page-payment__title {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+.page-payment__description {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.page-payment__description--edit-indent {
+    margin-top: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 40px;
+}
+
+.page-payment__link {
+    font-size: 12px;
+    line-height: 1.3;
+    color: #ff0195;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.page-payment__link:hover {
+    background-image: linear-gradient(#ffffff 0%, #ffffff 95%, rgba(255,1,149,0.2) 95%, rgba(255,1,149,0.2) 100%);
+}
+
+.page-payment__link:focus {
+    outline: solid 2px #00e2b5;
+}
+
+.page-payment__social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.page-payment__social-link:focus {
+    outline: solid 2px #00e2b5;
+}
+
+.page-payment__social svg {
+    fill: #3283e1;
+}
+
+.page-payment__social svg:hover  {
+    fill: #ff0195;
+}
+
+.page-payment__social-link--facebook {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.page-payment__social-link--twitter svg {
+    width: 32px;
+    height: 26px;
+}
+
+.page-payment__social-link--facebook svg {
+    width: 14px;
+    height: 26px;
+}
+
+.page-payment__social-link--vk svg {
+    width: 31px;
+    height: 17px;
+}
+
+.page-payment__button {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 158px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    color: #ff0195;
+    border: 2px solid #ff0195;
+}
+
+.page-payment__button:focus {
+    outline: solid 2px #00e2b5;
+}
+
+.page-payment__button:hover {
+    background-color: #ff0195;
+    color: #ffffff;
+}
+
+.page-payment__button--try {
+    margin-left: 15px;
+    background-color: #ff0195;
+    color: #ffffff;
+}
+
+.page-payment__button--try:hover {
+    color: #ff0195;
+    border: 2px solid #ff0195;
+    background-color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+    .page-payment {
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        min-height: calc(100vh - 300px);
+    }
+
+    .page-payment__content {
+        text-align: left;
+        width: 90%;
+        padding-left: 35%;
+    }
+
+    .page-payment__social {
+        justify-content: flex-start;
+    }
+
+    .page-payment__title {
+        font-size: 86px;
+        margin-bottom: 20px;
+    }
+
+    .page-payment__description {
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        padding-right: 100px;
+        margin-top: 0;
+    }
+
+    .page-payment__link {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -0.1px;
+        align-self: flex-start;
+    }
+
+    .page-payment__description--edit-indent {
+        margin-top: 0;
+        padding-right: 230px;
+        padding-left: 0;
+    }
+
+    .page-payment__info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .page-payment__info .page-payment__description {
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .page-payment__social {
+        order: 1;
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+}

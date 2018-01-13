@@ -45,6 +45,14 @@
     color: #B4BDC7;
 }
 
+.footer-info--edit-margin {
+    margin-top: 0;
+}
+
+.footer-info--edit-margin .footer-info__copyright {
+    margin-top: 30px;
+}
+
 @media (min-width: 1440px) {
     .footer-info {
         width: auto;
