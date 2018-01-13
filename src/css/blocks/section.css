@@ -199,7 +199,7 @@
 }
 
 @media (min-resolution: 144dpi) and (min-width: 1440px),
-     (min-resolution: 1.5dppx) and (min-width: 1440px) {
+      (min-resolution: 1.5dppx) and (min-width: 1440px) {
   .section--mission {
     background-image: url("../img/yellow@3x.png");
   }
