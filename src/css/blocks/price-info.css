@@ -14,7 +14,7 @@
 }
 
 .price-info__table::before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: -6px;
@@ -88,7 +88,7 @@
 
 .price-info__close::before,
 .price-info__close::after {
-  content: '';
+  content: "";
 
   position: absolute;
   top: 0;

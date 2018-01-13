@@ -85,7 +85,7 @@
 
 .session__toggle::before,
 .session__toggle::after {
-  content: '';
+  content: "";
 
   position: absolute;
   top: 0;

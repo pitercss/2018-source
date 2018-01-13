@@ -72,7 +72,7 @@
     padding-right: 3%;
     padding-left: 27.5%;
 
-    background: url('../img/yellow@2x.png') no-repeat 5% 8px;
+    background: url("../img/yellow@2x.png") no-repeat 5% 8px;
     background-size: 190px;
   }
 
@@ -111,7 +111,7 @@
   }
 
   .section--badge::before {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 0;
@@ -201,6 +201,6 @@
 @media (min-resolution: 144dpi) and (min-width: 1440px),
      (min-resolution: 1.5dppx) and (min-width: 1440px) {
   .section--mission {
-    background-image: url('../img/yellow@3x.png');
+    background-image: url("../img/yellow@3x.png");
   }
 }

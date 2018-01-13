@@ -27,7 +27,7 @@
 }
 
 .gallery__btn::before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: 10px;
@@ -36,7 +36,7 @@
   width: 12px;
   height: 12px;
 
-  background: transparent url('../img/icon-arrow.svg') no-repeat 50% 50%;
+  background: transparent url("../img/icon-arrow.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
@@ -158,7 +158,7 @@
     font-size: 26px;
     line-height: 1.4;
 
-    background: transparent url('') no-repeat 0 0;
+    background: transparent url("") no-repeat 0 0;
     border-bottom: none;
   }
 

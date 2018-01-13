@@ -46,7 +46,7 @@
   padding-bottom: 7px;
   box-sizing: content-box;
 
-  font-family: 'gotham pro', 'verdana', sans-serif;
+  font-family: "gotham pro", "verdana", sans-serif;
   font-size: 15px;
 
   color: #303B40;
@@ -71,12 +71,12 @@
 }
 
 .form__field--correct .form__input {
-  background: transparent url('../img/icon-check.svg') no-repeat 100% 14px;
+  background: transparent url("../img/icon-check.svg") no-repeat 100% 14px;
   background-size: 24px;
 }
 
 .form__field--wrong .form__input {
-  background: transparent url('../img/icon-error.svg') no-repeat 100% 14px;
+  background: transparent url("../img/icon-error.svg") no-repeat 100% 14px;
   background-size: 24px;
   border-bottom-color: #FF6E6E;
 }
@@ -182,7 +182,7 @@
 }
 
 .form__group--payment-options .form__link::before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: -1px;
@@ -191,7 +191,7 @@
   width: 20px;
   height: 20px;
 
-  background: transparent url('../img/icon-info.svg') no-repeat 0 0;
+  background: transparent url("../img/icon-info.svg") no-repeat 0 0;
   background-size: contain;
 }
 
@@ -204,7 +204,7 @@
   margin-top: 39px;
   padding: 0;
 
-  font-family: 'gotham pro', 'verdana', sans-serif;
+  font-family: "gotham pro", "verdana", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 3.1;

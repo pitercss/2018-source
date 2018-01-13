@@ -19,8 +19,8 @@
 
   background: white ;
   background-image:
-      url('../img/logo-slash.svg'),
-      url('../img/logo-words.svg');
+      url("../img/logo-slash.svg"),
+      url("../img/logo-words.svg");
   background-repeat: no-repeat;
   background-position:
       19px 46px,
@@ -32,7 +32,7 @@
 }
 
 .preview__card::before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: 26px;
@@ -159,7 +159,7 @@
 }
 
 .preview__personal-color::before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: -48px;
@@ -168,7 +168,7 @@
   width: 35px;
   height: 28px;
 
-  background: transparent url('../img/logo-footer.svg') no-repeat 0 0;
+  background: transparent url("../img/logo-footer.svg") no-repeat 0 0;
   background-size: contain;
 }
 
