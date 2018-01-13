@@ -25,6 +25,10 @@
     font-size: 0;
 }
 
+.sponsors__link:hover {
+    opacity: 0.5;
+}
+
 .sponsors__link:focus {
     box-shadow:
         0 0 0 2px white,
@@ -57,38 +61,55 @@
     background: #FF0195;
 }
 
+@media (min-width: 1024px) {
+    .sponsors__cards {
+        display: flex;
+        margin-right: 15.5%;
+        margin-left: 15.5%;
+
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sponsors__item {
+        width: 50%;
+        min-height: 0;
+        margin-top: 50px;
+    }
+
+    .sponsors__item:last-child {
+        margin-top: 50px;
+    }
+
+    .sponsors__btn {
+        display: inline-block;
+        margin-top: 51px;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+}
+
 @media (min-width: 1440px) {
     .sponsors__description {
         margin-top: 13px;
         margin-right: 21%;
         margin-left: 21%;
+
+        justify-content: space-between;
     }
 
     .sponsors__cards {
-        display: flex;
         margin-top: 52px;
-        margin-right: 15.5%;
-        margin-left: 15.5%;
-
-        justify-content: space-between;
-        align-items: center;
     }
 
     .sponsors__item {
-        min-height: 0;
+        width: auto;
         margin-top: 0;
     }
 
     .sponsors__item:last-child {
         margin-top: 0;
-    }
-
-    .sponsors__item--html-academy {
-        order: 1;
-    }
-
-    .sponsors__item--yandex-money {
-        order: 2;
     }
 
     .sponsors__item--html-academy img {
@@ -108,9 +129,6 @@
     }
 
     .sponsors__btn {
-        display: inline-block;
         margin-top: 51px;
-        padding-right: 3%;
-        padding-left: 3%;
     }
 }

@@ -1,11 +1,7 @@
 .session {
     position: relative;
 
-    display: flex;
     min-height: 71px;
-
-    justify-content: space-between;
-    flex-wrap: wrap;
 
     border-top: 1px solid #00E2B5;
 }
@@ -67,7 +63,6 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 1;
-    letter-spacing: 0.1px;
 }
 
 .session__toggle {
@@ -121,23 +116,21 @@
 .session__speaker-photo {
     width: 75px;
     height: 75px;
+    float: left;
     margin-top: 15px;
 }
 
 .session__info {
-    width: 73%;
+    min-height: 100px;
     margin-top: 5px;
+    margin-left: 91px;
     padding-bottom: 29px;
-
-    letter-spacing: 0.1px;
 }
 
 .session__description {
     width: 90%;
     margin: 0;
-    margin-top: 5px;
-
-    letter-spacing: -0.2px;
+    margin-top: 9px;
 }
 
 .session__link {
@@ -146,7 +139,6 @@
 
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -.1px;
     text-transform: lowercase;
     text-decoration: none;
 
@@ -194,7 +186,6 @@
         width: 18%;
 
         font-size: 26px;
-        letter-spacing: -1.4px;
     }
 
     .session--closed .session__time {
@@ -211,7 +202,6 @@
         margin-top: 12px;
 
         font-size: 20px;
-        letter-spacing: -0.2px;
     }
 
     .session--closed .session__topic {
@@ -241,13 +231,13 @@
     .session__speaker-photo {
         width: 150px;
         height: 150px;
-        margin-top: -18px;
+        margin-top: -16px;
     }
 
     .session__info {
-        width: 82%;
+        min-height: 164px;
         margin-top: 9px;
-        padding-bottom: 27px;
+        margin-left: 195px;
     }
 
     .session__description {
@@ -256,7 +246,6 @@
 
         font-size: 14px;
         line-height: 1.75;
-        letter-spacing: 0.1px;
     }
 
     .session__link {
@@ -266,7 +255,6 @@
 
         font-size: 14px;
         line-height: 1.2;
-        letter-spacing: 0.2px;
 
         border-bottom: none;
     }
