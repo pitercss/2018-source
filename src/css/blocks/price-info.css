@@ -17,7 +17,7 @@
     content: '';
 
     position: absolute;
-    top: -7px;
+    top: -6px;
     left: 50%;
 
     width: 9px;
@@ -40,12 +40,9 @@
 
 .price-info__table-row {
     display: flex;
+    width: 50%;
 
     flex-direction: column;
-}
-
-.price-info__table-row:last-child {
-    width: 60%;
 }
 
 .price-info__cell {
@@ -66,7 +63,7 @@
 }
 
 .price-info__cell--future {
-    padding-left: 23px;
+    padding-left: 31%;
 
     color: #B4BDC7;
 }
@@ -152,6 +149,7 @@
 
         font-size: 20px;
         line-height: 1;
+        white-space: nowrap;
     }
 
     .price-info__close {

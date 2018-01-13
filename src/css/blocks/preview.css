@@ -172,16 +172,30 @@
     background-size: contain;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .preview {
-        margin-top: -177px;
-
-        background: none;
+        margin-top: 0;
     }
 
     .preview__card {
         top: 0;
 
+        margin-top: -90px;
+    }
+
+    .preview__card::before {
+        background: linear-gradient(to right, #F8F8F8 50%, #F8F8F8 50%, #00E2B5 50%, #00E2B5 50%);
+    }
+}
+
+@media (min-width: 1440px) {
+    .preview {
+        margin-top: -145px;
+
+        background: none;
+    }
+
+    .preview__card {
         width: 374px;
         background-position:
             26px 62px,
@@ -196,8 +210,6 @@
 
         width: 22px;
         height: 22px;
-
-        background: linear-gradient(to right, #F8F8F8 50%, #F8F8F8 50%, #00E2B5 50%, #00E2B5 50%);
     }
 
     .preview__info {

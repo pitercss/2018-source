@@ -1,14 +1,13 @@
 .summary {
     min-height: 382px;
     padding-top: 20px;
-    padding-right: 15%;
+    padding-right: 10%;
     padding-bottom: 47px;
     padding-left: 5%;
 
     font-weight: bold;
     font-size: 36px;
     line-height: 1.2;
-    letter-spacing: -2px;
     text-transform: lowercase;
 
     color: white;
@@ -43,7 +42,6 @@
     padding: 0;
 
     font-size: 15px;
-    letter-spacing: -0.2px;
     text-align: left;
 }
 
@@ -73,12 +71,41 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .summary {
+        padding-right: 15%;
+        padding-left: 9%;
+
+        font-size: 50px;
+
+        background-position: 85% 100%;
+    }
+
+    .summary__heading {
+        margin-top: 35px;
+
+        font-size: 50px;
+    }
+
+    .summary__table-heading {
+        min-width: 160px;
+    }
+
+    .summary__table-heading:first-child,
+    .summary__table-data:first-child {
+        min-width: 95px;
+    }
+
+    .summary__table-data {
+        min-width: 160px;
+    }
+}
+
 @media (min-width: 1440px) {
     .summary {
         position: relative;
 
         min-height: 695px;
-        margin-top: 16px;
         padding-top: 86px;
         padding-right: 9%;
         padding-bottom: 48px;
@@ -93,12 +120,11 @@
 
     .summary__heading {
         margin-top: 20px;
-        margin-right: 34%;
+        margin-right: 27%;
         margin-left: 9%;
 
         font-size: 86px;
         line-height: 1.15;
-        letter-spacing: -4.6px;
     }
 
     .summary__table {
@@ -114,7 +140,6 @@
 
         font-size: 24px;
         line-height: 1.9;
-        letter-spacing: 0.4px;
     }
 
     .summary__table-heading:first-child,

@@ -1,7 +1,5 @@
 .form-subscribe {
     margin-top: 17px;
-
-    letter-spacing: -0.3px;
 }
 
 .form-subscribe__field {
@@ -20,16 +18,16 @@
     border-bottom: 1px solid #B4BDC7;
 }
 
+.form-subscribe__input:hover {
+    border-bottom-color: #00E2B5;
+}
+
 .form-subscribe__input:focus {
     border-bottom-color: transparent;
     box-shadow:
         0 0 0 2px white,
         0 0 0 4px #00E2B5;
     outline: none;
-}
-
-.form-subscribe__input:hover {
-    border-bottom-color: #00E2B5;
 }
 
 .form-subscribe__input:-moz-placeholder {
@@ -94,7 +92,6 @@
         margin-top: 0;
 
         font-size: 20px;
-        letter-spacing: 0;
     }
 
     .form-subscribe__field {

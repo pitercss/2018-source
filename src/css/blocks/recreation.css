@@ -2,8 +2,6 @@
     display: flex;
     min-height: 43px;
 
-    letter-spacing: -0.1px;
-
     color: #00E2B5;
     border-top: 1px solid #00E2B5;
 }
