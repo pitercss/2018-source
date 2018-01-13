@@ -1,97 +1,97 @@
 .social {
-    display: flex;
-    margin: 0;
-    margin-top: 16px;
-    padding: 0;
+  display: flex;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
 
-    flex-wrap: wrap;
-    justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .social__item {
-    display: flex;
-    margin-top: 2px;
-    margin-left: 15px;
+  display: flex;
+  margin-top: 2px;
+  margin-left: 15px;
 
-    align-items: center;
+  align-items: center;
 
-    list-style: none;
-    font-size: 0;
+  list-style: none;
+  font-size: 0;
 }
 
 .social__item:first-child {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .social__link {
-    display: inline-block;
+  display: inline-block;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    color: #77808A;
+  color: #77808A;
 }
 
 .social__link:focus {
-    outline: 1px solid #00E2B5;
+  outline: 1px solid #00E2B5;
 }
 
 .social__link:hover {
-    color: #FF0195;
+  color: #FF0195;
 }
 
 .social__link svg {
-    fill: #B4BDC7;
+  fill: #B4BDC7;
 }
 
 .social__link:hover svg {
-    fill: #FF0195;
+  fill: #FF0195;
 }
 
 @media (min-width: 1440px) {
-    .social {
-        width: 26%;
-        margin-top: 0;
+  .social {
+    width: 26%;
+    margin-top: 0;
 
-        justify-content: space-between;
-        align-items: center;
-    }
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .social__item {
-        margin-top: 13px;
-        margin-left: 0;
-    }
+  .social__item {
+    margin-top: 13px;
+    margin-left: 0;
+  }
 
-    .social__item:first-child {
-        width: auto;
-        margin-top: 17px;
-        margin-right: auto;
-        margin-left: auto;
+  .social__item:first-child {
+    width: auto;
+    margin-top: 17px;
+    margin-right: auto;
+    margin-left: auto;
 
-        order: 1;
+    order: 1;
 
-        font-size: 14px;
-    }
+    font-size: 14px;
+  }
 
-    .social__link--twitter svg {
-        width: 28px;
-        height: 23px;
-    }
+  .social__link--twitter svg {
+    width: 28px;
+    height: 23px;
+  }
 
-    .social__link--vk svg {
-        width: 32px;
-        height: 18px;
-    }
+  .social__link--vk svg {
+    width: 32px;
+    height: 18px;
+  }
 
-    .social__link--facebook svg {
-        width: 14px;
-        height: 26px;
-    }
+  .social__link--facebook svg {
+    width: 14px;
+    height: 26px;
+  }
 
-    .social__link--instagram svg {
-        width: 26px;
-        height: 26px;
-    }
+  .social__link--instagram svg {
+      width: 26px;
+      height: 26px;
+  }
 }

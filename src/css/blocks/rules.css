@@ -1,80 +1,80 @@
 .rules {
-    margin-top: 35px;
+  margin-top: 35px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .rules__wrapper {
-    padding-top: 11px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+  padding-top: 11px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 
-    text-align: left;
+  text-align: left;
 
-    background: #F8F8F8;
+  background: #F8F8F8;
 }
 
 .rules__caption {
-    margin: 0;
+  margin: 0;
 
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .rules__description {
-    margin: 0;
+  margin: 0;
 }
 
 .rules__link {
-    display: inline-block;
-    margin-top: 15px;
+  display: inline-block;
+  margin-top: 15px;
 
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 1.2;
-    text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.2;
+  text-decoration: none;
 
-    color: #FF0195;
-    border-bottom: 1px solid rgba(255, 1, 149, 0.2);
+  color: #FF0195;
+  border-bottom: 1px solid rgba(255, 1, 149, 0.2);
 }
 
 .rules__link:focus {
-    border-bottom-color: transparent;
-    outline: 1px solid #00E2B5;
+  border-bottom-color: transparent;
+  outline: 1px solid #00E2B5;
 }
 
 .rules__link:hover {
-    border-bottom-color: rgba(255, 1, 149, 0.3);
+  border-bottom-color: rgba(255, 1, 149, 0.3);
 }
 
 @media (min-width: 1440px) {
-    .rules {
-        width: 49%;
-        margin-top: 0;
+  .rules {
+    width: 49%;
+    margin-top: 0;
 
-        text-align: left;
-    }
+    text-align: left;
+  }
 
-    .rules__wrapper {
-        padding-top: 20px;
-        padding-right: 4%;
-        padding-bottom: 32px;
-        padding-left: 4%;
-    }
+  .rules__wrapper {
+    padding-top: 20px;
+    padding-right: 4%;
+    padding-bottom: 32px;
+    padding-left: 4%;
+  }
 
-    .rules__description {
-        font-size: 20px;
-    }
+  .rules__description {
+    font-size: 20px;
+  }
 
-    .rules__caption {
-        font-size: 20px;
-    }
+  .rules__caption {
+    font-size: 20px;
+  }
 
-    .rules__link {
-        margin-top: 20px;
+  .rules__link {
+    margin-top: 20px;
 
-        font-size: 20px;
+    font-size: 20px;
 
-        border-bottom: none;
-    }
+    border-bottom: none;
+  }
 }
