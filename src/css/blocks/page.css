@@ -265,7 +265,7 @@
   display: block;
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
 
   .page__content {
     width: 840px;

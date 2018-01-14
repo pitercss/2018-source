@@ -18,11 +18,11 @@ img {
 body {
   min-width: 375px;
   margin: 0;
-  font-family: "gotham pro", "verdana", sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #303B40;
-  background: #ffffff;
+  font-family: var(--font-stack);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  color: var(--text-color);
+  background: var(--white);
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -59,7 +59,7 @@ body {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .hide-mobile {
     display: block;
   }
