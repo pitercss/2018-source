@@ -3,7 +3,7 @@
 
   min-height: 71px;
 
-  border-top: 1px solid #00E2B5;
+  border-top: 1px solid var(--primary-color);
 }
 
 .session:first-of-type {
@@ -27,9 +27,9 @@
 
 .session__time {
   font-weight: bold;
-  font-size: 15px;
+  font-size: var(--second-font-size);
 
-  color: #00E2B5;
+  color: var(--primary-color);
 }
 
 .session--closed .session__container {
@@ -37,18 +37,18 @@
 }
 
 .session__container:focus {
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
 .session--closed .session__container:hover {
-  color: #FF0195;
+  color: var(--secondary-color);
 }
 
 .session__speaker {
   margin: 0;
   margin-top: 4px;
 
-  font-size: 15px;
+  font-size: var(--second-font-size);
   line-height: 1.2;
 }
 
@@ -61,7 +61,7 @@
   margin-top: 9px;
 
   font-weight: normal;
-  font-size: 15px;
+  font-size: var(--second-font-size);
   line-height: 1;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .session__toggle:focus {
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
 .session__toggle::before,
@@ -94,7 +94,7 @@
   width: 2px;
   height: 14px;
 
-  background: #FF0195;
+  background: var(--secondary-color);
 }
 
 .session__toggle::before {
@@ -142,7 +142,7 @@
   text-transform: lowercase;
   text-decoration: none;
 
-  color: #FF0195;
+  color: var(--secondary-color);
   border-bottom: 1px solid rgba(255, 1, 149, 0.2);
 }
 
@@ -152,10 +152,10 @@
 
 .session__link:focus {
   border-bottom: none;
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .session {
     min-height: 130px;
     margin-left: 9%;

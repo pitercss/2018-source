@@ -58,7 +58,7 @@
   padding-bottom: 10px;
 
   font-weight: bold;
-  font-size: 15px;
+  font-size: var(--second-font-size);
   text-transform: initial;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .price-info__close:focus {
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
 .price-info__close::before,
@@ -108,7 +108,7 @@
   transform: rotate(-45deg);
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .price-info {
     margin-top: 26px;
     margin-left: 8px;

@@ -2,7 +2,7 @@
   margin-top: 42px;
   padding-top: 1px;
 
-  background: #00E2B5;
+  background: var(--primary-color);
 }
 
 .preview__card {
@@ -43,7 +43,7 @@
 
   transform: translateX(-50%);
 
-  background: #00E2B5;
+  background: var(--primary-color);
   border-radius: 50%;
 }
 
@@ -65,7 +65,7 @@
 .preview__cell {
   margin-left: 46px;
 
-  font-size: 15px;
+  font-size: var(--second-font-size);
 }
 
 .preview__cell--name {
@@ -92,7 +92,7 @@
   margin-top: 121px;
   margin-left: 63px;
 
-  font-size: 15px;
+  font-size: var(--second-font-size);
 
   color: #B4BDC7;
 }
@@ -142,11 +142,11 @@
   text-transform: lowercase;
   text-decoration: none;
 
-  color: #FF0195;
+  color: var(--secondary-color);
 }
 
 .preview__link:focus {
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
 .preview__personal-color {
@@ -172,7 +172,7 @@
   background-size: contain;
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .preview {
     margin-top: 0;
   }
@@ -184,11 +184,11 @@
   }
 
   .preview__card::before {
-    background: linear-gradient(to right, #F8F8F8 50%, #F8F8F8 50%, #00E2B5 50%, #00E2B5 50%);
+    background: linear-gradient(to right, #F8F8F8 50%, #F8F8F8 50%, var(--primary-color) 50%, var(--primary-color) 50%);
   }
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .preview {
     margin-top: -145px;
 

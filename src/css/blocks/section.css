@@ -11,7 +11,7 @@
   line-height: 1.3;
   text-transform: lowercase;
 
-  color: #00E2B5;
+  color: var(--primary-color);
 }
 
 .section__subheading {
@@ -52,15 +52,15 @@
 .section--speakers {
   margin-top: 1px;
 
-  font-size: 15px;
+  font-size: var(--second-font-size);
 }
 
 .section--sponsors {
-  font-size: 15px;
+  font-size: var(--second-font-size);
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .section {
     margin-top: 50px;
     margin-right: 9%;
@@ -120,7 +120,7 @@
     width: 200px;
     height: 100%;
 
-    background: #00E2B5;
+    background: var(--primary-color);
   }
 
   .section--badge .section__heading {
@@ -142,7 +142,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .section {
     margin-top: 80px;
   }
@@ -198,8 +198,8 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (min-width: 1440px),
-      (min-resolution: 1.5dppx) and (min-width: 1440px) {
+@media (min-resolution: 144dpi) and (--large-desktop),
+      (min-resolution: 1.5dppx) and (--large-desktop) {
   .section--mission {
     background-image: url("../img/yellow@3x.png");
   }
