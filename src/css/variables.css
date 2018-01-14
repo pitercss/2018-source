@@ -11,6 +11,8 @@
 
   --main-font-size: 12px;
   --second-font-size: 15px;
+  --main-font-size-desktop: 14px;
+  --second-font-size-desktop: 20px;
   --font-stack: "gotham pro", "verdana", sans-serif;
   --main-line-height: 1.5;
 }

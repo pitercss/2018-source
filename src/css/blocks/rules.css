@@ -30,7 +30,7 @@
   margin-top: var(--second-font-size);
 
   font-weight: bold;
-  font-size: 12px;
+  font-size: var(--main-font-size);
   line-height: 1.2;
   text-decoration: none;
 
@@ -63,17 +63,17 @@
   }
 
   .rules__description {
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .rules__caption {
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .rules__link {
     margin-top: 20px;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
 
     border-bottom: none;
   }

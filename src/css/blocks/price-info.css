@@ -141,13 +141,13 @@
   .price-info__cell--date {
     padding-top: 21px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 
   .price-info__cell--price {
     padding-bottom: 24px;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
     line-height: 1;
     white-space: nowrap;
   }

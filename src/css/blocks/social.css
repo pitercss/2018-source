@@ -23,7 +23,7 @@
   width: 100%;
   margin: 0;
 
-  font-size: 12px;
+  font-size: var(--main-font-size);
 }
 
 .social__link {
@@ -72,7 +72,7 @@
 
     order: 1;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 
   .social__link--twitter svg {

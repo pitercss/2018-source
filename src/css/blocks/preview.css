@@ -220,7 +220,7 @@
   .preview__cell {
     margin-left: 64px;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
     line-height: 1.7;
   }
 
@@ -241,7 +241,7 @@
     margin-top: 170px;
     margin-left: 90px;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .preview__stickers-list--show {
@@ -257,7 +257,7 @@
     margin-top: 51px;
     margin-left: 26px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 
   .preview__personal-color {

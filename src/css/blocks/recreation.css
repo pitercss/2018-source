@@ -17,7 +17,7 @@
   margin: 0;
   margin-top: 11px;
 
-  font-size: 12px;
+  font-size: var(--main-font-size);
   text-transform: lowercase;
 }
 
@@ -33,12 +33,12 @@
     width: 18%;
     margin-top: 24px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 
   .recreation__heading {
     margin-top: 26px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 }

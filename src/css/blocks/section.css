@@ -17,7 +17,7 @@
 .section__subheading {
   display: block;
 
-  font-size: 12px;
+  font-size: var(--main-font-size);
   text-transform: uppercase;
 }
 
@@ -138,7 +138,7 @@
   .section--sponsors {
     margin-top: 90px;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 }
 
@@ -194,7 +194,7 @@
   .section--sponsors {
     margin-top: 90px;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 }
 

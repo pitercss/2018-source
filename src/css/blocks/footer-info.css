@@ -59,7 +59,7 @@
     margin: 0;
     margin-left: 48px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 
   .footer-info__list {

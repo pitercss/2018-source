@@ -81,7 +81,7 @@
   margin-top: 22px;
 
   font-weight: bold;
-  font-size: 12px;
+  font-size: var(--main-font-size);
   line-height: 1.2;
   text-decoration: none;
 

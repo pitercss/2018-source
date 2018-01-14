@@ -188,7 +188,7 @@ width: 100%;
   .header__time {
     margin-left: 65px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
     line-height: 1.5;
   }
 
@@ -206,7 +206,7 @@ width: 100%;
     padding-left: 76px;
     padding-right: 32px;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
     line-height: 2.4;
   }
 
@@ -222,7 +222,7 @@ width: 100%;
     display: block;
     margin-top: 8px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
     line-height: 1;
 
     color: var(--secondary-color);
@@ -240,7 +240,7 @@ width: 100%;
 
     align-self: flex-start;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
 
     border: none;
   }
@@ -274,7 +274,7 @@ width: 100%;
     max-width: 123px;
     padding-bottom: 16px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
     line-height: 1.5;
     text-decoration: none;
 
