@@ -33,6 +33,10 @@
   margin-top: 43px;
 }
 
+.section__container {
+  margin-top: 23px;
+}
+
 .section--badge {
   margin: 0;
   margin-top: 35px;
