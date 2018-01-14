@@ -11,14 +11,14 @@
   border-radius: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .color-id {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .color-id {
     margin-top: 24px;
     margin-left: 2px;

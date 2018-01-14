@@ -10,8 +10,8 @@
   line-height: 1.2;
   text-transform: lowercase;
 
-  color: white;
-  background: #00E2B5 url("../img/hand.png") no-repeat 90% 100%;
+  color: var(--text-second-color);
+  background: var(--primary-color) url("../img/hand.png") no-repeat 90% 100%;
 }
 
 .summary__heading {
@@ -41,7 +41,7 @@
   min-width: 113px;
   padding: 0;
 
-  font-size: 15px;
+  font-size: var(--second-font-size);
   text-align: left;
 }
 
@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .summary {
     padding-right: 15%;
     padding-left: 9%;
@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .summary {
     position: relative;
 
@@ -113,7 +113,7 @@
 
     font-size: 86px;
 
-    background: #00E2B5 url("../img/hand@2x.png") no-repeat 84% 88px;
+    background: var(--primary-color) url("../img/hand@2x.png") no-repeat 84% 88px;
     background-size: 344px;
     border-top: 1px solid #D6D8D9;
   }
@@ -152,8 +152,8 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (min-width: 1440px),
-      (min-resolution: 1.5dppx) and (min-width: 1440px) {
+@media (min-resolution: 144dpi) and (--large-desktop),
+      (min-resolution: 1.5dppx) and (--large-desktop) {
   .summary {
     background-image: url("../img/hand@3x.png");
   }

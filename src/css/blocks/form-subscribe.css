@@ -19,14 +19,14 @@
 }
 
 .form-subscribe__input:hover {
-  border-bottom-color: #00E2B5;
+  border-bottom-color: var(--primary-color);
 }
 
 .form-subscribe__input:focus {
   border-bottom-color: transparent;
   box-shadow:
       0 0 0 2px white,
-      0 0 0 4px #00E2B5;
+      0 0 0 4px var(--primary-color);
   outline: none;
 }
 
@@ -47,19 +47,19 @@ color: #B4BDC7;
 }
 
 .form-subscribe__input:hover:-moz-placeholder {
-color: #00E2B5;
+color: var(--primary-color);
 }
 
 .form-subscribe__input:hover::-moz-placeholder {
-color: #00E2B5;
+color: var(--primary-color);
 }
 
 .form-subscribe__input:hover::-webkit-input-placeholder {
-color: #00E2B5;
+color: var(--primary-color);
 }
 
 .form-subscribe__input:hover:-ms-input-placeholder {
-color: #00E2B5;
+color: var(--primary-color);
 }
 
 .form-subscribe__btn {
@@ -77,21 +77,21 @@ color: #00E2B5;
 .form-subscribe__btn:focus {
   box-shadow:
       0 0 0 2px white,
-      0 0 0 4px #00E2B5;
+      0 0 0 4px var(--primary-color);
   outline: none;
 }
 
 .form-subscribe__btn:hover {
-  color: white;
+  color: var(--text-second-color);
   background: #B4BDC7;
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .form-subscribe {
     width: 56%;
     margin-top: 0;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .form-subscribe__field {
@@ -107,7 +107,7 @@ color: #00E2B5;
 
     flex-grow: 1;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
 
     border-bottom-width: 2px;
   }
@@ -116,7 +116,7 @@ color: #00E2B5;
     width: 36%;
     padding: 0;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
     line-height: 1.8;
 
     border-width: 2px;
