@@ -9,8 +9,8 @@ const imagemin = require('gulp-imagemin');
 const svgmin = require('gulp-svgmin');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
+const jsmin = require('gulp-jsmin');
 const cssnext = require("gulp-cssnext");
-
 // HTML
 
 gulp.task('html', () => {
@@ -40,6 +40,17 @@ gulp.task('css', () => {
         }));
 });
 
+// JS
+
+gulp.task('scripts', () => {
+    return gulp.src('src/js/*.js')
+        .pipe(jsmin())
+        .pipe(gulp.dest('dest/js'))
+        .pipe(sync.stream({
+          once: true
+        }));
+});
+
 // Images
 
 gulp.task('images', () => {
@@ -65,6 +76,7 @@ gulp.task('copy', () => {
             'src/fonts/*',
             '!src/img/*',
             '!src/css/*',
+            '!src/js/*',
             '!src/*.html'
         ], {
             base: 'src'
@@ -105,12 +117,17 @@ gulp.task('watch:css', () => {
     return gulp.watch('src/css/**/*.css', gulp.series('css'));
 });
 
+gulp.task('watch:scripts', () => {
+    return gulp.watch('src/js/*.js', gulp.series('scripts'));
+});
+
 gulp.task('watch:copy', () => {
     return gulp.watch([
         'src/*',
         'src/fonts/*',
         '!src/img/*',
         '!src/css/*',
+        '!src/js/*',
         '!src/*.html'
     ], gulp.series('copy'));
 });
@@ -120,6 +137,7 @@ gulp.task('watch', gulp.parallel(
     'watch:svg',
     'watch:html',
     'watch:css',
+    'watch:scripts',
     'watch:copy'
 ));
 
@@ -130,6 +148,7 @@ gulp.task('build', gulp.parallel(
     'svg',
     'html',
     'css',
+    'scripts',
     'copy'
 ));
 

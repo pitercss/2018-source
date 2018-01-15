@@ -1,10 +1,10 @@
-.rules {
+.grey-block {
   margin-top: 35px;
 
   text-align: center;
 }
 
-.rules__wrapper {
+.grey-block__wrapper {
   padding-top: 11px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -15,17 +15,17 @@
   background: #F8F8F8;
 }
 
-.rules__caption {
+.grey-block__caption {
   margin: 0;
 
   font-size: var(--second-font-size);
 }
 
-.rules__description {
+.grey-block__description {
   margin: 0;
 }
 
-.rules__link {
+.grey-block__link {
   display: inline-block;
   margin-top: var(--second-font-size);
 
@@ -38,42 +38,46 @@
   border-bottom: 1px solid rgba(255, 1, 149, 0.2);
 }
 
-.rules__link:focus {
+.grey-block__link:focus {
   border-bottom-color: transparent;
   outline: 1px solid var(--primary-color);
 }
 
-.rules__link:hover {
+.grey-block__link:hover {
   border-bottom-color: rgba(255, 1, 149, 0.3);
 }
 
+@media (--desktop) {
+  .grey-block__link {
+    font-size: 20px;
+  }
+}
+
 @media (--large-desktop) {
-  .rules {
+  .grey-block {
     width: 49%;
     margin-top: 0;
 
     text-align: left;
   }
 
-  .rules__wrapper {
+  .grey-block__wrapper {
     padding-top: 20px;
     padding-right: 4%;
     padding-bottom: 32px;
     padding-left: 4%;
   }
 
-  .rules__description {
-    font-size: var(--second-font-size-desktop);
+  .grey-block__description {
+    font-size: 20px;
   }
 
-  .rules__caption {
-    font-size: var(--second-font-size-desktop);
+  .grey-block__caption {
+    font-size: 20px;
   }
 
-  .rules__link {
+  .grey-block__link {
     margin-top: 20px;
-
-    font-size: var(--second-font-size-desktop);
 
     border-bottom: none;
   }
