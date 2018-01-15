@@ -43,7 +43,7 @@
     </symbol>
   </svg>
   <header class="header">
-    <nav class="header__nav">
+    <div class="header__container">
       <div class="header__logo-container">
         <a class="header__logo" href="index.html">
           <img src="img/logo-header.svg" alt="pitercss_conf" width="106" height="22">
@@ -56,7 +56,7 @@
         <div class="header__place">
           <a class="header__place-link" href="#">
             <b>Saint Petersburg</b>
-            Benoit Farm.
+            Sreda
           </a>
         </div>
       </div>
@@ -64,24 +64,26 @@
         <a class="header__btn" href="#">1699 ₽</a>
         <span class="header__price-in-other-currencies">≈ 28,34 US$ or 26,74 €</span>
       </div>
-      <ul class="header__menu-list">
-        <li class="header__menu-item  header__menu-item--active">
-          <a class="header__menu-link" href="about.html">About</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#">Speakers</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#">Photos</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#">Blog</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#">Other</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="header__nav">
+        <ul class="header__menu-list">
+          <li class="header__menu-item  header__menu-item--active">
+            <a class="header__menu-link" href="about.html">About</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Speakers</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Photos</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Blog</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Other</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="content">
     <section class="summary">
@@ -278,52 +280,55 @@
         It Will Be Cool!
         <span class="section__subheading">Something Like This</span>
       </h2>
-      <div class="gallery">
-        <button class="gallery__btn  gallery__btn--back" type="button">
-          <span class="visually-hidden">Previous Picture</span>
-        </button>
-        <button class="gallery__btn  gallery__btn--forward" type="button">
-          <span class="visually-hidden">Next Picture</span>
-        </button>
-        <a class="gallery__image  gallery__image--hide-on-mobile" href="#">
-          <img src="img/hover.jpg" srcset="img/hover@2x.jpg 2x, img/hover@3x.jpg 3x" alt="Picture from the Last Year Conference">
-        </a>
-        <a class="gallery__image  gallery__image--hide-on-mobile" href="#">
+      <div class="section__container">
+        <div class="slider  hide-desktop">
+          <button class="slider__prev" type="button">
+            <span class="visually-hidden">Previous Picture</span>
+          </button>
+          <button class="slider__next" type="button">
+            <span class="visually-hidden">Next Picture</span>
+          </button>
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@3x.jpg 3x">
             <source media="(min-width: 768px)" srcset="img/photo-1-mobile@2x.jpg 1x, img/photo-1-mobile@3x.jpg 2x">
-            <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <img class="slider__image  slider__image--show" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
           </picture>
-        </a>
-        <a class="gallery__image" href="#">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@3x.jpg 3x">
             <source media="(min-width: 768px)" srcset="img/photo-2-mobile@2x.jpg 1x, img/photo-2-mobile@3x.jpg 2x">
-            <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <img class="slider__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
           </picture>
-        </a>
-        <a class="gallery__image  gallery__image--hide-on-mobile" href="#">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@3x.jpg 3x">
             <source media="(min-width: 768px)" srcset="img/photo-3-mobile@2x.jpg 1x, img/photo-3-mobile@3x.jpg 2x">
-            <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <img class="slider__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
           </picture>
-        </a>
-        <a class="gallery__image  gallery__image--hide-on-mobile" href="#">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@3x.jpg 3x">
             <source media="(min-width: 768px)" srcset="img/photo-4-mobile@2x.jpg 1x, img/photo-4-mobile@3x.jpg 2x">
-            <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <img class="slider__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
           </picture>
-        </a>
-        <a class="gallery__image  gallery__image--hide-on-mobile" href="#">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x, img/photo-5-desktop@3x.jpg 3x">
             <source media="(min-width: 768px)" srcset="img/photo-5-mobile@2x.jpg 1x, img/photo-5-mobile@3x.jpg 2x">
-            <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x, img/photo-5-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <img class="slider__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x, img/photo-5-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
           </picture>
-        </a>
-        <div class="gallery__container">
+          <a class="slider__link" href="#">See more funny photos</a>
+        </div>
+        <div class="gallery  hide-mobile">
+          <a class="gallery__image" href="#">
+            <img src="img/hover.jpg" srcset="img/hover@2x.jpg 2x, img/hover@3x.jpg 3x" alt="Picture from the Last Year Conference">
+          </a>
+          <a class="gallery__image  gallery__image--two-cells" href="#">
+            <img src="img/photo-1-desktop.jpg" srcset="img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
+          </a>
+          <a class="gallery__image" href="#">
+            <img src="img/photo-2-desktop.jpg" srcset="img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
+          </a>
+          <a class="gallery__image" href="#">
+            <img src="img/photo-3-desktop.jpg" srcset="img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
+          </a>
+          <a class="gallery__image" href="#">
+            <img src="img/photo-4-desktop.jpg" srcset="img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
+          </a>
+          <a class="gallery__image    gallery__image--two-cells" href="#">
+            <img src="img/photo-5-desktop.jpg" srcset="img/photo-5-desktop@2x.jpg 2x, img/photo-5-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
+          </a>
           <a class="gallery__link" href="#">See more funny photos</a>
         </div>
       </div>
@@ -461,17 +466,17 @@
     </section>
     <section class="section  section--speakers">
       <h2 class="visually-hidden">For speakers</h2>
-      <div class="speakers__block">
-        <h3 class="speakers__caption">Wanna be a speaker?</h3>
-        <p class="speakers__description">All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.</p>
-        <a class="speakers__btn" href="#">Send the report</a>
+      <div class="block">
+        <h3 class="block__caption">Wanna be a speaker?</h3>
+        <p class="block__description">All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.</p>
+        <a class="block__btn  btn" href="#">Send the report</a>
       </div>
-      <div class="rules">
-        <div class="rules__wrapper">
-          <h3 class="rules__caption">Term_Responsibility</h3>
-          <p class="rules__description">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&amp;A sessions.</p>
+      <div class="grey-block">
+        <div class="grey-block__wrapper">
+          <h3 class="grey-block__caption">Term_Responsibility</h3>
+          <p class="grey-block__description">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&amp;A sessions.</p>
         </div>
-        <a class="rules__link" href="#">Read all code of conduct</a>
+        <a class="grey-block__link" href="#">Read all code of conduct</a>
       </div>
     </section>
     <section class="section  section--sponsors">
@@ -499,7 +504,7 @@
           </a>
         </li>
       </ul>
-      <a class="sponsors__btn" href="#">i want to become a sponsor</a>
+      <a class="sponsors__btn  btn" href="#">i want to become a sponsor</a>
     </section>
   </main>
   <footer class="footer">
@@ -560,9 +565,9 @@
       </ul>
       <p class="footer-info__copyright">
         ©
-        <span class="footer-info__hide-on-desktop">LLC</span>
+        <span class="hide-desktop">LLC</span>
         «Interactive educational technologies»
-        <span class="footer-info__hide-on-desktop">,
+        <span class="hide-desktop">,
           <br>2013–
         </span>
         2016
@@ -574,5 +579,6 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js" type="application/javascript"></script>
 </body>
 </html>

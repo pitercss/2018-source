@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+  font-weight: bold;
+  line-height: 2.2;
+  text-decoration: none;
+  text-align: center;
+
+  color: #FF0195;
+  border: 2px solid #FF0195;
+}
+
+.btn:focus {
+  box-shadow:
+      0 0 0 2px white,
+      0 0 0 4px #00E2B5;
+  outline: none;
+}
+
+.btn:hover {
+  color: white;
+  background: #FF0195;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    display: inline-block;
+    padding-right: 34px;
+    padding-left: 34px;
+
+    font-size: 20px;
+    line-height: 2.2;
+  }
+}
