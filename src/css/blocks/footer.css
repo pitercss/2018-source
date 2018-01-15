@@ -22,7 +22,7 @@
 }
 
 .footer__logo-link:focus {
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
 .footer--margin-top {
@@ -33,7 +33,7 @@
   opacity: 0.5;
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .footer {
     display: flex;
     margin-top: 96px;

@@ -2,8 +2,8 @@
   display: flex;
   min-height: 43px;
 
-  color: #00E2B5;
-  border-top: 1px solid #00E2B5;
+  color: var(--primary-color);
+  border-top: 1px solid var(--primary-color);
 }
 
 .recreation__time {
@@ -17,11 +17,11 @@
   margin: 0;
   margin-top: 11px;
 
-  font-size: 12px;
+  font-size: var(--main-font-size);
   text-transform: lowercase;
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .recreation {
     min-height: 70px;
     margin-left: 9%;
@@ -33,12 +33,12 @@
     width: 18%;
     margin-top: 24px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 
   .recreation__heading {
     margin-top: 26px;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 }

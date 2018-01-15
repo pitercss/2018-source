@@ -18,7 +18,7 @@
 .grey-block__caption {
   margin: 0;
 
-  font-size: 15px;
+  font-size: var(--second-font-size);
 }
 
 .grey-block__description {
@@ -27,33 +27,33 @@
 
 .grey-block__link {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: var(--second-font-size);
 
   font-weight: bold;
-  font-size: 12px;
+  font-size: var(--main-font-size);
   line-height: 1.2;
   text-decoration: none;
 
-  color: #FF0195;
+  color: var(--secondary-color);
   border-bottom: 1px solid rgba(255, 1, 149, 0.2);
 }
 
 .grey-block__link:focus {
   border-bottom-color: transparent;
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
 .grey-block__link:hover {
   border-bottom-color: rgba(255, 1, 149, 0.3);
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .grey-block__link {
     font-size: 20px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .grey-block {
     width: 49%;
     margin-top: 0;

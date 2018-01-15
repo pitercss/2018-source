@@ -23,7 +23,7 @@
   width: 100%;
   margin: 0;
 
-  font-size: 12px;
+  font-size: var(--main-font-size);
 }
 
 .social__link {
@@ -35,11 +35,11 @@
 }
 
 .social__link:focus {
-  outline: 1px solid #00E2B5;
+  outline: 1px solid var(--primary-color);
 }
 
 .social__link:hover {
-  color: #FF0195;
+  color: var(--secondary-color);
 }
 
 .social__link svg {
@@ -47,10 +47,10 @@
 }
 
 .social__link:hover svg {
-  fill: #FF0195;
+  fill: var(--secondary-color);
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .social {
     width: 26%;
     margin-top: 0;
@@ -72,7 +72,7 @@
 
     order: 1;
 
-    font-size: 14px;
+    font-size: var(--main-font-size-desktop);
   }
 
   .social__link--twitter svg {

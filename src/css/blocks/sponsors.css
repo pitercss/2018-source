@@ -32,7 +32,7 @@
 .sponsors__link:focus {
   box-shadow:
       0 0 0 2px white,
-      0 0 0 4px #00E2B5;
+      0 0 0 4px var(--primary-color);
   outline: none;
 }
 
@@ -40,7 +40,7 @@
   margin-top: 22px;
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .sponsors__cards {
     display: flex;
     margin-right: 15.5%;
@@ -66,7 +66,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (--large-desktop) {
   .sponsors__description {
     margin-top: 13px;
     margin-right: 21%;

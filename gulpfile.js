@@ -10,7 +10,7 @@ const svgmin = require('gulp-svgmin');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
 const jsmin = require('gulp-jsmin');
-
+const cssnext = require("gulp-cssnext");
 // HTML
 
 gulp.task('html', () => {
@@ -31,6 +31,7 @@ gulp.task('css', () => {
     return gulp.src('src/css/**/*.css')
         .pipe(plumber())
         .pipe(concat('style.css'))
+        .pipe(cssnext())
         .pipe(postcss([autoprefixer]))
         .pipe(csso())
         .pipe(gulp.dest('dest/css'))
