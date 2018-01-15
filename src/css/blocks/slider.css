@@ -10,7 +10,7 @@
   left: 0;
   width: 32px;
   height: 32px;
-  transform: translateY(-50%);
+  transform: translateY(-32px);
   background: rgba(0, 0, 0, 0.7);
   border: none;
   cursor: pointer;
@@ -34,7 +34,7 @@
   right: 0;
   width: 32px;
   height: 32px;
-  transform: translateY(-50%);
+  transform: translateY(-32px);
   background: rgba(0, 0, 0, 0.7);
   border: none;
   cursor: pointer;
@@ -60,7 +60,8 @@
 .slider__image {
   display: none;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider__image--show {
