@@ -143,18 +143,18 @@
 
       <h1>Blockquotes</h1>
 
-      <blockquote>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, delectus, quod. Doloremque possimus, incidunt quasi voluptas ratione adipisci autem magni cumque, quaerat nobis, molestiae repellat consequatur praesentium earum laboriosam. Mollitia?
-        <cite>pitercss_conf</cite>
-      </blockquote>
-
       <blockquote class="quote-lead">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, delectus, quod. Doloremque possimus, incidunt quasi voluptas ratione adipisci autem magni cumque, quaerat nobis, molestiae repellat consequatur praesentium earum laboriosam. Mollitia?
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, delectus, quod. Doloremque possimus, incidunt quasi voluptas ratione adipisci autem magni cumque, quaerat nobis, molestiae repellat consequatur praesentium earum laboriosam. Mollitia?</p>
         <cite>pitercss_conf</cite>
       </blockquote>
 
       <blockquote class="quote-medium">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, delectus, quod. Doloremque possimus, incidunt quasi voluptas ratione adipisci autem magni cumque, quaerat nobis, molestiae repellat consequatur praesentium earum laboriosam. Mollitia?
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, delectus, quod. Doloremque possimus, incidunt quasi voluptas ratione adipisci autem magni cumque, quaerat nobis, molestiae repellat consequatur praesentium earum laboriosam. Mollitia?</p>
+        <cite>pitercss_conf</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, delectus, quod. Doloremque possimus, incidunt quasi voluptas ratione adipisci autem magni cumque, quaerat nobis, molestiae repellat consequatur praesentium earum laboriosam. Mollitia?</p>
         <cite>pitercss_conf</cite>
       </blockquote>
 
@@ -195,10 +195,10 @@
       <h1>Floating images</h1>
 
       <div>
-        <img class="img-left" src="https://placehold.it/300x300" alt="Last conference" width="300" height="300">
+        <img class="img-left" src="https://placehold.it/300x300" srcset="https://placehold.it/300x300 2x, https://placehold.it/300x300 3x" alt="Last conference" width="300" height="300">
         <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.Building user interfaces on the web is hard, because the web, and thus CSS, was inherently made for documents. Because UIs fundamentally are not documents, we've seen a mindset shift towards building component-based system.</p>
         <p>The rise of JavaScript frameworks like React, Ember and recently Angular 2, the effort of the W3C to standardize a web-native component system, pattern libraries and styleguides being considered 'the right way to build web applications' and many other things have illuminated this revolution – we are now in the "Component Age".</p>
-        <img class="img-right" src="https://placehold.it/300x300" alt="Last conference" width="300" height="300">
+        <img class="img-right" src="https://placehold.it/300x300" srcset="https://placehold.it/300x300 2x, https://placehold.it/300x300 3x" alt="Last conference" width="300" height="300">
         <p>Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&A sessions.Building user interfaces on the web is hard, because the web, and thus CSS, was inherently made for documents. Because UIs fundamentally are not documents, we've seen a mindset shift towards building component-based system.</p>
         <p>The rise of JavaScript frameworks like React, Ember and recently Angular 2, the effort of the W3C to standardize a web-native component system, pattern libraries and styleguides being considered 'the right way to build web applications' and many other things have illuminated this revolution – we are now in the "Component Age".</p>
       </div>
@@ -208,11 +208,11 @@
       <div class="slider">
         <button class="slider__prev hide-mobile" type="button"><span class="visually-hidden">Предыдущий</span></button>
         <figure class="slider__item js-active">
-          <img class="slider__image" src="http://placehold.it/421x225" width="421" height="225" alt="Coding">
+          <img class="slider__image" src="http://placehold.it/421x225" srcset="https://placehold.it/421x225 2x, https://placehold.it/421x225 3x" width="421" height="225" alt="Coding">
           <figcaption class="slider__note">Title of picture or something info</figcaption>
         </figure>
         <figure class="slider__item js-hide">
-          <img class="slider__image" src="http://placehold.it/421x225" width="421" height="225" alt="Coding">
+          <img class="slider__image" src="http://placehold.it/421x225" srcset="https://placehold.it/421x225 2x, https://placehold.it/421x225 3x" width="421" height="225" alt="Coding">
           <figcaption class="slider__note">Title of picture or something info</figcaption>
         </figure>
         <button class="slider__next hide-mobile" type="button"><span class="visually-hidden">Следующий</span></button>
