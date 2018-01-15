@@ -12,6 +12,14 @@
   cursor: pointer;
 }
 
+.slider__item {
+  margin: 0;
+}
+
+.slider__image {
+  width: 100%;
+}
+
 .slider__prev::before {
   content: "";
   position: absolute;
