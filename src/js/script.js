@@ -1,18 +1,32 @@
 window.slider = (() => {
   const ENTER = 13;
 
+  const sessionToggles = document.querySelectorAll('.session__toggle');
+
+  const toggleSession = (evt) => {
+    evt.target.parentElement.classList.toggle('session--closed');
+    evt.target.classList.toggle('session__toggle--hide');
+    evt.target.setAttribute('aria-label', evt.target.getAttribute('aria-label') === 'Open talk description' ? 'Close talk description' : 'Open talk description');
+  };
+
+  const addHandler = (nodeList, i) => {
+    nodeList[i].addEventListener('click', toggleSession);
+
+    nodeList[i].addEventListener('keydown', (evt) => {
+      if (evt.keyCode && evt.keyCode === ENTER) {
+        toggleSession;
+      }
+    });
+  };
+
+  sessionToggles.forEach((it, i) => {
+    addHandler(sessionToggles, i);
+  });
+
   const slider = document.querySelector('.slider');
   const images = slider.querySelectorAll('.slider__image');
 
   let currentImageIndex = 0;
-
-  for (let i = 0; i < images.length; i++) {
-    if (images[i].classList.contains('slider__image--show')) {
-      currentImageIndex = i;
-
-      break;
-    }
-  }
 
   const slideImages = (evt) => {
     evt.preventDefault();

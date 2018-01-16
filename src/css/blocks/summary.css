@@ -46,14 +46,6 @@
   }
 }
 
-@media (min-resolution: 216dpi),
-      (min-resolution: 2dppx) {
-  .summary {
-    background-image: url("../img/hand@3x.png");
-    background-size: 160px;
-  }
-}
-
 @media (--desktop) {
   .summary {
     padding-right: 15%;

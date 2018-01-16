@@ -17,8 +17,11 @@
 .section__subheading {
   display: block;
 
+  font-weight: bold;
   font-size: var(--main-font-size);
   text-transform: uppercase;
+
+  color: var(--primary-color);
 }
 
 .section__paragraph {
@@ -76,7 +79,7 @@
     padding-right: 3%;
     padding-left: 27.5%;
 
-    background: url("../img/yellow@2x.png") no-repeat 5% 8px;
+    background: url("../img/yellow.png") no-repeat 5% 8px;
     background-size: 190px;
   }
 
@@ -133,6 +136,12 @@
     padding-right: 34%;
 
     line-height: 1.1;
+  }
+
+  .section--badge .section__subheading {
+    width: 82%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .section--speakers {
@@ -202,9 +211,9 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (--large-desktop),
-      (min-resolution: 1.5dppx) and (--large-desktop) {
+@media (min-resolution: 144dpi) and (--desktop),
+      (min-resolution: 1.5dppx) and (--desktop) {
   .section--mission {
-    background-image: url("../img/yellow@3x.png");
+    background-image: url("../img/yellow@2x.png");
   }
 }
