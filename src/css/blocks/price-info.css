@@ -1,19 +1,25 @@
 .price-info {
   position: relative;
 
-  margin-top: 18px;
+  margin-top: 17px;
 }
 
-.price-info__table {
+.price-info__price-list {
   position: relative;
 
+  display: flex;
   width: 100%;
+  margin: 0;
+  padding-top: 12px;
+  padding-right: 11px;
+  padding-bottom: 10px;
+  padding-left: 11px;
 
   background: white;
   border: 2px solid #303B40;
 }
 
-.price-info__table::before {
+.price-info__price-list::before {
   content: "";
 
   position: absolute;
@@ -32,40 +38,28 @@
   border-right: 2px solid #303B40;
 }
 
-.price-info__table tbody {
-  display: flex;
-
-  justify-content: space-between;
+.price-info__item {
+  list-style: none;
 }
 
-.price-info__table-row {
-  display: flex;
-  width: 50%;
-
-  flex-direction: column;
+.price-info__item--current {
+  width: 66%;
+  padding-right: 10%;
 }
 
-.price-info__cell {
-  padding-top: 2px;
-  padding-left: 9px;
+.price-info__item--future {
+  color: #B4BDC7;
 }
 
-.price-info__cell--date {
-  padding-top: 8px;
+.price-info__date {
+  display: block;
 }
 
-.price-info__cell--price {
-  padding-bottom: 10px;
-
+.price-info__price {
   font-weight: bold;
   font-size: var(--second-font-size);
+  line-height: 1.6;
   text-transform: initial;
-}
-
-.price-info__cell--future {
-  padding-left: 31%;
-
-  color: #B4BDC7;
 }
 
 .price-info__close {
@@ -114,39 +108,35 @@
     margin-left: 8px;
   }
 
-  .price-info__table {
+  .price-info__price-list {
+    padding-top: 24px;
+    padding-right: 16px;
+    padding-bottom: 25px;
+    padding-left: 16px;
+
     border-width: 4px;
   }
 
-  .price-info__table::before {
-    top: -9px;
+  .price-info__price-list::before {
+    top: -12px;
     left: 68%;
 
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
 
     border-top-width: 4px;
     border-right-width: 4px;
   }
 
-  .price-info__table-row:last-child {
-    width: 22%;
+  .price-info__item--current {
+    width: 81%;
   }
 
-  .price-info__cell {
-    padding-top: 1px;
-    padding-left: 12px;
-  }
-
-  .price-info__cell--date {
-    padding-top: 21px;
-
+  .price-info__date {
     font-size: var(--main-font-size-desktop);
   }
 
-  .price-info__cell--price {
-    padding-bottom: 24px;
-
+  .price-info__price {
     font-size: var(--second-font-size-desktop);
     line-height: 1;
     white-space: nowrap;

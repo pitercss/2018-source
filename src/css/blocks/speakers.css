@@ -10,7 +10,7 @@
   margin-top: 6px;
 }
 
-.speakers__btn {
+.speakers__button {
   display: block;
   margin-top: 13px;
 
@@ -23,14 +23,14 @@
   border: 2px solid var(--secondary-color);
 }
 
-.speakers__btn:focus {
+.speakers__button:focus {
   box-shadow:
       0 0 0 2px white,
       0 0 0 4px var(--primary-color);
   outline: none;
 }
 
-.speakers__btn:hover {
+.speakers__button:hover {
   color: var(--text-second-color);
   background: var(--secondary-color);
 }
@@ -48,7 +48,7 @@
     text-align: left;
   }
 
-  .speakers__btn {
+  .speakers__button {
     display: inline-block;
     padding-right: 34px;
     padding-left: 34px;
@@ -76,7 +76,7 @@
     font-size: var(--second-font-size-desktop);
   }
 
-  .speakers__btn {
+  .speakers__button {
     margin-top: 41px;
 
     font-size: var(--second-font-size-desktop);

@@ -1,4 +1,4 @@
-.btn {
+.button {
   display: block;
   font-weight: bold;
   line-height: 2.2;
@@ -9,20 +9,20 @@
   border: 2px solid #FF0195;
 }
 
-.btn:focus {
+.button:focus {
   box-shadow:
       0 0 0 2px white,
       0 0 0 4px #00E2B5;
   outline: none;
 }
 
-.btn:hover {
+.button:hover {
   color: white;
   background: #FF0195;
 }
 
 @media (min-width: 1024px) {
-  .btn {
+  .button {
     display: inline-block;
     padding-right: 34px;
     padding-left: 34px;

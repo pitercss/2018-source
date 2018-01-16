@@ -55,14 +55,14 @@
         </time>
         <div class="header__place">
           <a class="header__place-link" href="#">
-            <b>Saint Petersburg</b>
+            <span class="header__place-city">Saint Petersburg</span>
             Sreda
           </a>
         </div>
       </div>
       <div class="header__buy">
-        <a class="header__btn" href="#">1699 ₽</a>
-        <span class="header__price-in-other-currencies">≈ 28,34 US$ or 26,74 €</span>
+        <a class="header__button" href="#">1699 ₽</a>
+        <span class="header__currencies">≈ 28,34 US$ or 26,74 €</span>
       </div>
       <nav class="header__nav">
         <ul class="header__menu-list">
@@ -89,18 +89,20 @@
     <section class="summary">
       <time class="summary__date" datetime="2018-06-08 10:00">08–09.06</time>
       <h1 class="summary__heading">First International Conference of Web-developers in Russia</h1>
-      <table class="summary__table">
-        <tr class="summary__table-row">
-          <th class="summary__table-heading">Days</th>
-          <th class="summary__table-heading">Participants</th>
-          <th class="summary__table-heading">Countries</th>
-        </tr>
-        <tr class="summary__table-row">
-          <td class="summary__table-data">2</td>
-          <td class="summary__table-data">500</td>
-          <td class="summary__table-data">12</td>
-        </tr>
-      </table>
+      <p class="summary__stats">
+        <span class="summary__stats-item">
+          2
+          <span class="summary__stats-unit">days</span>
+        </span>
+        <span class="summary__stats-item">
+          500
+          <span class="summary__stats-unit">participants</span>
+        </span>
+        <span class="summary__stats-item">
+          12
+          <span class="summary__stats-unit">countries</span>
+        </span>
+      </p>
     </section>
     <section class="section  section--mission">
       <h2 class="section__heading">
@@ -371,20 +373,24 @@
         </fieldset>
         <section class="preview">
           <div class="preview__card">
-            <table class="preview__info">
-              <tr class="visually-hidden">
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Company</th>
-                <th>Personal Color</th>
-              </tr>
-              <tr class="preview__table-row">
-                <td class="preview__cell  preview__cell--name">Konstantin</td>
-                <td class="preview__cell  preview__cell--name">Konstantinopolskiy</td>
-                <td class="preview__cell  preview__cell--company">Jet Brains</td>
-                <td class="preview__cell">#DF665D</td>
-              </tr>
-            </table>
+            <ul class="preview__list">
+              <li class="preview__item  preview__item--name">
+                <span class="visually-hidden">First Name</span>
+                Konstantin
+              </li>
+              <li class="preview__item  preview__item--name">
+                <span class="visually-hidden">Last Name</span>
+                Konstantinopolskiy
+              </li>
+              <li class="preview__item  preview__item--company">
+                <span class="visually-hidden">Company</span>
+                Jet Brains
+              </li>
+              <li class="preview__item">
+                <span class="visually-hidden">Personal Color</span>
+                #DF665D
+              </li>
+            </ul>
             <p class="preview__card-tip">
               Till here is nothing entered, your color is
               <span class="preview__card-tip-color">#FFFF</span>
@@ -436,23 +442,19 @@
               </label>
               <input class="form__input" type="text" name="code" id="code">
             </div>
-            <button class="form__btn" type="submit">Buy ticket for 1699 ₽</button>
+            <button class="form__button" type="submit">Buy ticket for 1699 ₽</button>
           </div>
           <aside class="price-info">
-            <table class="price-info__table">
-              <tr class="visually-hidden">
-                <th>Date</th>
-                <th>Price</th>
-              </tr>
-              <tr class="price-info__table-row">
-                <td class="price-info__cell  price-info__cell--date  price-info__cell--current">Today, 23 April</td>
-                <td class="price-info__cell  price-info__cell--price  price-info__cell--current">3 days till price increase. Hurry up!</td>
-              </tr>
-              <tr class="price-info__table-row">
-                <td class="price-info__cell  price-info__cell--date  price-info__cell--future">1 May</td>
-                <td class="price-info__cell  price-info__cell--price  price-info__cell--future">2500 ₽</td>
-              </tr>
-            </table>
+            <ul class="price-info__price-list">
+              <li class="price-info__item  price-info__item--current">
+                <span class="price-info__date">Today, 23 April</span>
+                <span class="price-info__price">3 days till price increase. Hurry up!</span>
+              </li>
+              <li class="price-info__item  price-info__item--future">
+                <span class="price-info__date">1 May</span>
+                <span class="price-info__price">2500 ₽</span>
+              </li>
+            </ul>
             <button class="price-info__close" type="button">
               <span class="visually-hidden">Close</span>
             </button>
@@ -469,7 +471,7 @@
       <div class="block">
         <h3 class="block__caption">Wanna be a speaker?</h3>
         <p class="block__description">All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.</p>
-        <a class="block__btn  btn" href="#">Send the report</a>
+        <a class="block__button  button" href="#">Send the report</a>
       </div>
       <div class="grey-block">
         <div class="grey-block__wrapper">
@@ -504,7 +506,7 @@
           </a>
         </li>
       </ul>
-      <a class="sponsors__btn  btn" href="#">i want to become a sponsor</a>
+      <a class="sponsors__button  button" href="#">i want to become a sponsor</a>
     </section>
   </main>
   <footer class="footer">
@@ -513,7 +515,7 @@
         <label class="form-subscribe__label" for="form-subscribe">Subscribe for last news</label>
         <div class="form-subscribe__field">
           <input class="form-subscribe__input" type="email" id="form-subscribe" name="email" placeholder="E-mail" required="required">
-          <button class="form-subscribe__btn" type="submit">Notify me</button>
+          <button class="form-subscribe__button" type="submit">Notify me</button>
         </div>
       </form>
       <ul class="social">

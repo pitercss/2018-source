@@ -1,6 +1,10 @@
 @media (--desktop) {
   .gallery {
     display: flex;
+    width: 99%;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-left: auto;
 
     justify-content: space-between;
     flex-wrap: wrap;
@@ -9,14 +13,14 @@
   }
 
   .gallery__image {
-    width: 32.5%;
-    margin-top: 12px;
+    width: 32%;
+    margin-top: 24px;
 
     background: #00E2B5;
   }
 
   .gallery__image--two-cells {
-    width: 66.5%;
+    width: 66%;
   }
 
   .gallery__image--three-cells {
@@ -37,7 +41,7 @@
   .gallery__link {
     display: flex;
     width: 174px;
-    margin-top: 12px;
+    margin-top: 24px;
     margin-right: auto;
     margin-left: auto;
 
@@ -64,10 +68,11 @@
   @supports (display: grid) {
     .gallery {
       display: grid;
+      margin-top: 38px;
 
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-gap: 12px;
+      grid-gap: 24px;
     }
 
     .gallery__image {

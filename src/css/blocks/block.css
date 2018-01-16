@@ -10,7 +10,7 @@
   margin-top: 6px;
 }
 
-.block__btn {
+.block__button {
   margin-top: 13px;
 }
 
@@ -27,7 +27,7 @@
     text-align: left;
   }
 
-  .block__btn {
+  .block__button {
     display: inline-block;
     padding-right: 34px;
     padding-left: 34px;
@@ -55,7 +55,7 @@
     font-size: 20px;
   }
 
-  .block__btn {
+  .block__button {
     margin-top: 41px;
   }
 }
