@@ -2,7 +2,7 @@
   min-height: 382px;
   padding-top: 20px;
   padding-right: 10%;
-  padding-bottom: 47px;
+  padding-bottom: 45px;
   padding-left: 5%;
 
   font-weight: bold;
@@ -21,52 +21,27 @@
   font-size: 36px;
 }
 
-.summary__table {
+.summary__stats {
+  display: flex;
+  width: 72.5%;
+  max-width: 300px;
+  margin: 0;
   margin-top: 27px;
 
-  border-collapse: collapse;
+  justify-content: space-between;
 }
 
-.summary__table tbody {
-  display: flex;
-
-  flex-direction: column;
-}
-
-.summary__table-row:first-child {
-  order: 1;
-}
-
-.summary__table-heading {
-  min-width: 113px;
-  padding: 0;
+.summary__stats-unit {
+  display: block;
+  margin-top: 2px;
 
   font-size: var(--second-font-size);
-  text-align: left;
-}
-
-.summary__table-heading:first-child,
-.summary__table-data:first-child {
-  min-width: 50px;
-}
-
-.summary__table-data {
-  min-width: 113px;
-  padding: 0;
 }
 
 @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
   .summary {
     background-image: url("../img/hand@2x.png");
-    background-size: 160px;
-  }
-}
-
-@media (min-resolution: 216dpi),
-      (min-resolution: 2dppx) {
-  .summary {
-    background-image: url("../img/hand@3x.png");
     background-size: 160px;
   }
 }
@@ -85,19 +60,6 @@
     margin-top: 35px;
 
     font-size: 50px;
-  }
-
-  .summary__table-heading {
-    min-width: 160px;
-  }
-
-  .summary__table-heading:first-child,
-  .summary__table-data:first-child {
-    min-width: 95px;
-  }
-
-  .summary__table-data {
-    min-width: 160px;
   }
 }
 
@@ -127,28 +89,19 @@
     line-height: 1.15;
   }
 
-  .summary__table {
+  .summary__stats {
     position: absolute;
-    top: 211px;
-    right: -5.5%;
+    top: 275px;
+    right: -2%;
+
+    width: 455px;
+    max-width: none;
 
     transform: rotate(-90deg);
   }
 
-  .summary__table-heading {
-    min-width: 222px;
-
+  .summary__stats-unit {
     font-size: 24px;
-    line-height: 1.9;
-  }
-
-  .summary__table-heading:first-child,
-  .summary__table-data:first-child {
-    min-width: 110px;
-  }
-
-  .summary__table-data {
-    min-width: 222px;
   }
 }
 

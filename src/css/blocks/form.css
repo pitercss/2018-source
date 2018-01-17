@@ -199,7 +199,7 @@
   display: none;
 }
 
-.form__btn {
+.form__button {
   width: 100%;
   margin-top: 39px;
   padding: 0;
@@ -214,14 +214,14 @@
   border: none;
 }
 
-.form__btn:focus {
+.form__button:focus {
   box-shadow:
       0 0 0 2px white,
       0 0 0 4px var(--primary-color);
   outline: none;
 }
 
-.form__btn:hover {
+.form__button:hover {
   background: #FF42B0;
 }
 
@@ -331,7 +331,7 @@
   }
 
   .form__group--payment-options {
-    margin-top: -119px;
+    margin-top: -117px;
 
     align-items: center;
   }
@@ -393,7 +393,7 @@
     padding-top: 10px;
   }
 
-  .form__btn {
+  .form__button {
     width: 64%;
     margin-top: 0;
 

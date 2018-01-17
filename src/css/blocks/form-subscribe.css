@@ -62,7 +62,7 @@ color: var(--primary-color);
 color: var(--primary-color);
 }
 
-.form-subscribe__btn {
+.form-subscribe__button {
   width: 28%;
 
   font-family: "gotham pro", "verdana", sans-serif;
@@ -74,14 +74,14 @@ color: var(--primary-color);
   border: 1px solid #B4BDC7;
 }
 
-.form-subscribe__btn:focus {
+.form-subscribe__button:focus {
   box-shadow:
       0 0 0 2px white,
       0 0 0 4px var(--primary-color);
   outline: none;
 }
 
-.form-subscribe__btn:hover {
+.form-subscribe__button:hover {
   color: var(--text-second-color);
   background: #B4BDC7;
 }
@@ -112,7 +112,7 @@ color: var(--primary-color);
     border-bottom-width: 2px;
   }
 
-  .form-subscribe__btn {
+  .form-subscribe__button {
     width: 36%;
     padding: 0;
 

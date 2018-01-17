@@ -36,7 +36,7 @@
   outline: none;
 }
 
-.sponsors__btn {
+.sponsors__button {
   margin-top: 22px;
 }
 
@@ -61,7 +61,7 @@
     margin-top: 50px;
   }
 
-  .sponsors__btn {
+  .sponsors__button {
     margin-top: 51px;
   }
 }
@@ -104,7 +104,7 @@
     width: 140px;
   }
 
-  .sponsors__btn {
+  .sponsors__button {
     margin-top: 51px;
   }
 }

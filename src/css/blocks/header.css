@@ -47,7 +47,7 @@ width: 100%;
   margin-right: 5%;
 }
 
-.header__btn {
+.header__button {
   position: relative;
 
   display: block;
@@ -64,18 +64,18 @@ width: 100%;
   background: var(--secondary-color);
 }
 
-.header__btn:focus {
+.header__button:focus {
   box-shadow:
       0 0 0 2px white,
       0 0 0 4px var(--primary-color);
   outline: none;
 }
 
-.header__btn:hover {
+.header__button:hover {
   background: #FF42B0;
 }
 
-.header__btn::before {
+.header__button::before {
   content: "";
 
   position: absolute;
@@ -89,7 +89,7 @@ width: 100%;
   background-size: contain;
 }
 
-.header__price-in-other-currencies {
+.header__currencies {
   display: none;
 }
 
@@ -202,7 +202,7 @@ width: 100%;
     order: 1;
   }
 
-  .header__btn {
+  .header__button {
     padding-left: 76px;
     padding-right: 32px;
 
@@ -210,7 +210,7 @@ width: 100%;
     line-height: 2.4;
   }
 
-  .header__btn::before {
+  .header__button::before {
     top: 16px;
     left: 30px;
 
@@ -218,7 +218,7 @@ width: 100%;
     height: 18px;
   }
 
-  .header__price-in-other-currencies {
+  .header__currencies {
     display: block;
     margin-top: 8px;
 
@@ -309,6 +309,10 @@ width: 100%;
 
   .header__place-link:hover {
     color: var(--secondary-color);
+  }
+
+  .header__place-city {
+    font-weight: bold;
   }
 }
 
