@@ -1,27 +1,38 @@
 window.slider = (() => {
   const ENTER = 13;
 
+  // добавление обработчика нажатия мышки или клавиши enter
+
+  const addHandler = (element, action) => {
+    element.addEventListener('click', action);
+
+    element.addEventListener('keydown', (evt) => {
+      if (evt.keyCode && evt.keyCode === ENTER) {
+        action;
+      }
+    });
+  };
+
+  // открытие и закрытие дополнительной информации о сессии
+
   const sessionToggles = document.querySelectorAll('.session__toggle');
 
   const toggleSession = (evt) => {
+    evt.preventDefault();
     evt.target.parentElement.classList.toggle('session--closed');
     evt.target.classList.toggle('session__toggle--hide');
     evt.target.setAttribute('aria-label', evt.target.getAttribute('aria-label') === 'Open talk description' ? 'Close talk description' : 'Open talk description');
   };
 
-  const addHandler = (nodeList, i) => {
-    nodeList[i].addEventListener('click', toggleSession);
-
-    nodeList[i].addEventListener('keydown', (evt) => {
-      if (evt.keyCode && evt.keyCode === ENTER) {
-        toggleSession;
-      }
-    });
+  const turnOnToggles = (nodeList, i) => {
+    addHandler(nodeList[i], toggleSession);
   };
 
   sessionToggles.forEach((it, i) => {
-    addHandler(sessionToggles, i);
+    turnOnToggles(sessionToggles, i);
   });
+
+  // слайдер
 
   const slider = document.querySelector('.slider');
   const images = slider.querySelectorAll('.slider__image');
@@ -45,11 +56,31 @@ window.slider = (() => {
     }
   };
 
-  slider.addEventListener('click', slideImages);
+  addHandler(slider, slideImages);
 
-  slider.addEventListener('keydown', (evt) => {
-    if (evt.keyCode && evt.keyCode === ENTER) {
-      slideImages;
-    }
-  });
+  // открытие блока со стикерами
+
+  const preview = document.querySelector('.preview');
+  const stickers = preview.querySelector('.preview__stickers-list');
+  const link = preview.querySelector('.preview__link');
+
+  const turnOnStickers = (evt) => {
+    evt.preventDefault();
+    stickers.classList.toggle('preview__stickers-list--show');
+    evt.target.innerHTML = evt.target.innerHTML === 'Add Sticker' ? 'Close' : 'Add Sticker';
+  };
+
+  addHandler(link, turnOnStickers);
+
+  // закрытие справки о цене
+
+  const priceInfo = document.querySelector('.price-info');
+  const close = priceInfo.querySelector('.price-info__close');
+
+  const closeInfo = (evt) => {
+    evt.preventDefault();
+    priceInfo.style.display = 'none';
+  }
+
+  addHandler(close, closeInfo);
 })();
