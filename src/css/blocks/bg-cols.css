@@ -10,7 +10,7 @@
   margin-bottom: 25px;
 }
 
-.bg-cols .bg-cols__item h2 {
+ .bg-cols .bg-cols__header {
   font-size: var(--second-font-size);
   line-height: 1.4;
   letter-spacing: -0.1px;
@@ -21,14 +21,14 @@
   margin-bottom: 0;
 }
 
-@media (min-width: 1024px) {
+@media (--desktop) {
   .bg-cols__item {
     width: 400px;
     margin-bottom: 100px;
     padding: 20px 25px;
   }
 
-  .bg-cols .bg-cols__item h2 {
+  .bg-cols .bg-cols__header {
     font-size: var(--second-font-size-desktop);
     line-height: 1.6;
   }

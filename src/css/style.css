@@ -3,7 +3,7 @@
 @import "global.css";
 @import "blocks/page.css";
 @import "blocks/bg-cols.css";
-@import "blocks/row.css";
+@import "blocks/columns.css";
 @import "blocks/slider.css";
 @import "blocks/header.css";
 @import "blocks/summary.css";
@@ -23,3 +23,4 @@
 @import "blocks/social.css";
 @import "blocks/footer-info.css";
 @import "blocks/page-payment.css";
+@import "blocks/picture.css";
