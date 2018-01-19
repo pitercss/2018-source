@@ -1,0 +1,17 @@
+.picture {
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+@media (--small-device) {
+  .picture--right {
+    float: right;
+    margin-left: 15px;
+  }
+
+  .picture--left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 7px;
+  }
+}
