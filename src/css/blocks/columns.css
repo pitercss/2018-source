@@ -1,0 +1,39 @@
+.columns--bg .columns__item {
+  background-color: #f6f6f6;
+  padding: 15px 20px;
+}
+
+.columns .columns__header {
+  font-size: var(--second-font-size);
+  line-height: 1.4;
+  letter-spacing: -0.1px;
+  margin: 0;
+}
+
+@media (--desktop) {
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -20px;
+  }
+
+  .columns__item {
+    flex: 1;
+    margin-bottom: 100px;
+    padding: 20px 25px;
+  }
+
+  .columns .columns__header {
+    font-size: var(--second-font-size-desktop);
+    line-height: 1.6;
+  }
+
+  .columns--bg {
+    margin: 0;
+  }
+
+  .columns--bg .columns__item {
+    padding: 15px 20px;
+    flex: 0 0 400px;
+  }
+}

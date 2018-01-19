@@ -34,23 +34,23 @@ window.slider = (() => {
 
   // слайдер
 
-  const slider = document.querySelector('.slider');
-  const images = slider.querySelectorAll('.slider__image');
+  const slider = document.querySelector('.gallery');
+  const images = slider.querySelectorAll('.gallery__image');
 
   let currentImageIndex = 0;
 
   const slideImages = (evt) => {
     evt.preventDefault();
-    if (evt.target.classList.contains('slider__prev')) {
+    if (evt.target.classList.contains('gallery__button--prev')) {
       if (currentImageIndex > 0) {
-        images[currentImageIndex].classList.remove('slider__image--show');
-        images[currentImageIndex - 1].classList.add('slider__image--show');
+        images[currentImageIndex].classList.remove('gallery__image--show');
+        images[currentImageIndex - 1].classList.add('gallery__image--show');
         currentImageIndex--;
       }
-    } else if (evt.target.classList.contains('slider__next')) {
+    } else if (evt.target.classList.contains('gallery__button--next')) {
       if (currentImageIndex < images.length - 1) {
-        images[currentImageIndex].classList.remove('slider__image--show');
-        images[currentImageIndex + 1].classList.add('slider__image--show');
+        images[currentImageIndex].classList.remove('gallery__image--show');
+        images[currentImageIndex + 1].classList.add('gallery__image--show');
         currentImageIndex++;
       }
     }

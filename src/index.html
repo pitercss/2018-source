@@ -300,53 +300,46 @@
     <section class="section  section--gallery">
       <h2 class="section__heading">It Will Be Cool!</h2>
       <span class="section__subheading">Something Like This</span>
-      <div class="section__container">
-        <div class="slider  hide-desktop">
-          <button class="slider__prev" type="button" aria-label="Show previous picture"></button>
-          <button class="slider__next" type="button" aria-label="Show next picture"></button>
+      <div class="gallery">
+        <button class="gallery__button  gallery__button--prev" type="button" aria-label="Show previous picture"></button>
+        <button class="gallery__button  gallery__button--next" type="button" aria-label="Show next picture"></button>
+        <a class="gallery__image  gallery__image--show" href="#">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-1-mobile@2x.jpg 1x, img/photo-1-mobile@3x.jpg 2x">
-            <img class="slider__image  slider__image--show" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <source media="(min-width: 768px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
           </picture>
+        </a>
+        <a class="gallery__image  gallery__image--two-cells" href="#">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-2-mobile@2x.jpg 1x, img/photo-2-mobile@3x.jpg 2x">
-            <img class="slider__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <source media="(min-width: 768px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
           </picture>
+        </a>
+        <a class="gallery__image" href="#">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-3-mobile@2x.jpg 1x, img/photo-3-mobile@3x.jpg 2x">
-            <img class="slider__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <source media="(min-width: 768px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
           </picture>
+        </a>
+        <a class="gallery__image" href="#">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-4-mobile@2x.jpg 1x, img/photo-4-mobile@3x.jpg 2x">
-            <img class="slider__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <source media="(min-width: 768px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
           </picture>
+        </a>
+        <a class="gallery__image" href="#">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-5-mobile@2x.jpg 1x, img/photo-5-mobile@3x.jpg 2x">
-            <img class="slider__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x, img/photo-5-mobile@3x.jpg 3x" alt="Picture from the Last Year Conference">
+            <source media="(min-width: 768px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+            <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
           </picture>
-          <a class="slider__link" href="#">See more funny photos</a>
-        </div>
-        <div class="gallery  hide-mobile">
-          <a class="gallery__image" href="#">
-            <img src="img/hover.jpg" srcset="img/hover@2x.jpg 2x, img/hover@3x.jpg 3x" alt="Picture from the Last Year Conference">
-          </a>
-          <a class="gallery__image  gallery__image--two-cells" href="#">
-            <img src="img/photo-1-desktop.jpg" srcset="img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
-          </a>
-          <a class="gallery__image" href="#">
-            <img src="img/photo-2-desktop.jpg" srcset="img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
-          </a>
-          <a class="gallery__image" href="#">
-            <img src="img/photo-3-desktop.jpg" srcset="img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
-          </a>
-          <a class="gallery__image" href="#">
-            <img src="img/photo-4-desktop.jpg" srcset="img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
-          </a>
-          <a class="gallery__image    gallery__image--two-cells" href="#">
-            <img src="img/photo-5-desktop.jpg" srcset="img/photo-5-desktop@2x.jpg 2x, img/photo-5-desktop@3x.jpg 3x" alt="Picture from the Last Year Conference">
-          </a>
-          <a class="gallery__link" href="#">See more funny photos</a>
-        </div>
+        </a>
+        <a class="gallery__image  gallery__image--two-cells" href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+            <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+          </picture>
+        </a>
+        <a class="gallery__link" href="#">See more funny photos</a>
       </div>
     </section>
     <section class="section  section--badge">

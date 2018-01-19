@@ -26,7 +26,7 @@
 
 .section__paragraph {
   margin: 0;
-  margin-top: 23px;
+  margin-top: 21px;
 
   font-size: 21px;
   line-height: 1.4;
@@ -52,6 +52,12 @@
 .section--badge .section__heading {
   width: 90%;
   margin-top: 28px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section--badge .section__subheading {
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
