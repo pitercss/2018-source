@@ -140,6 +140,7 @@
     text-align: center;
 
     background: transparent url("") no-repeat 0 0;
+    border: none;
   }
 
   .gallery__link:hover {

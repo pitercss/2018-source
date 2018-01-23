@@ -50,9 +50,9 @@
   fill: var(--secondary-color);
 }
 
-@media (--large-desktop) {
+@media (--desktop) {
   .social {
-    width: 26%;
+    width: 33%;
     margin-top: 0;
 
     justify-content: space-between;
@@ -93,5 +93,11 @@
   .social__link--instagram svg {
       width: 26px;
       height: 26px;
+  }
+}
+
+@media (--medium-desktop) {
+  .social {
+    width: 26%;
   }
 }

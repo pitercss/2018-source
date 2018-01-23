@@ -57,7 +57,7 @@
   margin-top: 30px;
 }
 
-@media (--large-desktop) {
+@media (--desktop) {
   .footer-info {
     width: auto;
     margin: 0;

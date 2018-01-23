@@ -86,7 +86,7 @@ color: var(--primary-color);
   background: #B4BDC7;
 }
 
-@media (--large-desktop) {
+@media (--desktop) {
   .form-subscribe {
     width: 56%;
     margin-top: 0;
