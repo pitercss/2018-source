@@ -5,10 +5,6 @@ html {
   box-sizing: inherit;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -46,8 +42,55 @@ body {
   display: none;
 }
 
+p {
+  font-size: var(--second-font-size);
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.paragraph-lead {
+  font-size: 21px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.paragraph-small {
+  font-size: var(--main-font-size);
+}
+
+@media (--small-device) {
+  .picture-right {
+    float: right;
+    margin-left: 15px;
+  }
+
+  .picture-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 7px;
+  }
+}
+
 @media (--desktop) {
   .hide-mobile {
     display: block;
+  }
+
+  p {
+    font-size: var(--second-font-size-desktop);
+  }
+
+  .paragraph-lead {
+    font-size: 34px;
+  }
+
+  .paragraph-small {
+    font-size: var(--main-font-size-desktop);
+    line-height: 1.7;
   }
 }

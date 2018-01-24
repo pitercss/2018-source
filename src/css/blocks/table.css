@@ -7,15 +7,19 @@
   margin-bottom: 30px;
 }
 
-.table__head {
+.table th {
   text-align: left;
 }
 
-.table__row:not(:first-child) .table__head {
+.table tr:first-child th:not(:first-child) {
+  text-align: right;
+}
+
+.table tr:not(:first-child) th {
   font-weight: 400;
 }
 
-.table__row:first-child {
+.table tr:first-child {
   border-bottom: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
@@ -29,7 +33,7 @@
     line-height: 2.4;
   }
 
-  .table__row:first-child {
+  .table tr:first-child {
     line-height: 1.5;
   }
 }

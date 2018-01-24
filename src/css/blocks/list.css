@@ -1,4 +1,4 @@
-.list {
+ol, .list-unordered {
   padding-left: 15px;
   margin: 0;
   font-size: var(--second-font-size);
@@ -6,15 +6,15 @@
   font-weight: bold;
 }
 
-.list--unordered {
+.list-unordered {
   list-style-type: none;
 }
 
-.list--unordered .list__item {
+.list-unordered li {
   position: relative;
 }
 
-.list--unordered .list__item::before {
+.list-unordered li::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -27,7 +27,7 @@
 }
 
 @media (--desktop) {
- .list {
+  ol, .list-unordered {
     font-size: var(--second-font-size-desktop);
     line-height: 2.4;
   }
