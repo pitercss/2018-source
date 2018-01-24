@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+.columns__item {
+  font-size: var(--second-font-size);
+}
+
 @media (--desktop) {
   .columns {
     display: flex;
@@ -19,8 +23,9 @@
 
   .columns__item {
     flex: 1;
-    margin-bottom: 100px;
+    margin: 0;
     padding: 20px 25px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .columns .columns__header {
@@ -30,6 +35,7 @@
 
   .columns--bg {
     margin: 0;
+    margin-bottom: 80px;
   }
 
   .columns--bg .columns__item {

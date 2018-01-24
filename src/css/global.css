@@ -50,8 +50,4 @@ body {
   .hide-mobile {
     display: block;
   }
-
-  .hide-desktop {
-    display: none;
-  }
 }

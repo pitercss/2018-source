@@ -1,0 +1,35 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--second-font-size);
+  text-align: right;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.table__head {
+  text-align: left;
+}
+
+.table__row:not(:first-child) .table__head {
+  font-weight: 400;
+}
+
+.table__row:first-child {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+@media (--desktop) {
+  .table {
+    width: 550px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    font-size: var(--second-font-size-desktop);
+    line-height: 2.4;
+  }
+
+  .table__row:first-child {
+    line-height: 1.5;
+  }
+}

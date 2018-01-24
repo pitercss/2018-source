@@ -1,0 +1,152 @@
+.blockquote {
+  position: relative;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 35px;
+  font-weight: bold;
+  font-size: var(--second-font-size);
+}
+
+.blockquote__paragraph::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 13px;
+  height: 11px;
+  background: transparent url("../img/quotes-open.svg") no-repeat 50% 50%;
+  background-size: contain;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.blockquote__paragraph::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 11px;
+  background: transparent url("../img/quotes-closed.svg") no-repeat 50% 50%;
+  background-size: 100%;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.blockquote__author {
+  font-size: var(--main-font-size);
+  font-style: normal;
+  line-height: 1;
+}
+
+.blockquote--lead {
+  padding-bottom: 25px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.blockquote--lead .blockquote__paragraph::before {
+  width: 21px;
+  height: 17px;
+  margin-left: 0;
+}
+
+.blockquote--lead .blockquote__paragraph::after {
+  width: 21px;
+  height: 17px;
+}
+
+.blockquote--lead .blockquote__author {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.blockquote--medium {
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+.blockquote--medium .blockquote__paragraph::before {
+  width: 15px;
+  height: 13px;
+  margin-left: 2px;
+}
+
+.blockquote--medium .blockquote__paragraph::after {
+  width: 15px;
+  height: 13px;
+  margin-top: 5px;
+}
+
+.blockquote--medium .blockquote__author {
+  font-size: var(--second-font-size);
+  line-height: 1.5;
+}
+
+@media (--desktop) {
+  .blockquote {
+    padding-bottom: 80px;
+    padding-right: 100px;
+    padding-left: 90px;
+    font-size: var(--second-font-size-desktop);
+  }
+
+  .blockquote__paragraph::before {
+    width: 26px;
+    height: 22px;
+    margin-left: 40px;
+  }
+
+  .blockquote__paragraph::after {
+    width: 26px;
+    height: 22px;
+    margin-left: 20px;
+  }
+
+  .blockquote__author {
+    font-size: 16px;
+  }
+
+  .blockquote--lead {
+    padding-bottom: 50px;
+    padding-top: 35px;
+    font-size: 34px;
+  }
+
+  .blockquote--lead .blockquote__paragraph::before {
+    width: 42px;
+    height: 34px;
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+
+  .blockquote--lead .blockquote__paragraph::after {
+    width: 42px;
+    height: 34px;
+  }
+
+  .blockquote--lead .blockquote__author {
+    font-size: 26px;
+  }
+
+  .blockquote--medium {
+    padding-bottom: 60px;
+    font-size: 26px;
+  }
+
+  .blockquote--medium .blockquote__paragraph::before {
+    width: 30px;
+    height: 26px;
+    margin-left: 30px;
+  }
+
+  .blockquote--medium .blockquote__paragraph::after {
+    width: 30px;
+    height: 26px;
+  }
+
+  .blockquote--medium .blockquote__author {
+    font-size: var(--second-font-size-desktop);
+  }
+}
