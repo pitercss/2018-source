@@ -22,4 +22,6 @@
 @import "blocks/social.css";
 @import "blocks/footer-info.css";
 @import "blocks/page-payment.css";
-@import "blocks/picture.css";
+@import "blocks/table.css";
+@import "blocks/blockquote.css";
+@import "blocks/list.css";
