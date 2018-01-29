@@ -1,0 +1,39 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--second-font-size);
+  text-align: right;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table tr:first-child th:not(:first-child) {
+  text-align: right;
+}
+
+.table tr:not(:first-child) th {
+  font-weight: 400;
+}
+
+.table tr:first-child {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+@media (--desktop) {
+  .table {
+    width: 550px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    font-size: var(--second-font-size-desktop);
+    line-height: 2.4;
+  }
+
+  .table tr:first-child {
+    line-height: 1.5;
+  }
+}
