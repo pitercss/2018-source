@@ -48,42 +48,42 @@
         <a class="header__logo" href="index.html">
           <img src="img/logo-header.svg" alt="pitercss_conf" width="106" height="22">
         </a>
-        <time class="header__time" datetime="2018-06-08 10:00">
-          June
-          <span class="header__days">8–9th,</span>
-          2018
-        </time>
-        <div class="header__place">
-          <a class="header__place-link" href="#">
-            <span class="header__place-city">Saint Petersburg</span>
-            Sreda
-          </a>
-        </div>
       </div>
-      <div class="header__buy">
-        <a class="header__button" href="#">1699 ₽</a>
-        <span class="header__currencies">≈ 28,34 US$ or 26,74 €</span>
+      <time class="header__time" datetime="2018-06-08 10:00">
+        June
+        <span class="header__days">8–9th,</span>
+        2018
+      </time>
+      <div class="header__place">
+        <a class="header__place-link" href="#">
+          <span class="header__place-city">Saint Petersburg</span>
+          Sreda
+        </a>
       </div>
-      <nav class="header__nav">
-        <ul class="header__menu-list">
-          <li class="header__menu-item  header__menu-item--active">
-            <a class="header__menu-link" href="about.html">About</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Speakers</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Photos</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Blog</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Other</a>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <div class="header__buy">
+      <a class="header__button" href="#">1699 ₽</a>
+      <span class="header__currencies">≈ 28,34 US$ or 26,74 €</span>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__menu-list">
+        <li class="header__menu-item  header__menu-item--active">
+          <a class="header__menu-link" href="about.html">About</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Speakers</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Photos</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Blog</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Other</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="content">
     <section class="summary">
@@ -300,46 +300,58 @@
     <section class="section  section--gallery">
       <h2 class="section__heading">It Will Be Cool!</h2>
       <span class="section__subheading">Something Like This</span>
-      <div class="gallery">
+      <div class="gallery  gallery--transformable">
         <button class="gallery__button  gallery__button--prev" type="button" aria-label="Show previous picture"></button>
         <button class="gallery__button  gallery__button--next" type="button" aria-label="Show next picture"></button>
-        <a class="gallery__image  gallery__image--show" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-            <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-          </picture>
-        </a>
-        <a class="gallery__image  gallery__image--two-cells" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-            <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-          </picture>
-        </a>
-        <a class="gallery__image" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-            <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-          </picture>
-        </a>
-        <a class="gallery__image" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-            <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-          </picture>
-        </a>
-        <a class="gallery__image" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-            <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-          </picture>
-        </a>
-        <a class="gallery__image  gallery__image--two-cells" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-            <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-          </picture>
-        </a>
-        <a class="gallery__link" href="#">See more funny photos</a>
+        <div class="gallery__item  gallery__item--show">
+          <a class="gallery__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            </picture>
+          </a>
+        </div>
+        <div class="gallery__item  gallery__item--two-cells">
+          <a class="gallery__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            </picture>
+          </a>
+        </div>
+        <div class="gallery__item">
+          <a class="gallery__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            </picture>
+          </a>
+        </div>
+        <div class="gallery__item">
+          <a class="gallery__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            </picture>
+          </a>
+        </div>
+        <div class="gallery__item">
+          <a class="gallery__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            </picture>
+          </a>
+        </div>
+        <div class="gallery__item  gallery__item--two-cells">
+          <a class="gallery__link" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            </picture>
+          </a>
+        </div>
+        <a class="gallery__more" href="#">See more funny photos</a>
       </div>
     </section>
     <section class="section  section--badge">

@@ -8,8 +8,11 @@
 
 .form-subscribe__input {
   width: 69%;
-  margin-right: 2%;
-  padding: 0;
+  margin-right: 1%;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 1px;
+  padding-left: 4px;
 
   font-family: "gotham pro", "verdana", sans-serif;
   line-height: 2;
@@ -23,51 +26,49 @@
 }
 
 .form-subscribe__input:focus {
-  border-bottom-color: transparent;
-  box-shadow:
-      0 0 0 2px white,
-      0 0 0 4px var(--primary-color);
-  outline: none;
+  outline: 2px solid var(--primary-color);
 }
 
 .form-subscribe__input:-moz-placeholder {
-color: #B4BDC7;
+  color: #B4BDC7;
 }
 
 .form-subscribe__input::-moz-placeholder {
-color: #B4BDC7;
+  color: #B4BDC7;
 }
 
 .form-subscribe__input::-webkit-input-placeholder {
-color: #B4BDC7;
+  color: #B4BDC7;
 }
 
 .form-subscribe__input:-ms-input-placeholder {
-color: #B4BDC7;
+  color: #B4BDC7;
 }
 
 .form-subscribe__input:hover:-moz-placeholder {
-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .form-subscribe__input:hover::-moz-placeholder {
-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .form-subscribe__input:hover::-webkit-input-placeholder {
-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .form-subscribe__input:hover:-ms-input-placeholder {
-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .form-subscribe__button {
   width: 28%;
+  padding-top: 7px;
+  padding-bottom: 6px;
 
   font-family: "gotham pro", "verdana", sans-serif;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.2;
 
   color: #B4BDC7;
   background: white;
@@ -88,7 +89,7 @@ color: var(--primary-color);
 
 @media (--desktop) {
   .form-subscribe {
-    width: 56%;
+    width: 60%;
     margin-top: 0;
 
     font-size: var(--second-font-size-desktop);
@@ -117,7 +118,7 @@ color: var(--primary-color);
     padding: 0;
 
     font-size: var(--main-font-size-desktop);
-    line-height: 1.8;
+    line-height: 1.2;
 
     border-width: 2px;
   }

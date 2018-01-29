@@ -35,48 +35,48 @@
       <path d="M18.04 0H7.692C3.493 0 .072 3.459.072 7.703v10.46c0 4.245 3.421 7.704 7.62 7.704H18.04c4.2 0 7.62-3.459 7.62-7.703V7.704C25.66 3.458 22.24 0 18.04 0zm5.049 18.164c0 2.817-2.261 5.103-5.049 5.103H7.692c-2.787 0-5.048-2.286-5.048-5.103V7.704c0-2.818 2.26-5.104 5.048-5.104H18.04c2.788 0 5.049 2.286 5.049 5.103v10.46z"/><path d="M12.86 6.24c-3.648 0-6.615 3-6.615 6.687 0 3.689 2.967 6.688 6.615 6.688 3.65 0 6.616-3 6.616-6.688 0-3.688-2.967-6.687-6.616-6.687zm0 10.787c-2.237 0-4.043-1.826-4.043-4.087 0-2.262 1.806-4.088 4.043-4.088s4.044 1.826 4.044 4.088c0 2.26-1.807 4.087-4.044 4.087zm6.628-9.118A1.6 1.6 0 0 1 17.897 6.3a1.6 1.6 0 0 1 1.59-1.608c.886 0 1.592.714 1.592 1.608a1.6 1.6 0 0 1-1.591 1.609z"/>
     </symbol>
   </svg>
-  <header class="header header--underline">
+  <header class="header">
     <div class="header__container">
       <div class="header__logo-container">
         <a class="header__logo" href="index.html">
           <img src="img/logo-header.svg" alt="pitercss_conf" width="106" height="22">
         </a>
-        <time class="header__time" datetime="2018-06-08 10:00">
-          June
-          <span class="header__days">8–9th,</span>
-          2018
-        </time>
-        <div class="header__place">
-          <a class="header__place-link" href="#">
-            <b>Saint Petersburg</b>
-            Sreda
-          </a>
-        </div>
       </div>
-      <div class="header__buy">
-        <a class="header__button" href="#">1699 ₽</a>
-        <span class="header__currencies">≈ 28,34 US$ or 26,74 €</span>
+      <time class="header__time" datetime="2018-06-08 10:00">
+        June
+        <span class="header__days">8–9th,</span>
+        2018
+      </time>
+      <div class="header__place">
+        <a class="header__place-link" href="#">
+          <span class="header__place-city">Saint Petersburg</span>
+          Sreda
+        </a>
       </div>
-      <nav class="header__nav">
-        <ul class="header__menu-list">
-          <li class="header__menu-item  header__menu-item--active">
-            <a class="header__menu-link" href="about.html">About</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Speakers</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Photos</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Blog</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Other</a>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <div class="header__buy">
+      <a class="header__button" href="#">1699 ₽</a>
+      <span class="header__currencies">≈ 28,34 US$ or 26,74 €</span>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__menu-list">
+        <li class="header__menu-item  header__menu-item--active">
+          <a class="header__menu-link" href="about.html">About</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Speakers</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Photos</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Blog</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Other</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page">
     <div class="page__content">
@@ -220,17 +220,17 @@
 
       <h1>Slider</h1>
 
-      <div class="slider">
-        <button class="slider__prev" type="button" aria-label="Show previous picture"></button>
-        <figure class="slider__item js-active">
-          <img class="slider__image" src="http://placehold.it/840x450" srcset="https://placehold.it/840x450 2x" width="840" height="450" alt="Coding">
-          <figcaption class="slider__note">Title of picture or something info</figcaption>
+      <div class="gallery">
+        <button class="gallery__button  gallery__button--prev" type="button" aria-label="Show previous picture"></button>
+        <figure class="gallery__item  gallery__item--show">
+          <img class="gallery__image" src="http://placehold.it/840x450" srcset="https://placehold.it/840x450 2x" alt="Coding">
+          <figcaption class="gallery__note">Title of picture or something info</figcaption>
         </figure>
-        <figure class="slider__item js-hide">
-          <img class="slider__image" src="http://placehold.it/840x450" srcset="https://placehold.it/840x450 2x" width="840" height="450" alt="Coding">
-          <figcaption class="slider__note">Title of picture or something info</figcaption>
+        <figure class="gallery__item">
+          <img class="gallery__image" src="http://placehold.it/940x550" srcset="https://placehold.it/940x550 2x" alt="Coding">
+          <figcaption class="gallery__note">Title of picture or something info</figcaption>
         </figure>
-        <button class="slider__next" type="button" aria-label="Show next picture"></button>
+        <button class="gallery__button  gallery__button--next" type="button" aria-label="Show next picture"></button>
       </div>
     </div>
   </main>
@@ -297,5 +297,6 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
