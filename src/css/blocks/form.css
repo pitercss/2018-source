@@ -259,6 +259,10 @@
   .form__group--payment-options {
     margin-top: 0;
   }
+
+  .form__warning {
+    font-size: 15px;
+  }
 }
 
 @media (--large-desktop) {

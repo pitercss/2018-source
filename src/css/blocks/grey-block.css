@@ -48,6 +48,10 @@
 }
 
 @media (--desktop) {
+  .grey-block__description {
+    font-size: 15px;
+  }
+
   .grey-block__link {
     font-size: 20px;
   }
