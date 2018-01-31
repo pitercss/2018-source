@@ -123,3 +123,9 @@
     border-width: 2px;
   }
 }
+
+@media (--large-desktop) {
+  .form-subscribe {
+    width: 65%;
+  }
+}

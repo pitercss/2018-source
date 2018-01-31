@@ -207,6 +207,10 @@
     width: 840px;
   }
 
+  .gallery--transformable {
+    width: 99%;
+  }
+
   .gallery__item {
     height: 450px;
   }

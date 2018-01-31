@@ -75,32 +75,32 @@
 
 @media (--desktop) {
   .section {
-    margin-top: 50px;
-    margin-right: 9%;
-    margin-left: 9%;
+    margin-top: 80px;
+    margin-right: 30px;
+    margin-left: 30px;
   }
 
   .section--mission {
-    min-height: 307px;
-    padding-right: 3%;
-    padding-left: 27.5%;
+    min-height: 474px;
+    padding-left: 370px;
 
     background: url("../img/yellow.png") no-repeat 5% 8px;
-    background-size: 190px;
+    background-size: 296px;
   }
 
   .section__heading {
-    font-size: 50px;
+    font-size: 86px;
   }
 
   .section__subheading {
+    font-size: 16px;
     line-height: 2.7;
   }
 
   .section__paragraph {
     margin-top: 26px;
 
-    font-size: 24px;
+    font-size: 34px;
   }
 
   .section--schedule {
@@ -120,7 +120,7 @@
 
     margin: 0;
     margin-top: 85px;
-    padding-bottom: 85px;
+    padding-bottom: 116px;
   }
 
   .section--badge::before {
@@ -130,28 +130,28 @@
     top: 0;
     right: 0;
 
-    width: 200px;
+    width: 216px;
     height: 100%;
 
     background: var(--primary-color);
   }
 
   .section--badge .section__heading {
-    width: 82%;
-    margin-top: 50px;
+    margin-top: 86px;
+    margin-left: 30px;
     padding-right: 34%;
 
     line-height: 1.1;
   }
 
   .section--badge .section__subheading {
-    width: 82%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 30px;
   }
 
   .section--speakers {
-    margin-top: 70px;
+    display: flex;
+    margin-top: 107px;
   }
 
   .section--sponsors {
@@ -161,15 +161,16 @@
   }
 }
 
-@media (--large-desktop) {
+@media (--medium-desktop) {
   .section {
     margin-top: 80px;
+    margin-right: 9%;
+    margin-left: 9%;
   }
 
   .section--mission {
-    min-height: 474px;
-
-    background-size: 296px;
+    padding-right: 3%;
+    padding-left: 27.5%;
   }
 
   .section__heading {
@@ -193,27 +194,26 @@
   }
 
   .section--badge {
+    margin: 0;
     margin-top: 110px;
-    padding-bottom: 116px;
   }
 
   .section--badge::before {
     width: 322px;
   }
 
-  .section--badge .section__heading {
-    margin-top: 86px;
+  .section--badge .section__heading,
+  .section--badge .section__subheading {
+    width: 82%;
+    margin-left: auto;
   }
 
   .section--speakers {
-    display: flex;
     margin-top: 107px;
   }
 
   .section--sponsors {
     margin-top: 90px;
-
-    font-size: var(--second-font-size-desktop);
   }
 }
 

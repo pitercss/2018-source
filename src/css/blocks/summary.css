@@ -50,38 +50,17 @@
 
 @media (--desktop) {
   .summary {
-    padding-right: 15%;
-    padding-left: 9%;
-
-    font-size: 50px;
-
-    background-position: 85% 100%;
-  }
-
-  .summary__heading {
-    margin-top: 35px;
-
-    font-size: 50px;
-  }
-
-  .summary__stats {
-    font-size: 50px;
-  }
-}
-
-@media (--large-desktop) {
-  .summary {
     position: relative;
 
     min-height: 695px;
-    padding-top: 86px;
-    padding-right: 9%;
+    padding-top: 30px;
+    padding-right: 30px;
     padding-bottom: 48px;
-    padding-left: 9%;
+    padding-left: 30px;
 
     font-size: 86px;
 
-    background: var(--primary-color) url("../img/hand@2x.png") no-repeat 84% 88px;
+    background: var(--primary-color) url("../img/hand@2x.png") no-repeat 84% bottom;
     background-size: 344px;
     border-top: 1px solid #D6D8D9;
   }
@@ -98,7 +77,7 @@
   .summary__stats {
     position: absolute;
     top: 275px;
-    right: -2%;
+    right: -10%;
 
     width: 455px;
     max-width: none;
@@ -115,9 +94,27 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (--large-desktop),
-      (min-resolution: 1.5dppx) and (--large-desktop) {
+@media (min-resolution: 144dpi) and (--desktop),
+      (min-resolution: 1.5dppx) and (--desktop) {
   .summary {
     background-image: url("../img/hand@3x.png");
+  }
+}
+
+@media (--medium-desktop) {
+  .summary {
+    padding-top: 86px;
+    padding-right: 9%;
+    padding-left: 9%;
+  }
+
+  .summary__stats {
+    right: -2%;
+  }
+}
+
+@media (--large-desktop) {
+  .summary {
+    background-position: 84% 88px;
   }
 }

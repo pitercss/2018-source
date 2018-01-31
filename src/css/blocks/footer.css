@@ -38,11 +38,11 @@
     display: flex;
     margin-top: 96px;
     padding-top: 18px;
-    padding-right: 9.5%;
-    padding-left: 9.5%;
+    padding-right: 25px;
+    padding-left: 25px;
 
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .footer__content {
@@ -57,6 +57,8 @@
     width: auto;
     margin: 0;
     margin-bottom: 8px;
+
+    align-self: flex-end;
   }
 
   .footer__logo img {
@@ -65,7 +67,18 @@
 }
 
 @media (--medium-desktop) {
+  .footer {
+    padding-right: 9.5%;
+    padding-left: 9.5%;
+  }
+
   .footer__content {
     width: 57%;
+  }
+}
+
+@media (--large-desktop) {
+  .footer__content {
+    width: 53%;
   }
 }

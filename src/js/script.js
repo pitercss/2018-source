@@ -70,6 +70,7 @@ window.script = (() => {
 
     const turnOnStickers = (evt) => {
       evt.preventDefault();
+      preview.classList.toggle('preview--stickers');
       stickers.classList.toggle('preview__stickers-list--show');
       evt.target.innerHTML = evt.target.innerHTML === 'Add Sticker' ? 'Close' : 'Add Sticker';
     };

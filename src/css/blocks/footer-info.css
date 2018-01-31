@@ -85,3 +85,9 @@
     display: inline;
   }
 }
+
+@media (--large-desktop) {
+  .footer-info {
+    margin: 0;
+  }
+}

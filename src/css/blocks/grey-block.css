@@ -48,16 +48,6 @@
 }
 
 @media (--desktop) {
-  .grey-block__description {
-    font-size: 15px;
-  }
-
-  .grey-block__link {
-    font-size: 20px;
-  }
-}
-
-@media (--large-desktop) {
   .grey-block {
     width: 49%;
     margin-top: 0;
@@ -82,6 +72,8 @@
 
   .grey-block__link {
     margin-top: 20px;
+
+    font-size: 20px;
 
     border-bottom: none;
   }
