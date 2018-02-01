@@ -31,10 +31,6 @@
   color: #1E1F1D;
 }
 
-.header__days {
-  display: none;
-}
-
 .header__place {
   display: none;
 }
@@ -156,47 +152,14 @@ width: 100%;
   border-bottom: 1px solid rgba(48, 59, 64, 0.2);
 }
 
-@media (--desktop) {
-  .header {
-    margin-top: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    border-bottom: 1px solid rgba(48, 59, 64, 0.2);
-  }
-
-  .header__nav {
-    width: auto;
-    margin-right: 15px;
-    margin-left: auto;
-  }
-
+@media (--tablet) {
   .header__container {
-    max-width: 350px;
-    height: 85px;
-    margin-left: 0;
+    max-width: 40%;
+    height: 52px;
+    margin-right: auto;
 
     flex-wrap: wrap;
     align-content: space-between;
-  }
-
-  .header__logo-container img {
-    width: 150px;
-    height: 32px;
-  }
-
-  .header__time {
-    margin-left: 54px;
-
-    font-size: var(--main-font-size-desktop);
-    line-height: 1.5;
-  }
-
-  .header__days {
-    display: inline;
   }
 
   .header__place {
@@ -209,10 +172,9 @@ width: 100%;
 
     display: inline-block;
     max-width: 123px;
-    padding-bottom: 16px;
 
-    font-size: var(--main-font-size-desktop);
-    line-height: 1.5;
+    font-size: 7px;
+    line-height: 3;
     text-decoration: none;
 
     color: #1E1F1D;
@@ -250,6 +212,62 @@ width: 100%;
 
   .header__place-city {
     font-weight: bold;
+    font-size: var(--main-font-size);
+    line-height: 1;
+  }
+
+  .header__menu-list {
+    margin-top: 0;
+  }
+}
+
+@media (--desktop) {
+  .header {
+    margin-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(48, 59, 64, 0.2);
+  }
+
+  .header__nav {
+    width: auto;
+    margin-right: 15px;
+    margin-left: auto;
+  }
+
+  .header__container {
+    max-width: 350px;
+    height: 85px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .header__logo-container img {
+    width: 150px;
+    height: 32px;
+  }
+
+  .header__time {
+    margin-left: 54px;
+
+    font-size: var(--main-font-size-desktop);
+    line-height: 1.5;
+  }
+
+  .header__place-link {
+    padding-bottom: 16px;
+
+    font-size: var(--main-font-size-desktop);
+    line-height: 1.5;
+  }
+
+  .header__place-city {
+    font-size: var(--main-font-size-desktop);
+    line-height: 1.5;
   }
 
   .header__buy {
