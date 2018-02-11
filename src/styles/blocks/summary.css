@@ -11,7 +11,7 @@
   text-transform: lowercase;
 
   color: var(--text-second-color);
-  background: var(--primary-color) url("../img/hand.png") no-repeat 90% 100%;
+  background: var(--primary-color) url("../images/hand.png") no-repeat 90% 100%;
 }
 
 .summary__heading {
@@ -43,12 +43,12 @@
 @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
   .summary {
-    background-image: url("../img/hand@2x.png");
+    background-image: url("../images/hand@2x.png");
     background-size: 160px;
   }
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .summary {
     position: relative;
 
@@ -60,9 +60,8 @@
 
     font-size: 86px;
 
-    background: var(--primary-color) url("../img/hand@2x.png") no-repeat 84% bottom;
+    background: var(--primary-color) url("../images/hand@2x.png") no-repeat 84% bottom;
     background-size: 344px;
-    border-top: 1px solid #D6D8D9;
   }
 
   .summary__heading {
@@ -94,14 +93,14 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (--desktop),
-      (min-resolution: 1.5dppx) and (--desktop) {
+@media (min-resolution: 144dpi) and (min-width: 1024px),
+      (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .summary {
-    background-image: url("../img/hand@3x.png");
+    background-image: url("../images/hand@3x.png");
   }
 }
 
-@media (--medium-desktop) {
+@media (min-width: 1280px) {
   .summary {
     padding-top: 86px;
     padding-right: 9%;
@@ -113,7 +112,7 @@
   }
 }
 
-@media (--large-desktop) {
+@media (min-width: 1440px) {
   .summary {
     background-position: 84% 88px;
   }

@@ -73,7 +73,7 @@
   text-align: center;
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .section {
     margin-top: 80px;
     margin-right: 30px;
@@ -84,7 +84,7 @@
     min-height: 474px;
     padding-left: 370px;
 
-    background: url("../img/yellow.png") no-repeat 5% 8px;
+    background: url("../images/yellow.png") no-repeat 5% 8px;
     background-size: 296px;
   }
 
@@ -161,7 +161,7 @@
   }
 }
 
-@media (--medium-desktop) {
+@media (min-width: 1280px) {
   .section {
     margin-top: 80px;
     margin-right: 9%;
@@ -217,9 +217,9 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (--desktop),
-      (min-resolution: 1.5dppx) and (--desktop) {
+@media (min-resolution: 144dpi) and (min-width: 1024px),
+      (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .section--mission {
-    background-image: url("../img/yellow@2x.png");
+    background-image: url("../images/yellow@2x.png");
   }
 }

@@ -26,7 +26,7 @@ ol, .list-unordered {
   background-color: var(--primary-color);
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   ol, .list-unordered {
     font-size: var(--second-font-size-desktop);
     line-height: 2.4;

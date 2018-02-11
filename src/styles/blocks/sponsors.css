@@ -40,7 +40,7 @@
   margin-top: 22px;
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .sponsors__description {
     margin-top: 13px;
     margin-right: 21%;
@@ -91,7 +91,7 @@
   }
 }
 
-@media (--medium-desktop) {
+@media (min-width: 1280px) {
   .sponsors__cards {
     margin-right: 15.5%;
     margin-left: 15.5%;

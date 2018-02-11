@@ -50,7 +50,7 @@
   fill: var(--secondary-color);
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .social {
     width: 33%;
     margin-top: 0;
@@ -96,7 +96,7 @@
   }
 }
 
-@media (--medium-desktop) {
+@media (min-width: 1280px) {
   .social {
     width: 26%;
   }

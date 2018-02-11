@@ -35,7 +35,7 @@
   background: var(--secondary-color);
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .speakers__block {
     text-align: center;
   }
@@ -55,7 +55,7 @@
   }
 }
 
-@media (--large-desktop) {
+@media (min-width: 1440px) {
   .speakers__block {
     width: 51%;
 

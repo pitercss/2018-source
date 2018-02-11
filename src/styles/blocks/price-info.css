@@ -102,7 +102,7 @@
   transform: rotate(-45deg);
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .price-info {
     margin-top: 26px;
     margin-left: 8px;

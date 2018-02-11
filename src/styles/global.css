@@ -63,7 +63,7 @@ a {
   font-size: var(--main-font-size);
 }
 
-@media (--small-device) {
+@media (min-width: 460px) {
   .picture-right {
     float: right;
     margin-left: 15px;
@@ -76,7 +76,7 @@ a {
   }
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .hide-mobile {
     display: block;
   }

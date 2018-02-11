@@ -13,14 +13,6 @@
   --second-font-size: 15px;
   --main-font-size-desktop: 14px;
   --second-font-size-desktop: 20px;
-  --font-stack: "gotham pro", "verdana", sans-serif;
+  --font-stack: "Gotham Pro", "Verdana", sans-serif;
   --main-line-height: 1.5;
 }
-
-
-@custom-media --small-device (min-width: 460px);
-@custom-media --tablet (min-width: 768px);
-@custom-media --desktop (min-width: 1024px);
-@custom-media --medium-desktop (min-width: 1280px);
-@custom-media --large-desktop (min-width: 1440px);
-

@@ -57,7 +57,7 @@
   margin-top: 30px;
 }
 
-@media (--desktop) {
+@media (min-width: 1024px) {
   .footer-info {
     width: auto;
     margin: 0;
@@ -86,7 +86,7 @@
   }
 }
 
-@media (--large-desktop) {
+@media (min-width: 1440px) {
   .footer-info {
     margin: 0;
   }
