@@ -21,12 +21,14 @@
 
 .sponsors__link {
   display: inline-block;
+  filter: grayscale(100%) opacity(50%);
 
   font-size: 0;
 }
 
-.sponsors__link:hover {
-  opacity: 0.5;
+.sponsors__link:hover,
+.sponsors__link:focus {
+  filter: none;
 }
 
 .sponsors__link:focus {
@@ -68,22 +70,6 @@
 
   .sponsors__item:last-child {
     margin-top: 0;
-  }
-
-  .sponsors__item--html-academy img {
-    width: 192px;
-  }
-
-  .sponsors__item--yandex-money img {
-    width: 202px;
-  }
-
-  .sponsors__item--visa img {
-    width: 94px;
-  }
-
-  .sponsors__item--opera img {
-    width: 140px;
   }
 
   .sponsors__button {
