@@ -77,10 +77,6 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .hide-mobile {
-    display: block;
-  }
-
   p {
     font-size: var(--second-font-size-desktop);
   }
