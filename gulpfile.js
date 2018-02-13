@@ -53,15 +53,6 @@ gulp.task('scripts', () => {
 
 // Images
 
-gulp.task('images', () => {
-    return gulp.src('src/images/*.{jpg,png}')
-        .pipe(imagemin([
-            imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 3})
-        ]))
-        .pipe(gulp.dest('dest/images'));
-});
-
 gulp.task('svg', () => {
     return gulp.src('src/images/*.svg')
         .pipe(svgmin())
@@ -74,7 +65,7 @@ gulp.task('copy', () => {
     return gulp.src([
             'src/*',
             'src/fonts/*',
-            '!src/images/*',
+            'src/images/*.{jpg,png}',
             '!src/styles/*',
             '!src/scripts/*',
             '!src/*.html'
@@ -101,10 +92,6 @@ gulp.task('server', () => {
 
 // Watch
 
-gulp.task('watch:images', () => {
-    return gulp.watch('src/images/*.{jpg,png}', gulp.series('images'));
-});
-
 gulp.task('watch:svg', () => {
     return gulp.watch('src/images/*.svg', gulp.series('svg'));
 });
@@ -125,7 +112,7 @@ gulp.task('watch:copy', () => {
     return gulp.watch([
         'src/*',
         'src/fonts/*',
-        '!src/images/*',
+        'src/images/*.{jpg,png}',
         '!src/styles/*',
         '!src/scripts/*',
         '!src/*.html'
@@ -133,7 +120,6 @@ gulp.task('watch:copy', () => {
 });
 
 gulp.task('watch', gulp.parallel(
-    'watch:images',
     'watch:svg',
     'watch:html',
     'watch:css',
@@ -144,7 +130,6 @@ gulp.task('watch', gulp.parallel(
 // Build
 
 gulp.task('build', gulp.parallel(
-    'images',
     'svg',
     'html',
     'css',
