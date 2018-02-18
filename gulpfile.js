@@ -5,12 +5,12 @@ const htmlmin = require('gulp-htmlmin');
 const postcss = require('gulp-postcss');
 const rsync = require('gulp-rsync');
 const sync = require('browser-sync').create();
-const imagemin = require('gulp-imagemin');
 const svgmin = require('gulp-svgmin');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
 const jsmin = require('gulp-jsmin');
 const cssnext = require("gulp-cssnext");
+
 // HTML
 
 gulp.task('html', () => {
