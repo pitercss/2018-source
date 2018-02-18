@@ -1,7 +1,7 @@
 @font-face {
   font-family: "gotham pro";
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
   font-style: normal;
   src: url("../fonts/gotham-pro.woff") format("woff"),
       url("../fonts/gotham-pro.woff2") format("woff2");
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "gotham pro";
   font-weight: 700;
-  font-display: swap;
+  font-display: fallback;
   font-style: normal;
   src: url("../fonts/gotham-pro-bold.woff") format("woff"),
       url("../fonts/gotham-pro-bold.woff2") format("woff2");
