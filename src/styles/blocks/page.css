@@ -1,6 +1,8 @@
 .page {
   margin-right: 19px;
   margin-left: 19px;
+  font-size: var(--second-font-size);
+  line-height: 1.5;
 }
 
 .page h1 {
@@ -48,6 +50,34 @@
 
 .page img {
   display: block;
+}
+
+.page ol,
+.page ul {
+  padding-left: 15px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.page ul {
+  list-style-type: none;
+}
+
+.page li {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.page ul li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  transform: translateY(-50%);
+  left: -14px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
 }
 
 @media (min-width: 1024px) {
