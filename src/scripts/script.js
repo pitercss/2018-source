@@ -93,3 +93,69 @@ window.script = (() => {
     addHandler(close, closeInfo);
   }
 })();
+
+/*
+ * Iframe lazy loading
+ */
+(function(document){
+  setupVideoPreload();
+
+  function setupVideoPreload() {
+    var videoElements = document.querySelectorAll('.video');
+
+    if (videoElements) {
+      for (var i = 0; i < videoElements.length; i++) {
+        preloadVideo(videoElements[i]);
+      }
+    }
+  }
+
+  function preloadVideo(videoElement) {
+    var playButton = videoElement.querySelector('.video__button');
+    var cover = videoElement.querySelector('.video__media');
+
+    if (cover) {
+      var videoId = parseCoverURL(cover);
+    }
+
+    var videoWrapper = videoElement.querySelector('.video__wrapper');
+
+    if (playButton && videoWrapper) {
+      playButton.addEventListener('click', function() {
+        var iframe = makeIframe(videoId);
+
+        if (iframe !== null) {
+          videoWrapper.innerHTML = '';
+          videoWrapper.appendChild(iframe);
+        }
+      });
+    }
+  }
+
+  function parseCoverURL(coverElement) {
+    var urlRegExp = /https:\/\/img\.youtube\.com\/vi\/([a-zA-Z0-9_-]+)\/mqdefault\.jpg/i;
+    var url = coverElement.src;
+    var match = url.match(urlRegExp);
+
+    return match[1];
+  }
+
+  function makeIframe(videoId) {
+    var iframe = document.createElement('iframe');
+
+    if (iframe) {
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('src',  generateIframeUrl(videoId));
+      iframe.classList.add('video__media');
+
+      return iframe;
+    }
+
+    return null;
+  }
+
+  function generateIframeUrl(videoId) {
+    return 'https://www.youtube.com/embed/' + videoId + '?rel=0&showinfo=0&autoplay=1';
+	}
+})(document);
