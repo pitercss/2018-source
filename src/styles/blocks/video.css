@@ -42,7 +42,7 @@
 
 .video__button:hover .video__icon,
 .video__button:focus .video__icon {
-  fill: green;
+  fill: white;
 }
 
 .video__caption {
