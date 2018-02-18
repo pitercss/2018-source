@@ -1,7 +1,6 @@
 .gallery {
   position: relative;
 
-  width: 335px;
   margin-top: 27px;
   margin-right: auto;
   margin-left: auto;
@@ -86,16 +85,8 @@
 }
 
 .gallery__more {
-  display: inline-block;
-  margin-top: 22px;
-
-  font-weight: bold;
-  font-size: var(--main-font-size);
-  line-height: 1.2;
-  text-decoration: none;
-
-  color: var(--secondary-color);
-  border-bottom: 1px solid rgba(255, 1, 149, 0.2);
+  margin-top: 40px;
+  text-align: center;
 }
 
 .gallery__more:hover {
@@ -176,7 +167,6 @@
       margin-top: 38px;
 
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
       grid-gap: 24px;
     }
 
