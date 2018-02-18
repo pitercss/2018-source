@@ -85,7 +85,7 @@
     min-height: 474px;
     padding-left: 370px;
 
-    background: url("../images/yellow.png") no-repeat 5% 8px;
+    background: url("/images/yellow.png") no-repeat 5% 8px;
     background-size: 296px;
   }
 
@@ -221,6 +221,6 @@
 @media (min-resolution: 144dpi) and (min-width: 1024px),
       (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .section--mission {
-    background-image: url("../images/yellow@2x.png");
+    background-image: url("/images/yellow@2x.png");
   }
 }

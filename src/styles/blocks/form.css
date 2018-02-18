@@ -71,12 +71,12 @@
 }
 
 .form__field--correct .form__input {
-  background: transparent url("../images/icon-check.svg") no-repeat 100% 14px;
+  background: transparent url("/images/icon-check.svg") no-repeat 100% 14px;
   background-size: 24px;
 }
 
 .form__field--wrong .form__input {
-  background: transparent url("../images/icon-error.svg") no-repeat 100% 14px;
+  background: transparent url("/images/icon-error.svg") no-repeat 100% 14px;
   background-size: 24px;
   border-bottom-color: #FF6E6E;
 }
@@ -191,7 +191,7 @@
   width: 20px;
   height: 20px;
 
-  background: transparent url("../images/icon-info.svg") no-repeat 0 0;
+  background: transparent url("/images/icon-info.svg") no-repeat 0 0;
   background-size: contain;
 }
 

@@ -33,7 +33,7 @@
   width: 12px;
   height: 12px;
 
-  background: transparent url("../images/icon-arrow.svg") no-repeat 50% 50%;
+  background: transparent url("/images/icon-arrow.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 

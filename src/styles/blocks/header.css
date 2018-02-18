@@ -175,7 +175,7 @@
     width: 18px;
     height: 34px;
 
-    background: url("../images/icon-place.svg") no-repeat 0 2px;
+    background: url("/images/icon-place.svg") no-repeat 0 2px;
     background-size: 12px;
     border: 2px solid transparent;
   }
@@ -284,7 +284,7 @@
   width: 22px;
   height: 13px;
 
-  background: transparent url("../images/icon-ticket.svg") no-repeat 0 0;
+  background: transparent url("/images/icon-ticket.svg") no-repeat 0 0;
   background-size: contain;
 }
 
