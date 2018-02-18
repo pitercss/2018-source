@@ -33,6 +33,10 @@
   opacity: 0.5;
 }
 
+.footer-info__copyright {
+  text-transform: lowercase;
+}
+
 @media (min-width: 1024px) {
   .footer {
     display: flex;
