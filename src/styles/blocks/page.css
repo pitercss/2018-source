@@ -71,8 +71,7 @@
 .page ul li::before {
   content: "";
   position: absolute;
-  top: 10px;
-  transform: translateY(-50%);
+  top: 11px;
   left: -14px;
   display: block;
   width: 6px;
