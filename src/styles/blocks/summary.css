@@ -11,7 +11,8 @@
   text-transform: lowercase;
 
   color: var(--text-second-color);
-  background: var(--primary-color) url("/images/hand.png") no-repeat 90% 100%;
+  background: var(--primary-color) url("/images/hand.png") 90% 100% no-repeat;
+  background-size: auto 95%;
 }
 
 .summary__heading {
@@ -44,7 +45,6 @@
       (min-resolution: 1.5dppx) {
   .summary {
     background-image: url("/images/hand@2x.png");
-    background-size: 160px;
   }
 }
 
@@ -59,9 +59,6 @@
     padding-left: 30px;
 
     font-size: 86px;
-
-    background: var(--primary-color) url("/images/hand@2x.png") no-repeat 84% bottom;
-    background-size: 344px;
   }
 
   .summary__heading {
@@ -105,15 +102,11 @@
     padding-top: 86px;
     padding-right: 9%;
     padding-left: 9%;
+
+    background-position: 80% 100%;
   }
 
   .summary__stats {
     right: -2%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .summary {
-    background-position: 84% 88px;
   }
 }
