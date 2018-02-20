@@ -40,7 +40,12 @@
 }
 
 .page mark {
-  background-image: linear-gradient(#ffffff 10%, var(--primary-color) 10%, var(--primary-color) 80%, #ffffff 100%);
+  background-image: linear-gradient(
+    #ffffff 10%,
+    #9af3e1 10%,
+    #9af3e1 80%,
+    #ffffff 100%
+  );
 }
 
 .page strong,
