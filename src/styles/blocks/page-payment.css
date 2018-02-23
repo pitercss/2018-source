@@ -1,12 +1,96 @@
 .page-payment {
   margin-right: 19px;
   margin-left: 19px;
+  margin-top: 50px;
   padding-top: 90px;
   padding-bottom: 15px;
 }
 
 .page-payment__content {
+  position: relative;
   text-align: center;
+}
+
+.page-payment__content--success::before,
+.page-payment__content--fail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 95%;
+}
+
+.page-payment__content--fail::before {
+  background-size: auto 100%;
+}
+
+.page-payment__content--success::before {
+  background-image: url("/images/hand-success@1x.png");
+}
+
+.page-payment__content--fail::before {
+  background-image: url("/images/hand-lose@1x.png");
+}
+
+@media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+  .page-payment__content--success::before {
+    background-image: url("/images/hand-success@2x.png");
+  }
+
+  .page-payment__content--fail::before {
+    background-image: url("/images/hand-lose@2x.png");
+  }
+}
+
+@media (min-resolution: 144dpi) and (min-width: 1024px),
+      (min-resolution: 1.5dppx) and (min-width: 1024px) {
+  .page-payment__content--success::before {
+    background-image: url("/images/hand-success@3x.png");
+  }
+
+  .page-payment__content--fail::before {
+    background-image: url("/images/hand-lose@3x.png");
+  }
+}
+
+@media (max-width: 1360px) {
+  .page-payment__content--success::before {
+    background-size: auto 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-payment__content--success::before,
+  .page-payment__content--fail::before {
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    background-position: center;
+  }
+
+  .page-payment__content--fail::before {
+    height: 250px;
+    top: -140px;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-payment__content--success::before,
+  .page-payment__content--fail::before {
+    top: -150px;
+  }
+
+  .page-payment__content--fail::before {
+    height: 270px;
+  }
 }
 
 .page-payment__title {
@@ -32,7 +116,7 @@
   .page-payment__content {
     text-align: left;
     width: 90%;
-    padding-left: 35%;
+    margin-left: 35%;
   }
 
   .page-payment__title {
