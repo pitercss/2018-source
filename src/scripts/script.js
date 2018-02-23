@@ -17,54 +17,59 @@ window.script = (() => {
 
   const sessionToggles = document.querySelectorAll('.session__toggle');
 
-  if (sessionToggles.length > 0) {
-    const toggleSession = (evt) => {
-      evt.preventDefault();
-      evt.target.parentElement.classList.toggle('session--closed');
-      evt.target.classList.toggle('session__toggle--hide');
-      evt.target.setAttribute('aria-label', evt.target.getAttribute('aria-label') === 'Open talk description' ? 'Close talk description' : 'Open talk description');
-    };
+  if (sessionToggles) {
+    if (sessionToggles.length > 0) {
+      const toggleSession = (evt) => {
+        evt.preventDefault();
+        evt.target.parentElement.classList.toggle('session--closed');
+        evt.target.classList.toggle('session__toggle--hide');
+        evt.target.setAttribute('aria-label', evt.target.getAttribute('aria-label') === 'Open talk description' ? 'Close talk description' : 'Open talk description');
+      };
 
-    const turnOnToggles = (nodeList, i) => {
-      addHandler(nodeList[i], toggleSession);
-    };
+      const turnOnToggles = (nodeList, i) => {
+        addHandler(nodeList[i], toggleSession);
+      };
 
-    sessionToggles.forEach((it, i) => {
-      turnOnToggles(sessionToggles, i);
-    });
+      sessionToggles.forEach((it, i) => {
+        turnOnToggles(sessionToggles, i);
+      });
+    }
   }
 
   // слайдер
 
   const slider = document.querySelector('.gallery');
-  const images = slider.querySelectorAll('.gallery__item');
 
-  let currentImageIndex = 0;
+  if (slider) {
+    const images = slider.querySelectorAll('.gallery__item');
 
-  const slideImages = (evt) => {
-    evt.preventDefault();
-    if (evt.target.classList.contains('gallery__button--prev')) {
-      if (currentImageIndex > 0) {
-        images[currentImageIndex].classList.remove('gallery__item--show');
-        images[currentImageIndex - 1].classList.add('gallery__item--show');
-        currentImageIndex--;
+    let currentImageIndex = 0;
+
+    const slideImages = (evt) => {
+      evt.preventDefault();
+      if (evt.target.classList.contains('gallery__button--prev')) {
+        if (currentImageIndex > 0) {
+          images[currentImageIndex].classList.remove('gallery__item--show');
+          images[currentImageIndex - 1].classList.add('gallery__item--show');
+          currentImageIndex--;
+        }
+      } else if (evt.target.classList.contains('gallery__button--next')) {
+        if (currentImageIndex < images.length - 1) {
+          images[currentImageIndex].classList.remove('gallery__item--show');
+          images[currentImageIndex + 1].classList.add('gallery__item--show');
+          currentImageIndex++;
+        }
       }
-    } else if (evt.target.classList.contains('gallery__button--next')) {
-      if (currentImageIndex < images.length - 1) {
-        images[currentImageIndex].classList.remove('gallery__item--show');
-        images[currentImageIndex + 1].classList.add('gallery__item--show');
-        currentImageIndex++;
-      }
-    }
-  };
+    };
 
-  addHandler(slider, slideImages);
+    addHandler(slider, slideImages);
+  }
 
   // открытие блока со стикерами
 
   const preview = document.querySelector('.preview');
 
-  if (preview !== null) {
+  if (preview) {
     const stickers = preview.querySelector('.preview__stickers-list');
     const link = preview.querySelector('.preview__link');
 
@@ -82,7 +87,7 @@ window.script = (() => {
 
   const priceInfo = document.querySelector('.price-info');
 
-  if (priceInfo !== null) {
+  if (priceInfo) {
     const close = priceInfo.querySelector('.price-info__close');
 
     const closeInfo = (evt) => {
