@@ -19,6 +19,10 @@
   font-size: 0;
 }
 
+.social__item--twitter {
+  margin-right: 12px;
+}
+
 .social__item:first-child {
   width: 100%;
   margin: 0;
