@@ -1,0 +1,18 @@
+.map {
+  position: relative;
+  height: var(--map-height);
+  margin-bottom: 40px;
+}
+
+.map iframe {
+  border: 0;
+  width: 100%;
+  height: var(--map-height);
+}
+
+.map--full-width iframe {
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
