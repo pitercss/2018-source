@@ -45,7 +45,7 @@
     <div class="header__container">
       <div class="header__logo-container">
         <a class="header__logo" href="/">
-          <img src="/images/logo-header.svg" alt="pitercss_conf" width="106" height="22">
+          <img src="/images/logo-header.svg" alt="pitercss_conf" width="132" height="28">
         </a>
       </div>
       <time class="header__time" datetime="2018-06-08 10:00">June 8–9th, 2018</time>
@@ -57,13 +57,13 @@
       </div>
     </div>
     <div class="header__buy">
-      <a class="header__button" href="">1699 ₽</a>
+      <a class="header__button" href="">Buy tickets</a>
       <span class="header__currencies">≈ 28,34 US$ or 26,74 €</span>
     </div>
     <nav class="header__nav">
       <ul class="header__menu-list">
         <li class="header__menu-item header__menu-item--active">
-          <a class="header__menu-link" href="">About</a>
+          <a class="header__menu-link" href="">Schedule</a>
         </li>
         <li class="header__menu-item">
           <a class="header__menu-link" href="">Speakers</a>
@@ -82,275 +82,497 @@
   </header>
   <main class="content">
     <section class="summary">
-      <time class="summary__date" datetime="2018-06-08 10:00">08–09.06</time>
-      <h1 class="summary__heading">First International Conference of Web-developers in Russia</h1>
+      <div class="summary__container">
+        <time class="summary__date" datetime="2018-06-08 10:00">8–9.06</time>
+        <h1 class="summary__heading">The First International  Front-end Conference  in Russia</h1>
+      </div>
       <p class="summary__stats">
         <span class="summary__stats-item">
           2
           <span class="summary__stats-unit">days</span>
         </span>
         <span class="summary__stats-item">
-          500
-          <span class="summary__stats-unit">participants</span>
+          12
+          <span class="summary__stats-unit">speakers</span>
         </span>
         <span class="summary__stats-item">
-          12
-          <span class="summary__stats-unit">countries</span>
+          500
+          <span class="summary__stats-unit">participants</span>
         </span>
       </p>
     </section>
     <section class="section section--mission">
-      <h2 class="section__heading">Mission</h2>
-      <span class="section__subheading">and Lifestyle</span>
-      <p class="section__paragraph">pitercss conference provides the opportunity to be part of the global front-end development community</p>
+      <h2 class="section__heading">We Unite</h2>
+      <span class="section__subheading">Russian and Worldwide Communities</span>
+      <p class="section__paragraph">Your chance to participate in a European conference without leaving the country</p>
     </section>
     <section class="section section--schedule">
-      <span class="section__subheading">Preliminary</span>
       <h2 class="section__heading">Schedule</h2>
-      <section class="session session--closed">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 10:00">10:00</time>
-          <div class="session__container" tabindex="0">
-            <div class="session__speaker">
-              Jen Kramer
-              <span class="session__company">Codecademy</span>
-            </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+      <time class="section__day" datetime="2018-06-08 10:00">
+        Day 1
+        <sup class="section__date">June 8</sup>
+      </time>
+      <section class="leader">
+        <div class="leader__container">
+          <div class="leader__caption">Leader</div>
+          <h4 class="leader__name">Anton Shein
+            <span class="leader__company">Yandex</span>
+          </h4>
+          <div class="leader__photo">
+            <img src="/images/photos/leader.png" srcset="/images/photos/leader@2x.png 2x" alt="Anton Shein">
           </div>
         </div>
-        <button class="session__toggle" type="button" aria-label="Open talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Jen Kramer">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">…</p>
-          <a class="session__link" href="">About this speaker</a>
-        </div>
       </section>
-      <section class="session">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 11:00">11:00</time>
-          <div class="session__container">
-            <div class="session__speaker">
-              Johnatan Snook
-              <span class="session__company">Opera</span>
+      <div class="section__container">
+        <section class="session">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 10:00">10:00</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Alexey Simonenko
+                <span class="session__company">HTML academy</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+              </picture>
+              <h3 class="session__topic">Responsive Web Applications with Container Queries</h3>
             </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
           </div>
+          <button class="session__toggle session__toggle--hide" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">How do you take a complex web application, with a myriad of comp  and interactions, and make it fully responsive without pulling your hair out for a year?</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 11:00">11:00</time>
+            <div class="session__container">
+              <div class="session__speaker">
+                Johnatan Snook
+                <span class="session__company">Opera</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Johnatan Snook">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Close talk description"></button>
+          <div class="session__info">
+            <p class="session__description">How do you take a complex web application, with a myriad of components and interactions, and make it fully responsive without pulling your hair out for a year?</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 12:00">12:00</time>
+          <h3 class="recreation__heading">Short Break</h3>
         </div>
-        <button class="session__toggle session__toggle--hide" type="button" aria-label="Close talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Johnatan Snook">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">How do you take a complex web application, with a myriad of components and interactions, and make it fully responsive without pulling your hair out for a year?</p>
-          <a class="session__link" href="">About this speaker</a>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 12:15">12:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Tim Jenkins
+                <span class="session__company">Yahoo</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Tim Jenkins">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 13:15">13:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Michael Rudnik
+                <span class="session__company">Yandex</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Michael Rudnik">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 14:15">14:15</time>
+          <h3 class="recreation__heading">Loooonger Break</h3>
         </div>
-      </section>
-      <div class="recreation">
-        <time class="recreation__time" datetime="2018-06-08 12:00">12:00</time>
-        <h3 class="recreation__heading">Short Break</h3>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 15:15">15:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Alexey Simonenko
+                <span class="session__company">HTML Academy</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 16:15">16:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Konstantin Sedov
+                <span class="session__company">Evil Martians</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Konstantin Sedov">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 17:15">17:15</time>
+          <h3 class="recreation__heading">Short Break</h3>
+        </div>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 18:15">18:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Lo Chen Ji
+                <span class="session__company">Spotify</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Lo Chen Ji">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 19:15">19:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Ryan Seddon
+                <span class="session__company">Google</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Ryan Seddon">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 20:15">20:15</time>
+          <h3 class="recreation__heading">Afterparty</h3>
+        </div>
       </div>
-      <section class="session session--closed">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 12:15">12:15</time>
-          <div class="session__container" tabindex="0">
-            <div class="session__speaker">
-              Tim Jenkins
-              <span class="session__company">Yahoo</span>
+      <time class="section__day" datetime="2018-06-09 10:00">
+        Day 2
+        <sup class="section__date">June 9</sup>
+      </time>
+      <div class="section__container">
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 10:00">10:00</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Alexey Simonenko
+                <span class="session__company">HTML academy</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+              </picture>
+              <h3 class="session__topic">Responsive Web Applications with Container Queries</h3>
             </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
           </div>
-        </div>
-        <button class="session__toggle" type="button" aria-label="Open talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Tim Jenkins">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">…</p>
-          <a class="session__link" href="">About this speaker</a>
-        </div>
-      </section>
-      <section class="session session--closed">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 13:15">13:15</time>
-          <div class="session__container" tabindex="0">
-            <div class="session__speaker">
-              Michael Rudnik
-              <span class="session__company">Yandex</span>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">How do you take a complex web application, with a myriad of comp  and interactions, and make it fully responsive without pulling your hair out for a year?</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 11:00">11:00</time>
+            <div class="session__container">
+              <div class="session__speaker">
+                Johnatan Snook
+                <span class="session__company">Opera</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Johnatan Snook">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
           </div>
+          <button class="session__toggle" type="button" aria-label="Close talk description"></button>
+          <div class="session__info">
+            <p class="session__description">How do you take a complex web application, with a myriad of components and interactions, and make it fully responsive without pulling your hair out for a year?</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 12:00">12:00</time>
+          <h3 class="recreation__heading">Short Break</h3>
         </div>
-        <button class="session__toggle" type="button" aria-label="Open talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Michael Rudnik">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">…</p>
-          <a class="session__link" href="">About this speaker</a>
-        </div>
-      </section>
-      <div class="recreation">
-        <time class="recreation__time" datetime="2018-06-08 14:15">14:15</time>
-        <h3 class="recreation__heading">Loooooooooooooooooooooooooooonger Break</h3>
-      </div>
-      <section class="session session--closed">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 15:15">15:15</time>
-          <div class="session__container" tabindex="0">
-            <div class="session__speaker">
-              Alexey Simonenko
-              <span class="session__company">HTML Academy</span>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 12:15">12:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Tim Jenkins
+                <span class="session__company">Yahoo</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Tim Jenkins">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
           </div>
-        </div>
-        <button class="session__toggle" type="button" aria-label="Open talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Alexey Simonenko">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">…</p>
-          <a class="session__link" href="">About this speaker</a>
-        </div>
-      </section>
-      <section class="session session--closed">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 16:15">16:15</time>
-          <div class="session__container" tabindex="0">
-            <div class="session__speaker">
-              Konstantin Sedov
-              <span class="session__company">Evil Martians</span>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 13:15">13:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Michael Rudnik
+                <span class="session__company">Yandex</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Michael Rudnik">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
           </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 14:15">14:15</time>
+          <h3 class="recreation__heading">Loooonger Break</h3>
         </div>
-        <button class="session__toggle" type="button" aria-label="Open talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Konstantin Sedov">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">…</p>
-          <a class="session__link" href="">About this speaker</a>
-        </div>
-      </section>
-      <div class="recreation">
-        <time class="recreation__time" datetime="2018-06-08 17:15">17:15</time>
-        <h3 class="recreation__heading">Short Break</h3>
-      </div>
-      <section class="session session--closed">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 18:15">18:15</time>
-          <div class="session__container" tabindex="0">
-            <div class="session__speaker">
-              Lo Chen Ji
-              <span class="session__company">Spotify</span>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 15:15">15:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Alexey Simonenko
+                <span class="session__company">HTML Academy</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
           </div>
-        </div>
-        <button class="session__toggle" type="button" aria-label="Open talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Lo Chen Ji">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">…</p>
-          <a class="session__link" href="">About this speaker</a>
-        </div>
-      </section>
-      <section class="session session--closed">
-        <div class="session__heading">
-          <time class="session__time" datetime="2018-06-08 19:15">19:15</time>
-          <div class="session__container" tabindex="0">
-            <div class="session__speaker">
-              Ryan Seddon
-              <span class="session__company">Google</span>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 16:15">16:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Konstantin Sedov
+                <span class="session__company">Evil Martians</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Konstantin Sedov">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
-            <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
           </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 17:15">17:15</time>
+          <h3 class="recreation__heading">Short Break</h3>
         </div>
-        <button class="session__toggle" type="button" aria-label="Open talk description"></button>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/images/speaker@2x.jpg 1x, /images/speaker@3x.jpg 2x">
-          <img class="session__speaker-photo" src="/images/speaker.jpg" srcset="/images/speaker@2x.jpg 2x" alt="Ryan Seddon">
-        </picture>
-        <div class="session__info">
-          <p class="session__description">…</p>
-          <a class="session__link" href="">About this speaker</a>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 18:15">18:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Lo Chen Ji
+                <span class="session__company">Spotify</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Lo Chen Ji">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <section class="session session--closed">
+          <div class="session__heading">
+            <time class="session__time" datetime="2018-06-08 19:15">19:15</time>
+            <div class="session__container" tabindex="0">
+              <div class="session__speaker">
+                Ryan Seddon
+                <span class="session__company">Google</span>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Ryan Seddon">
+              </picture>
+              <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
+            </div>
+          </div>
+          <button class="session__toggle" type="button" aria-label="Open talk description"></button>
+          <div class="session__info">
+            <p class="session__description">…</p>
+            <a class="session__link" href="">About this speaker</a>
+          </div>
+        </section>
+        <div class="recreation">
+          <time class="recreation__time" datetime="2018-06-08 20:15">20:15</time>
+          <h3 class="recreation__heading">Afterparty</h3>
         </div>
-      </section>
-      <div class="recreation">
-        <time class="recreation__time" datetime="2018-06-08 20:15">20:15</time>
-        <h3 class="recreation__heading">Afterparty</h3>
       </div>
     </section>
     <section class="section section--gallery">
-      <h2 class="section__heading">It Will Be Cool!</h2>
-      <span class="section__subheading">Something Like This</span>
+      <h2 class="section__heading">Impressions</h2>
+      <span class="section__subheading">Photos and Videos from Last Year</span>
       <div class="gallery gallery--transformable">
         <button class="gallery__button gallery__button--prev" type="button" aria-label="Show previous picture"></button>
         <button class="gallery__button gallery__button--next" type="button" aria-label="Show next picture"></button>
         <div class="gallery__item gallery__item--show">
           <picture>
-            <source media="(min-width: 768px)" srcset="/images/photo-1-desktop.jpg 1x, /images/photo-1-desktop@2x.jpg 2x">
-            <img class="gallery__image" src="/images/photo-1-mobile.jpg" srcset="/images/photo-1-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            <source media="(min-width: 768px)" srcset="/images/photos/1.jpg 1x, /images/photos/1.jpg 2x">
+            <img class="gallery__image" src="/images/photos/1.jpg" srcset="/images/photos/1.jpg 2x" alt="Picture from the Last Year Conference">
           </picture>
         </div>
         <div class="gallery__item gallery__item--two-cells">
-          <a class="gallery__link" href="">
-            <picture>
-              <source media="(min-width: 768px)" srcset="/images/photo-2-desktop.jpg 1x, /images/photo-2-desktop@2x.jpg 2x">
-              <img class="gallery__image" src="/images/photo-2-mobile.jpg" srcset="/images/photo-2-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-            </picture>
-          </a>
-        </div>
-        <div class="gallery__item">
           <picture>
-            <source media="(min-width: 768px)" srcset="/images/photo-3-desktop.jpg 1x, /images/photo-3-desktop@2x.jpg 2x">
-            <img class="gallery__image" src="/images/photo-3-mobile.jpg" srcset="/images/photo-3-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-          </picture>
-        </div>
-        <div class="gallery__item">
-          <a class="gallery__link" href="">
-            <picture>
-              <source media="(min-width: 768px)" srcset="/images/photo-4-desktop.jpg 1x, /images/photo-4-desktop@2x.jpg 2x">
-              <img class="gallery__image" src="/images/photo-4-mobile.jpg" srcset="/images/photo-4-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-            </picture>
-          </a>
-        </div>
-        <div class="gallery__item">
-          <picture>
-            <source media="(min-width: 768px)" srcset="/images/photo-5-desktop.jpg 1x, /images/photo-5-desktop@2x.jpg 2x">
-            <img class="gallery__image" src="/images/photo-5-mobile.jpg" srcset="/images/photo-5-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
+            <source media="(min-width: 768px)" srcset="/images/photos/2.jpg 1x, /images/photos/2.jpg 2x">
+            <img class="gallery__image" src="/images/photos/2.jpg" srcset="/images/photos/2.jpg 2x" alt="Picture from the Last Year Conference">
           </picture>
         </div>
         <div class="gallery__item gallery__item--two-cells">
-          <a class="gallery__link" href="">
-            <picture>
-              <source media="(min-width: 768px)" srcset="/images/photo-6-desktop.jpg 1x, /images/photo-6-desktop@2x.jpg 2x">
-              <img class="gallery__image" src="/images/photo-6-mobile.jpg" srcset="/images/photo-6-mobile@2x.jpg 2x" alt="Picture from the Last Year Conference">
-            </picture>
-          </a>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/photos/3.jpg 1x, /images/photos/3.jpg 2x">
+            <img class="gallery__image" src="/images/photos/3.jpg" srcset="/images/photos/3.jpg 2x" alt="Picture from the Last Year Conference">
+          </picture>
         </div>
-        <a class="gallery__more" href="">See more funny photos</a>
+        <div class="gallery__item">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/photos/4.jpg 1x, /images/photos/4.jpg 2x">
+            <img class="gallery__image" src="/images/photos/4.jpg" srcset="/images/photos/4.jpg 2x" alt="Picture from the Last Year Conference">
+          </picture>
+        </div>
+        <div class="gallery__item">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/photos/5.jpg 1x, /images/photos/5.jpg 2x">
+            <img class="gallery__image" src="/images/photos/5.jpg" srcset="/images/photos/5.jpg 2x" alt="Picture from the Last Year Conference">
+          </picture>
+        </div>
+        <div class="gallery__item gallery__item--two-cells">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/photos/6.jpg 1x, /images/photos/6.jpg 2x">
+            <img class="gallery__image" src="/images/photos/6.jpg" srcset="/images/photos/6.jpg 2x" alt="Picture from the Last Year Conference">
+          </picture>
+        </div>
+        <div class="gallery__item gallery__item--three-cells">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/photos/9.jpg 1x, /images/photos/9.jpg 2x">
+            <img class="gallery__image" src="/images/photos/9.jpg" srcset="/images/photos/9.jpg 2x" alt="Picture from the Last Year Conference">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="section section--badge">
       <h2 class="section__heading">Make Your Badge</h2>
-      <span class="section__subheading">
-        With Personal Color ID
-        <span class="color-id">#DF665D</span>
-      </span>
       <form class="form" action="#" method="post">
         <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Number of Days</legend>
+          <div class="form__group form__group--days-number">
+            <input class="form__radio" type="radio" name="days-number" id="2-days" value="2 days" checked>
+            <label class="form__label form__label--days-number" for="2-days" tabindex="0">
+              2 days for 7000 ₽
+              <span class="form__currencies">121,7 $ US / 98.8 €</span>
+            </label>
+            <input class="form__radio" type="radio" name="days-number" id="1-day" value="1 day">
+            <label class="form__label form__label--days-number" for="1-day" tabindex="0">
+              1 day for 4000 ₽
+              <span class="form__currencies">69,5 $ US / 56.4 €</span>
+            </label>
+          </div>
+          <p class="form__warning">
+            Pressing the button you accept
+            <a class="form__terms" href="#">the terms of use</a>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--text-fields">
           <legend class="visually-hidden">Personal Information</legend>
           <div class="form__group">
             <div class="form__field">
@@ -364,15 +586,15 @@
               <p class="form__error">Here's the error description.</p>
             </div>
           </div>
+          <div class="form__field">
+            <label class="form__label form__label--personal-information" for="badge-email">E-mail (Not Necessary)</label>
+            <input class="form__input" type="email" name="email" id="badge-email">
+            <p class="form__error">Here's the error description.</p>
+          </div>
           <div class="form__group">
             <div class="form__field">
               <label class="form__label form__label--personal-information" for="badge-company">Company</label>
               <input class="form__input" type="text" name="company" id="badge-company">
-              <p class="form__error">Here's the error description.</p>
-            </div>
-            <div class="form__field">
-              <label class="form__label form__label--personal-information" for="badge-email">E-mail</label>
-              <input class="form__input" type="email" name="email" id="badge-email" required>
               <p class="form__error">Here's the error description.</p>
             </div>
           </div>
@@ -393,33 +615,12 @@
                 Jet Brains
               </li>
               <li class="preview__item">
-                <span class="visually-hidden">Personal Color</span>
-                #DF665D
+                <span class="visually-hidden">Status</span>
+                Participant
               </li>
             </ul>
-            <p class="preview__card-tip">
-              Till here is nothing entered, your color is
-              <span class="preview__card-tip-color">#FFFF</span>
-            </p>
-            <ul class="preview__stickers-list">
-              <li class="preview__stickers-item">
-                <img src="https://placehold.it/40x40" alt="Sticker">
-              </li>
-              <li class="preview__stickers-item">
-                <img src="https://placehold.it/45x45" alt="Sticker">
-              </li>
-              <li class="preview__stickers-item">
-                <img src="https://placehold.it/50x50" alt="Sticker">
-              </li>
-              <li class="preview__stickers-item">
-                <img src="https://placehold.it/55x55" alt="Sticker">
-              </li>
-              <li class="preview__stickers-item">
-                <img src="https://placehold.it/60x60" alt="Sticker">
-              </li>
-            </ul>
-            <a class="preview__link" href="">Add Sticker</a>
-            <div class="preview__personal-color"></div>
+            <p class="preview__card-tip">Enter your first name, last name, and company</p>
+            <div class="preview__footer"></div>
           </div>
         </section>
         <fieldset class="form__fieldset form__fieldset--payment">
@@ -448,7 +649,7 @@
               </label>
               <input class="form__input" type="text" name="code" id="payment-code">
             </div>
-            <button class="form__button" type="submit">Buy ticket for 1699 ₽</button>
+            <button class="form__button" type="submit">Buy for 1699 ₽</button>
           </div>
           <aside class="price-info">
             <ul class="price-info__price-list">
@@ -463,9 +664,9 @@
             </ul>
             <button class="price-info__close" type="button" aria-label="Close price info"></button>
           </aside>
-          <p class="form__warning">
+          <p class="form__warning form__warning--center">
             Pressing the button you accept
-            <a class="form__link" href="">the terms of use</a>
+            <a class="form__terms" href="#">the terms of use</a>
           </p>
         </fieldset>
       </form>
@@ -477,12 +678,12 @@
         <p class="block__description">All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.</p>
         <a class="block__button button" href="">Send the report</a>
       </div>
-      <div class="grey-block">
-        <div class="grey-block__wrapper">
-          <h3 class="grey-block__caption">Term_Responsibility</h3>
-          <p class="grey-block__description">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&amp;A sessions.</p>
+      <div class="bgr-block">
+        <div class="bgr-block__wrapper">
+          <h3 class="bgr-block__caption">Term_Responsibility</h3>
+          <p class="bgr-block__description">Be prepared for a lot of light. Depending on the conditions, you may or may not be able to see the audience well (or at all). There are techniques that will help you prepare for that situation. We’ll illuminate the audience and reduce the brightness of the stage lights for Q&amp;A sessions.</p>
         </div>
-        <a class="grey-block__link" href="">Read all code of conduct</a>
+        <a class="bgr-block__link" href="">Read all code of conduct</a>
       </div>
     </section>
     <section class="section section--sponsors">
@@ -491,22 +692,12 @@
       <ul class="sponsors__cards">
         <li class="sponsors__item sponsors__item--html-academy">
           <a class="sponsors__link" href="">
-            <img class="sponsors__image" src="/images/sponsor-html-academy.svg" alt="HTML academy" width="145">
+            <img class="sponsors__image" src="/images/sponsors/html-academy.svg" alt="HTML academy" width="145">
           </a>
         </li>
         <li class="sponsors__item sponsors__item--yandex-money">
           <a class="sponsors__link" href="">
-            <img class="sponsors__image" src="/images/sponsor-yandex-money.svg" alt="Yandex money" width="152">
-          </a>
-        </li>
-        <li class="sponsors__item sponsors__item--visa">
-          <a class="sponsors__link" href="">
-            <img class="sponsors__image" src="/images/sponsor-visa.svg" alt="Visa" width="70">
-          </a>
-        </li>
-        <li class="sponsors__item sponsors__item--opera">
-          <a class="sponsors__link" href="">
-            <img class="sponsors__image" src="/images/sponsors-opera.svg" alt="Opera" width="105">
+            <img class="sponsors__image" src="/images/sponsors/shishki.svg" alt="Shishki" width="152">
           </a>
         </li>
       </ul>
@@ -516,7 +707,7 @@
   <footer class="footer">
     <div class="footer__content">
       <form class="form-subscribe" action="https://pitercss.us14.list-manage.com/subscribe/post?u=5e93eb3640317ef9257048d9c&id=e052fffa90" method="post">
-        <label class="form-subscribe__label" for="subscribe-email">Be the first to know</label>
+        <label class="form-subscribe__label" for="subscribe-email">Subscribe for last news</label>
         <div class="form-subscribe__field">
           <input class="form-subscribe__input" type="email" id="subscribe-email" name="email" placeholder="email@example.com" required="required">
           <button class="form-subscribe__button" type="submit">Notify me</button>
@@ -559,10 +750,10 @@
     <div class="footer-info">
       <ul class="footer-info__list">
         <li class="footer-info__item">
-          <a href="" class="footer-info__link"><span>Call for Speakers</span></a>
+          <a href="" class="footer-info__link"><span>Code of Conduct</span></a>
         </li>
         <li class="footer-info__item">
-          <a href="" class="footer-info__link"><span>Code of Conduct</span></a>
+          <a href="" class="footer-info__link"><span>Privacy Policy</span></a>
         </li>
       </ul>
       <p class="footer-info__copyright">

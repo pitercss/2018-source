@@ -2,7 +2,7 @@
 
 .header {
   display: flex;
-  margin-top: 12px;
+  margin-top: 10px;
 
   flex-wrap: wrap;
 }
@@ -33,7 +33,7 @@
 
 .header__container {
   display: flex;
-  margin-left: 5.5%;
+  margin-left: 6.4%;
 
   flex-grow: 1;
   flex-direction: column;
@@ -42,7 +42,7 @@
 @media (min-width: 320px) {
   .header__container {
     max-width: 100%;
-    height: 52px;
+    height: 50px;
     margin-right: 20px;
 
     flex-wrap: wrap;
@@ -75,8 +75,8 @@
 /* Logo Container */
 
 .header__logo-container img {
-  width: 106px;
-  height: 22px;
+  width: 132px;
+  height: 28px;
 }
 
 @media (min-width: 1024px) {
@@ -102,10 +102,10 @@
 /* Time */
 
 .header__time {
-  margin-left: 38px;
+  margin-left: 34px;
 
-  font-size: 7px;
-  line-height: 1.9;
+  font-size: 10px;
+  line-height: 1.2;
 
   color: #1E1F1D;
 }
@@ -131,7 +131,7 @@
   display: none;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   .header__place {
     display: block;
     height: 100%;
@@ -215,6 +215,7 @@
 
 .header__nav {
   width: 100%;
+  margin-top: 5px;
 }
 
 @media (min-width: 1024px) {
@@ -227,8 +228,8 @@
 /* Buy */
 
 .header__buy {
-  margin-top: 2px;
-  margin-right: 5%;
+  margin-top: 6px;
+  margin-right: 6.2%;
 }
 
 @media (min-width: 1024px) {
@@ -244,19 +245,21 @@
   position: relative;
 
   display: block;
-  padding-top: 10px;
-  padding-right: 29px;
-  padding-bottom: 8px;
-  padding-left: 60px;
+  padding-top: 11px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  padding-left: 43px;
 
   font-weight: bold;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.2;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
   color: var(--text-second-color);
   background: var(--secondary-color);
+  border-radius: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -285,11 +288,11 @@
   content: "";
 
   position: absolute;
-  top: 13px;
-  left: 26px;
+  top: 11px;
+  left: 17px;
 
-  width: 22px;
-  height: 13px;
+  width: 21px;
+  height: 12px;
 
   background: transparent url("../images/icon-ticket.svg") no-repeat 0 0;
   background-size: contain;
@@ -313,7 +316,7 @@
 }
 
 .header__button:hover {
-  background: #FF42B0;
+  background: var(--hover-color);
 }
 
 /* Currencies */
@@ -340,10 +343,10 @@
   display: flex;
   width: 100%;
   margin: 0;
-  padding-top: 15px;
-  padding-right: 10%;
-  padding-bottom: 16px;
-  padding-left: 5.5%;
+  padding-top: 14px;
+  padding-right: 6.2%;
+  padding-bottom: 15px;
+  padding-left: 6.4%;
   justify-content: space-between;
   flex-wrap: wrap;
   border-top: 1px solid rgba(48, 59, 64, 0.2);
@@ -381,7 +384,6 @@
 /* Menu Item */
 
 .header__menu-item {
-  margin-right: 0.5%;
   padding-top: 8px;
   padding-right: 6px;
   padding-bottom: 6px;

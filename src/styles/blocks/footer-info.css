@@ -1,6 +1,6 @@
 .footer-info {
   width: 90%;
-  margin-top: 20px;
+  margin-top: -28px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -44,6 +44,8 @@
 .footer-info__copyright {
   margin: 0;
   margin-top: 19px;
+
+  font-size: var(--main-font-size);
 
   color: #B4BDC7;
 }

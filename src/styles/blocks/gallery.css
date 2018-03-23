@@ -1,7 +1,7 @@
 .gallery {
   position: relative;
 
-  margin-top: 27px;
+  margin-top: 19px;
   margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
@@ -12,7 +12,7 @@
 
 .gallery__button {
   position: absolute;
-  top: 109px;
+  top: 91px;
   z-index: 1;
 
   display: none;
@@ -60,7 +60,7 @@
 
 .gallery__item {
   display: none;
-  height: 250px;
+  height: 214px;
   margin: 0;
 
   background: var(--primary-color);

@@ -1,21 +1,19 @@
 .recreation {
   display: flex;
-  min-height: 43px;
+  padding-top: 18px;
+  padding-bottom: 14px;
 
-  color: var(--primary-color);
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid var(--tertiary-color);
 }
 
 .recreation__time {
   width: 14%;
-  margin-top: 11px;
 
   font-weight: bold;
 }
 
 .recreation__heading {
   margin: 0;
-  margin-top: 11px;
 
   font-size: var(--main-font-size);
   text-transform: lowercase;

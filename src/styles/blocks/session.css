@@ -1,13 +1,19 @@
 .session {
   position: relative;
 
-  min-height: 71px;
+  padding-top: 12px;
 
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid var(--tertiary-color);
 }
 
-.session:first-of-type {
-  margin-top: 19px;
+.leader + .section__container .session:first-child {
+  padding-top: 21px;
+
+  border-top-color: transparent;
+}
+
+.session--closed {
+  padding-bottom: 14px;
 }
 
 .session--closed .session__topic,
@@ -18,7 +24,6 @@
 
 .session__heading {
   width: 100%;
-  margin-top: 13px;
 }
 
 .session--closed .session__heading {
@@ -28,8 +33,6 @@
 .session__time {
   font-weight: bold;
   font-size: var(--second-font-size);
-
-  color: var(--primary-color);
 }
 
 .session--closed .session__container {
@@ -37,6 +40,10 @@
 }
 
 .session__container:focus {
+  outline: none;
+}
+
+.session--closed .session__container:focus {
   outline: 1px solid var(--primary-color);
 }
 
@@ -65,11 +72,11 @@
 
 .session__topic {
   margin: 0;
-  margin-top: 9px;
+  margin-top: 15px;
+  margin-left: 88px;
 
   font-weight: normal;
   font-size: var(--second-font-size);
-  line-height: 1;
 }
 
 .session__toggle {
@@ -117,40 +124,41 @@
 }
 
 .session__speaker-photo {
-  width: 75px;
-  height: 75px;
+  width: 72px;
+  height: 72px;
   float: left;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .session__info {
   min-height: 100px;
-  margin-top: 5px;
-  margin-left: 91px;
-  padding-bottom: 29px;
+  margin-top: -3px;
+  margin-left: 88px;
+  padding-bottom: 23px;
 }
 
 .session__description {
   width: 90%;
   margin: 0;
   margin-top: 9px;
+
+  font-size: var(--main-font-size);
 }
 
 .session__link {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 16px;
 
-  font-weight: 700;
   line-height: 1.2;
   text-transform: lowercase;
   text-decoration: none;
 
-  color: var(--secondary-color);
-  border-bottom: 1px solid rgba(255, 1, 149, 0.2);
+  color: var(--tertiary-color);
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .session__link:hover {
-  border-bottom-color: rgba(255, 1, 149, 0.3);
+  border-bottom-color: rgba(239, 67, 25, 0.5);
 }
 
 .session__link:focus {

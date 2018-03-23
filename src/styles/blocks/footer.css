@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 47px;
+  margin-top: 44px;
   margin-bottom: 35px;
 
   border-top: 1px solid rgba(48, 59, 64, 0.2);
@@ -31,10 +31,6 @@
 
 .footer__logo-link:hover {
   opacity: 0.5;
-}
-
-.footer-info__copyright {
-  text-transform: lowercase;
 }
 
 @media (min-width: 1024px) {

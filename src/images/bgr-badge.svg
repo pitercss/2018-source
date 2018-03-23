@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="440"
+   height="201"
+   viewBox="0 0 440 201"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="bgr-badge.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="1.1741294"
+     inkscape:cx="110"
+     inkscape:cy="100.5"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 25.422,0.578 h 6.81 L 7.194,51.856 H 0.391 Z m 19.452,0 h 6.809 l -25.03,51.278 h -6.81 L 44.873,0.578 Z m 36.605,0 h 6.809 L 63.252,51.856 h -6.804 z m 19.451,0 h 6.81 L 82.71,51.856 H 75.9 Z m 36.606,0 h 6.808 L 119.31,51.856 h -6.805 z m 19.45,0 h 6.81 l -25.03,51.278 h -6.81 z m 36.606,0 h 6.809 l -25.036,51.278 h -6.804 z m 19.451,0 h 6.81 l -25.03,51.278 h -6.81 z M 25.422,74.668 h 6.81 L 7.194,125.945 H 0.391 Z m -5.579,51.278 25.03,-51.278 h 6.81 l -25.03,51.278 z M 88.288,74.668 63.252,125.946 H 56.448 L 81.479,74.668 Z M 75.9,125.946 100.93,74.668 h 6.81 l -25.031,51.278 h -6.81 z m 68.444,-51.278 -25.036,51.278 h -6.803 l 25.03,-51.278 h 6.81 z m -12.388,51.278 25.03,-51.278 h 6.81 l -25.03,51.278 z m 68.445,-51.278 -25.036,51.278 h -6.804 l 25.031,-51.278 z m 12.642,0 h 6.81 l -25.03,51.277 h -6.81 z m -187.621,74.09 h 6.81 L 7.194,200.035 H 0.391 l 25.031,-51.279 z m 19.452,0 h 6.809 l -25.03,51.278 h -6.81 l 25.03,-51.279 z m 36.605,0 h 6.809 l -25.036,51.278 h -6.804 l 25.031,-51.279 z m 19.451,0 h 6.81 L 82.71,200.036 H 75.9 l 25.03,-51.279 z m 36.606,0 h 6.808 l -25.035,51.278 h -6.805 l 25.032,-51.279 z m 19.45,0 h 6.81 l -25.03,51.278 h -6.81 l 25.03,-51.279 z m 36.606,0 h 6.809 l -25.036,51.278 h -6.804 l 25.031,-51.279 z m 19.451,0 h 6.81 l -25.03,51.278 h -6.81 l 25.03,-51.279 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="fill:#00daad;fill-rule:evenodd" />
+  <path
+     d="m 245.031,0.578 h 6.81 L 226.803,51.856 H 220 Z m 19.452,0 h 6.809 l -25.03,51.278 h -6.81 l 25.03,-51.278 z m 36.605,0 h 6.809 l -25.036,51.278 h -6.804 z m 19.451,0 h 6.81 l -25.03,51.278 h -6.81 z m 36.606,0 h 6.808 l -25.034,51.278 h -6.805 z m 19.45,0 h 6.81 l -25.03,51.278 h -6.81 z m 36.606,0 h 6.809 l -25.036,51.278 h -6.804 z m 19.451,0 h 6.81 l -25.03,51.278 h -6.81 z m -187.621,74.09 h 6.81 l -25.038,51.277 H 220 Z m -5.579,51.278 25.03,-51.278 h 6.81 l -25.03,51.278 z m 68.445,-51.278 -25.036,51.278 h -6.804 l 25.031,-51.278 z m -12.388,51.278 25.03,-51.278 h 6.81 l -25.031,51.278 h -6.81 z m 68.444,-51.278 -25.036,51.278 h -6.803 l 25.03,-51.278 h 6.81 z m -12.388,51.278 25.03,-51.278 h 6.81 l -25.03,51.278 z m 68.445,-51.278 -25.036,51.278 h -6.804 l 25.031,-51.278 z m 12.642,0 h 6.81 l -25.03,51.277 h -6.81 z m -187.621,74.09 h 6.81 l -25.038,51.277 H 220 l 25.031,-51.279 z m 19.452,0 h 6.809 l -25.03,51.278 h -6.81 l 25.03,-51.279 z m 36.605,0 h 6.809 l -25.036,51.278 h -6.804 l 25.031,-51.279 z m 19.451,0 h 6.81 l -25.03,51.278 h -6.81 l 25.03,-51.279 z m 36.606,0 h 6.808 l -25.035,51.278 h -6.805 l 25.032,-51.279 z m 19.45,0 h 6.81 l -25.03,51.278 h -6.81 l 25.03,-51.279 z m 36.606,0 h 6.809 l -25.036,51.278 h -6.804 l 25.031,-51.279 z m 19.451,0 h 6.81 l -25.03,51.278 h -6.81 l 25.03,-51.279 z"
+     id="path2-8"
+     inkscape:connector-curvature="0"
+     style="fill:#00daad;fill-rule:evenodd" />
+</svg>

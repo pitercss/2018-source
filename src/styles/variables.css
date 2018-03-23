@@ -1,12 +1,22 @@
 :root {
-  --charcoal-grey: #303b40;
-  --neon-pink: #ff0195;
   --aquamarine: #00e2b5;
+  --barbie-pink: #e30083;
+  --blue-magenta-violet: #55359e;
+  --charcoal-grey: #303b40;
+  --fire-opal: #f2613e;
+  --flame: #ef4319;
+  --neon-pink: #ff0195;
   --white: #ffffff;
+  --yellow: #ffdb1a;
 
-  --text-color: var(--charcoal-grey);
+
   --primary-color: var(--aquamarine);
-  --secondary-color: var(--neon-pink);
+  --secondary-color: var(--flame);
+  --hover-color: var(--fire-opal);
+  --tertiary-color: var(--blue-magenta-violet);
+  --quaternary-color: var(--yellow);
+  --quinary-color: var(--barbie-pink);
+  --text-color: var(--charcoal-grey);
   --text-second-color: var(--white);
 
   --main-font-size: 12px;
