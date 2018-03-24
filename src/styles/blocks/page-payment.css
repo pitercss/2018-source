@@ -45,6 +45,7 @@
   right: 1.7%;
 
   width: 59.5%;
+  max-width: 375px;
 
   background-image: url('../images/bgr-fail.svg');
 }
@@ -53,6 +54,7 @@
   right: 6.6%;
 
   width: 48.6%;
+  max-width: 280px;
 
   background-image: url('../images/bgr-success.svg');
 }
