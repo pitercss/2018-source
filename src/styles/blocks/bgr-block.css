@@ -56,10 +56,10 @@
   }
 
   .bgr-block__wrapper {
-    padding-top: 20px;
-    padding-right: 4%;
+    padding-top: 19px;
+    padding-right: 24px;
     padding-bottom: 32px;
-    padding-left: 4%;
+    padding-left: 24px;
   }
 
   .bgr-block__description {
@@ -71,9 +71,9 @@
   }
 
   .bgr-block__link {
-    margin-top: 20px;
+    margin-top: 14px;
 
-    font-size: 20px;
+    font-size: 16px;
 
     border-bottom: none;
   }

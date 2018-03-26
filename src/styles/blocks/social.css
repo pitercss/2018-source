@@ -102,3 +102,14 @@
       height: 26px;
   }
 }
+
+@media (min-width: 1280px) {
+  .social {
+    width: 26.1%;
+    margin-top: 2px;
+  }
+
+  .social__item:first-child {
+    margin-top: 13px;
+  }
+}

@@ -8,7 +8,6 @@
   position: relative;
 
   display: flex;
-  width: 100%;
   margin: 0;
   padding-top: 12px;
   padding-right: 11px;
@@ -104,8 +103,8 @@
 
 @media (min-width: 1024px) {
   .price-info {
-    margin-top: 26px;
-    margin-left: 8px;
+    margin-top: 38px;
+    margin-left: 6px;
   }
 
   .price-info__price-list {
@@ -119,7 +118,6 @@
 
   .price-info__price-list::before {
     top: -12px;
-    left: 68%;
 
     width: 18px;
     height: 18px;
@@ -139,7 +137,6 @@
   .price-info__price {
     font-size: var(--second-font-size-desktop);
     line-height: 1;
-    white-space: nowrap;
   }
 
   .price-info__close {

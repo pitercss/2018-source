@@ -59,7 +59,12 @@
     </div>
     <div class="header__buy">
       <a class="header__button" href="">Buy tickets</a>
-      <span class="header__currencies">≈ 28,34 US$ or 26,74 €</span>
+      <span class="header__days-number">
+        1 day:
+        <span class="header__price">4000 ₽</span>
+        / 2 days:
+        <span class="header__price">7000 ₽</span>
+      </span>
     </div>
     <nav class="header__nav">
       <ul class="header__menu-list">
@@ -83,24 +88,26 @@
   </header>
   <main class="content">
     <section class="summary">
-      <div class="summary__container">
-        <time class="summary__date" datetime="2018-06-08 10:00">8–9.06</time>
-        <h1 class="summary__heading">The First International  Front-end Conference  in Russia</h1>
+      <div class="summary__inner">
+        <div class="summary__container">
+          <time class="summary__date" datetime="2018-06-08 10:00">8–9.06</time>
+          <h1 class="summary__heading">The First International  Front-end Conference  in Russia</h1>
+        </div>
+        <p class="summary__stats">
+          <span class="summary__stats-item">
+            2
+            <span class="summary__stats-unit">days</span>
+          </span>
+          <span class="summary__stats-item">
+            12
+            <span class="summary__stats-unit">speakers</span>
+          </span>
+          <span class="summary__stats-item">
+            500
+            <span class="summary__stats-unit">participants</span>
+          </span>
+        </p>
       </div>
-      <p class="summary__stats">
-        <span class="summary__stats-item">
-          2
-          <span class="summary__stats-unit">days</span>
-        </span>
-        <span class="summary__stats-item">
-          12
-          <span class="summary__stats-unit">speakers</span>
-        </span>
-        <span class="summary__stats-item">
-          500
-          <span class="summary__stats-unit">participants</span>
-        </span>
-      </p>
     </section>
     <section class="section section--mission">
       <h2 class="section__heading">We Unite</h2>
@@ -115,10 +122,12 @@
       </time>
       <section class="leader">
         <div class="leader__container">
-          <div class="leader__caption">Leader</div>
-          <h4 class="leader__name">Anton Shein
-            <span class="leader__company">Yandex</span>
-          </h4>
+          <div class="leader__heading">
+            <div class="leader__caption">Leader</div>
+            <h4 class="leader__name">Anton Shein
+              <span class="leader__company">Yandex</span>
+            </h4>
+          </div>
           <div class="leader__photo">
             <img src="/images/photos/leader.png" srcset="/images/photos/leader@2x.png 2x" alt="Anton Shein">
           </div>
@@ -133,10 +142,12 @@
                 Alexey Simonenko
                 <span class="session__company">HTML academy</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+                </picture>
+              </div>
               <h3 class="session__topic">Responsive Web Applications with Container Queries</h3>
             </div>
           </div>
@@ -154,10 +165,12 @@
                 Johnatan Snook
                 <span class="session__company">Opera</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Johnatan Snook">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Johnatan Snook">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -179,10 +192,12 @@
                 Tim Jenkins
                 <span class="session__company">Yahoo</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Tim Jenkins">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Tim Jenkins">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -200,10 +215,12 @@
                 Michael Rudnik
                 <span class="session__company">Yandex</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Michael Rudnik">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Michael Rudnik">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -225,10 +242,12 @@
                 Alexey Simonenko
                 <span class="session__company">HTML Academy</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -246,10 +265,12 @@
                 Konstantin Sedov
                 <span class="session__company">Evil Martians</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Konstantin Sedov">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Konstantin Sedov">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -271,10 +292,12 @@
                 Lo Chen Ji
                 <span class="session__company">Spotify</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Lo Chen Ji">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Lo Chen Ji">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -292,10 +315,12 @@
                 Ryan Seddon
                 <span class="session__company">Google</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Ryan Seddon">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Ryan Seddon">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -323,10 +348,12 @@
                 Alexey Simonenko
                 <span class="session__company">HTML academy</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+                </picture>
+              </div>
               <h3 class="session__topic">Responsive Web Applications with Container Queries</h3>
             </div>
           </div>
@@ -344,10 +371,12 @@
                 Johnatan Snook
                 <span class="session__company">Opera</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Johnatan Snook">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Johnatan Snook">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -369,10 +398,12 @@
                 Tim Jenkins
                 <span class="session__company">Yahoo</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Tim Jenkins">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Tim Jenkins">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -390,10 +421,12 @@
                 Michael Rudnik
                 <span class="session__company">Yandex</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Michael Rudnik">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Michael Rudnik">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -415,10 +448,12 @@
                 Alexey Simonenko
                 <span class="session__company">HTML Academy</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Alexey Simonenko">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -436,10 +471,12 @@
                 Konstantin Sedov
                 <span class="session__company">Evil Martians</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Konstantin Sedov">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Konstantin Sedov">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -461,10 +498,12 @@
                 Lo Chen Ji
                 <span class="session__company">Spotify</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Lo Chen Ji">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Lo Chen Ji">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -482,10 +521,12 @@
                 Ryan Seddon
                 <span class="session__company">Google</span>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
-                <img class="session__speaker-photo" src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Ryan Seddon">
-              </picture>
+              <div class="session__speaker-photo">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="/images/photos/speaker.jpg 1x, /images/photos/speaker@2x.jpg 2x">
+                  <img src="/images/photos/speaker-mobile.jpg" srcset="/images/photos/speaker.jpg 2x" alt="Ryan Seddon">
+                </picture>
+              </div>
               <h3 class="session__topic">CSS4 Grid: True Layout Finally Arrives</h3>
             </div>
           </div>
@@ -562,125 +603,123 @@
       </div>
     </section>
     <section class="section section--badge">
-      <h2 class="section__heading">Make Your Badge</h2>
-      <form class="form" action="#" method="post">
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Number of Days</legend>
-          <div class="form__group form__group--days-number">
-            <input class="form__radio" type="radio" name="days-number" id="2-days" value="2 days" checked>
-            <label class="form__label form__label--days-number" for="2-days" tabindex="0">
-              2 days for 7000 ₽
-              <span class="form__currencies">121,7 $ US / 98.8 €</span>
-            </label>
-            <input class="form__radio" type="radio" name="days-number" id="1-day" value="1 day">
-            <label class="form__label form__label--days-number" for="1-day" tabindex="0">
-              1 day for 4000 ₽
-              <span class="form__currencies">69,5 $ US / 56.4 €</span>
-            </label>
-          </div>
-          <p class="form__warning">
-            Pressing the button you accept
-            <a class="form__terms" href="#">the terms of use</a>
-          </p>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--text-fields">
-          <legend class="visually-hidden">Personal Information</legend>
-          <div class="form__group">
-            <div class="form__field">
-              <label class="form__label form__label--personal-information" for="badge-first-name">First Name</label>
-              <input class="form__input" type="text" name="first-name" id="badge-first-name" required>
-              <p class="form__error">Here's the error description.</p>
+      <div class="section__inner">
+        <h2 class="section__heading">Your Ticket</h2>
+        <form class="form" action="#" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Number of Days</legend>
+            <div class="form__group form__group--days-number">
+              <input class="form__radio" type="radio" name="days-number" id="2-days" value="2 days" checked>
+              <label class="form__label form__label--days-number" for="2-days" tabindex="0">
+                2 days for 7000 ₽
+                <span class="form__currencies">121,7 $ US / 98.8 €</span>
+              </label>
+              <input class="form__radio" type="radio" name="days-number" id="1-day" value="1 day">
+              <label class="form__label form__label--days-number" for="1-day" tabindex="0">
+                1 day for 4000 ₽
+                <span class="form__currencies">69,5 $ US / 56.4 €</span>
+              </label>
             </div>
-            <div class="form__field">
-              <label class="form__label form__label--personal-information" for="badge-last-name">Last Name</label>
-              <input class="form__input" type="text" name="last-name" id="badge-last-name" required>
-              <p class="form__error">Here's the error description.</p>
+            <p class="form__warning">You can always buy the 2nd day from your account</p>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--text-fields">
+            <legend class="visually-hidden">Personal Information</legend>
+            <div class="form__group">
+              <div class="form__field">
+                <label class="form__label form__label--personal-information" for="badge-first-name">First Name</label>
+                <input class="form__input" type="text" name="first-name" id="badge-first-name" placeholder="First Name" required>
+                <p class="form__error">Here's the error description.</p>
+              </div>
+              <div class="form__field">
+                <label class="form__label form__label--personal-information" for="badge-last-name">Last Name</label>
+                <input class="form__input" type="text" name="last-name" id="badge-last-name" placeholder="Last Name" required>
+                <p class="form__error">Here's the error description.</p>
+              </div>
             </div>
-          </div>
-          <div class="form__field">
-            <label class="form__label form__label--personal-information" for="badge-email">E-mail (Not Necessary)</label>
-            <input class="form__input" type="email" name="email" id="badge-email">
-            <p class="form__error">Here's the error description.</p>
-          </div>
-          <div class="form__group">
-            <div class="form__field">
-              <label class="form__label form__label--personal-information" for="badge-company">Company</label>
-              <input class="form__input" type="text" name="company" id="badge-company">
-              <p class="form__error">Here's the error description.</p>
+            <div class="form__group">
+              <div class="form__field">
+                <label class="form__label form__label--personal-information" for="badge-email">E-mail (Not Necessary)</label>
+                <input class="form__input" type="email" name="email" id="badge-email" placeholder="E-mail (Not Necessary)">
+                <p class="form__error">Here's the error description.</p>
+              </div>
+              <div class="form__field">
+                <label class="form__label form__label--personal-information" for="badge-company">Company (Not Necessary)</label>
+                <input class="form__input" type="text" name="company" id="badge-company" placeholder="Company (Not Necessary)">
+                <p class="form__error">Here's the error description.</p>
+              </div>
             </div>
-          </div>
-        </fieldset>
-        <section class="preview">
-          <div class="preview__card">
-            <ul class="preview__list">
-              <li class="preview__item preview__item--name">
-                <span class="visually-hidden">First Name</span>
-                Konstantin
-              </li>
-              <li class="preview__item preview__item--name">
-                <span class="visually-hidden">Last Name</span>
-                Konstantinopolskiy
-              </li>
-              <li class="preview__item preview__item--company">
-                <span class="visually-hidden">Company</span>
-                Jet Brains
-              </li>
-              <li class="preview__item">
-                <span class="visually-hidden">Status</span>
-                Participant
-              </li>
-            </ul>
-            <p class="preview__card-tip">Enter your first name, last name, and company</p>
-            <div class="preview__footer"></div>
-          </div>
-        </section>
-        <fieldset class="form__fieldset form__fieldset--payment">
-          <legend class="visually-hidden">Payment</legend>
-          <div class="form__group form__group--payment-options">
-            <input class="form__radio" type="radio" name="payment-option" id="payment-yandex" value="yandex" checked>
-            <label class="form__label form__label--payment-options form__label--yandex" for="payment-yandex" tabindex="0">
-              <span class="visually-hidden">Yandex Kassa</span>
-              <svg width="110" height="28">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yandex"></use>
-              </svg>
-            </label>
-            <input class="form__radio" type="radio" name="payment-option" id="payment-paypal" value="paypal">
-            <label class="form__label form__label--payment-options form__label--paypal" for="payment-paypal" tabindex="0">
-              <span class="visually-hidden">PayPal</span>
-              <svg width="75" height="22">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-paypal"></use>
-              </svg>
-            </label>
-            <a class="form__link" href=""><span>About cashless payment</span></a>
-          </div>
-          <div class="form__group form__group--code">
+          </fieldset>
+          <section class="preview">
+            <div class="preview__card">
+              <ul class="preview__list">
+                <li class="preview__item preview__item--name">
+                  <span class="visually-hidden">First Name</span>
+                  Konstantin
+                </li>
+                <li class="preview__item preview__item--name">
+                  <span class="visually-hidden">Last Name</span>
+                  Konstantinopolskiy
+                </li>
+                <li class="preview__item preview__item--company">
+                  <span class="visually-hidden">Company</span>
+                  Jet Brains
+                </li>
+                <li class="preview__item">
+                  <span class="visually-hidden">Status</span>
+                  Participant
+                </li>
+              </ul>
+              <p class="preview__card-tip">Enter your first name, last name, and company</p>
+              <div class="preview__footer"></div>
+            </div>
+          </section>
+          <fieldset class="form__fieldset form__fieldset--payment">
+            <legend class="visually-hidden">Payment</legend>
             <div class="form__field form__field--code">
               <label class="form__label" for="payment-code">
                 <span class="visually-hidden">Code</span>
               </label>
-              <input class="form__input" type="text" name="code" id="payment-code">
+              <input class="form__input" type="text" name="code" id="payment-code" placeholder="Promo code">
+              <span class="form__tip">will make your ticket a bit cheaper</span>
             </div>
-            <button class="form__button" type="submit">Buy for 1699 ₽</button>
-          </div>
-          <aside class="price-info">
-            <ul class="price-info__price-list">
-              <li class="price-info__item price-info__item--current">
-                <span class="price-info__date">Today, 23 April</span>
-                <span class="price-info__price">3 days till price increase. Hurry up!</span>
-              </li>
-              <li class="price-info__item price-info__item--future">
-                <span class="price-info__date">1 May</span>
-                <span class="price-info__price">2500 ₽</span>
-              </li>
-            </ul>
-            <button class="price-info__close" type="button" aria-label="Close price info"></button>
-          </aside>
-          <p class="form__warning form__warning--center">
-            Pressing the button you accept
-            <a class="form__terms" href="#">the terms of use</a>
-          </p>
-        </fieldset>
-      </form>
+            <div class="form__group form__group--payment-options">
+              <input class="form__radio" type="radio" name="payment-option" id="payment-yandex" value="yandex" checked>
+              <label class="form__label form__label--payment-options form__label--yandex" for="payment-yandex" tabindex="0">
+                <span class="visually-hidden">Yandex Kassa</span>
+                <svg width="110" height="28">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yandex"></use>
+                </svg>
+              </label>
+              <input class="form__radio" type="radio" name="payment-option" id="payment-paypal" value="paypal">
+              <label class="form__label form__label--payment-options form__label--paypal" for="payment-paypal" tabindex="0">
+                <span class="visually-hidden">PayPal</span>
+                <svg width="75" height="22">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-paypal"></use>
+                </svg>
+              </label>
+              <a class="form__link" href=""><span>About cashless payment</span></a>
+            </div>
+            <button class="form__button" type="submit">Buy for 7000 ₽</button>
+            <aside class="price-info">
+              <ul class="price-info__price-list">
+                <li class="price-info__item price-info__item--current">
+                  <span class="price-info__date">Today, 23 April</span>
+                  <span class="price-info__price">3 days till price increase. Hurry up!</span>
+                </li>
+                <li class="price-info__item price-info__item--future">
+                  <span class="price-info__date">1 May</span>
+                  <span class="price-info__price">2500 ₽</span>
+                </li>
+              </ul>
+              <button class="price-info__close" type="button" aria-label="Close price info"></button>
+            </aside>
+            <p class="form__warning form__warning--center">
+              Pressing the button you accept
+              <a class="form__terms" href="#">the terms of use</a>
+            </p>
+          </fieldset>
+        </form>
+      </div>
     </section>
     <section class="section section--speakers">
       <h2 class="visually-hidden">For speakers</h2>
@@ -716,67 +755,69 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__content">
-      <form class="form-subscribe" action="https://pitercss.us14.list-manage.com/subscribe/post?u=5e93eb3640317ef9257048d9c&id=e052fffa90" method="post">
-        <label class="form-subscribe__label" for="subscribe-email">Subscribe for last news</label>
-        <div class="form-subscribe__field">
-          <input class="form-subscribe__input" type="email" id="subscribe-email" name="email" placeholder="email@example.com" required="required">
-          <button class="form-subscribe__button" type="submit">Notify me</button>
-        </div>
-      </form>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link social__link--email" href="mailto:hi@pitercss.com">hi@pitercss.com</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/pitercss_conf" aria-label="twitter">
-            <svg width="24" height="20">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="" aria-label="vkontakte">
-            <svg width="25" height="14">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vkontakte"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/pitercssconf/" aria-label="facebook">
-            <svg width="12" height="23">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/pitercss_conf/" aria-label="instagram">
-            <svg width="21" height="21">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-info">
-      <ul class="footer-info__list">
-        <li class="footer-info__item">
-          <a href="" class="footer-info__link"><span>Code of Conduct</span></a>
-        </li>
-        <li class="footer-info__item">
-          <a href="" class="footer-info__link"><span>Privacy Policy</span></a>
-        </li>
-      </ul>
-      <p class="footer-info__copyright">
-        © LLC «Interactive educational technologies»,
-        <span class="footer-info__copyright-years">2013–2016</span>
-      </p>
-    </div>
-    <div class="footer__logo">
-      <a class="footer__logo-link" href="">
-        <img class="footer__logo-image" src="/images/logo-footer.svg" alt="pitercss_conf" width="37">
-      </a>
-    </div>
+    <div class="footer__container">
+      <div class="footer__content">
+        <form class="form-subscribe" action="https://pitercss.us14.list-manage.com/subscribe/post?u=5e93eb3640317ef9257048d9c&id=e052fffa90" method="post">
+          <label class="form-subscribe__label" for="subscribe-email">Subscribe for last news</label>
+          <div class="form-subscribe__field">
+            <input class="form-subscribe__input" type="email" id="subscribe-email" name="email" placeholder="email@example.com" required="required">
+            <button class="form-subscribe__button" type="submit">Notify me</button>
+          </div>
+        </form>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--email" href="mailto:hi@pitercss.com">hi@pitercss.com</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/pitercss_conf" aria-label="twitter">
+              <svg width="24" height="20">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="" aria-label="vkontakte">
+              <svg width="25" height="14">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/pitercssconf/" aria-label="facebook">
+              <svg width="12" height="23">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/pitercss_conf/" aria-label="instagram">
+              <svg width="21" height="21">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <ul class="footer-info__list">
+          <li class="footer-info__item">
+            <a href="" class="footer-info__link"><span>Code of Conduct</span></a>
+          </li>
+          <li class="footer-info__item">
+            <a href="" class="footer-info__link"><span>Privacy Policy</span></a>
+          </li>
+        </ul>
+        <p class="footer-info__copyright">
+          © LLC «Interactive educational technologies»,
+          <span class="footer-info__copyright-years">2013–2016</span>
+        </p>
+      </div>
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="">
+          <img class="footer__logo-image" src="/images/logo-footer.svg" alt="pitercss_conf" width="37">
+        </a>
+      </div>
+    </div>    
   </footer>
   <script src="/scripts/script.js"></script>
 </body>

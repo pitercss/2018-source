@@ -73,6 +73,7 @@
 
   .footer-info__list {
     display: flex;
+    margin: 0;
   }
 
   .footer-info__item {
@@ -83,7 +84,7 @@
   .footer-info__copyright {
     margin-top: 20px;
 
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .footer-info__copyright-years {
@@ -91,8 +92,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .footer-info {
+    width: 24%;
     margin: 0;
   }
 }

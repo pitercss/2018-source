@@ -2,6 +2,7 @@
   position: relative;
 
   padding-top: 12px;
+  padding-bottom: 23px;
 
   border-top: 1px solid var(--tertiary-color);
 }
@@ -62,12 +63,14 @@
 
 .session__company {
   margin-left: -3px;
-
-  text-transform: lowercase;
 }
 
 .session__company::before {
   content: "__";
+}
+
+.session--closed .session__company {
+  text-transform: lowercase;
 }
 
 .session__topic {
@@ -131,10 +134,8 @@
 }
 
 .session__info {
-  min-height: 100px;
   margin-top: -3px;
   margin-left: 88px;
-  padding-bottom: 23px;
 }
 
 .session__description {
@@ -168,31 +169,24 @@
 
 @media (min-width: 1024px) {
   .session {
-    min-height: 130px;
-    margin-left: 9%;
+    min-height: 260px;
+    margin-left: 8.7%;
+    padding-top: 25px;
+    padding-bottom: 29px;
 
     border-top-width: 2px;
   }
 
-  .session:first-of-type {
-    margin-top: 50px;
-  }
-
-  .session--closed .session__topic {
-    display: block;
-  }
-
-  .session__heading {
-    display: flex;
-    margin-top: 30px;
-
-    align-items: flex-start;
+  .session--closed {
+    min-height: 0;
   }
 
   .session__time {
-    width: 195px;
+    float: left;
+    width: 199px;
 
     font-size: 26px;
+    line-height: 1.2;
   }
 
   .session__speaker {
@@ -206,14 +200,19 @@
   }
 
   .session__topic {
-    margin-top: 12px;
+    margin-top: 9px;
+    margin-left: 199px;
 
     font-size: var(--second-font-size-desktop);
   }
 
+  .session--closed .session__topic {
+    display: block;
+  }
+
   .session__toggle {
     top: 50px;
-    right: 4px;
+    right: -2px;
 
     width: 28px;
     height: 28px;
@@ -228,19 +227,34 @@
   }
 
   .session__speaker-photo {
+    position: relative;
+
     width: 150px;
     height: 150px;
-    margin-top: -16px;
+    margin-top: 17px;
+  }
+
+  .session__speaker-photo::before {
+    content: '';
+
+    position: absolute;
+    top: 48px;
+    right: -23px;
+
+    width: 47px;
+    height: 54px;
+
+    background: transparent url('../images/bgr-speaker.svg') no-repeat 0 0;
+    background-size: contain;
   }
 
   .session__info {
-    min-height: 164px;
-    margin-top: 9px;
-    margin-left: 195px;
+    width: 48.5%;
+    margin-top: 3px;
+    margin-left: 199px;
   }
 
   .session__description {
-    width: 59%;
     margin-top: 0;
 
     font-size: var(--main-font-size-desktop);
@@ -252,9 +266,11 @@
     margin-left: -8px;
     padding: 8px;
 
+    font-weight: bold;
     font-size: var(--main-font-size-desktop);
     line-height: 1.2;
 
+    color: var(--secondary-color);
     border-bottom: none;
   }
 }
