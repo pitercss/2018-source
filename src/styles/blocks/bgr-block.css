@@ -12,7 +12,7 @@
 
   text-align: left;
 
-  color: var(--text-second-color);
+  color: var(--dark-bgr-text-color);
   background: var(--primary-color);
 }
 
@@ -63,11 +63,11 @@
   }
 
   .bgr-block__description {
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .bgr-block__caption {
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .bgr-block__link {

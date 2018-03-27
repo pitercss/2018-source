@@ -37,7 +37,7 @@
 }
 
 .video__icon {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 .video__button:focus {
@@ -46,7 +46,7 @@
 
 .video__button:hover .video__icon,
 .video__button:focus .video__icon {
-  fill: white;
+  fill: var(--white);
 }
 
 .video__caption {

@@ -39,7 +39,7 @@
 
   text-decoration: none;
 
-  color: #77808A;
+  color: var(--dark-bgr-color);
 }
 
 .social__link:focus {
@@ -51,7 +51,7 @@
 }
 
 .social__link svg {
-  fill: #B4BDC7;
+  fill: var(--secondary-text-color);
 }
 
 .social__link:hover svg {

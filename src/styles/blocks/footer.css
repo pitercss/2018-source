@@ -41,6 +41,12 @@
     padding-left: 25px;
   }
 
+  .footer--payment {
+    margin-top: 61px;
+
+    border: 0;
+  }
+
   .footer__container {
     display: flex;
 

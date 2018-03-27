@@ -20,7 +20,7 @@
 }
 
 .page-payment--fail::before {
-  background: #d6d8d9;
+  background: var(--border-color);
 }
 
 .page-payment--success::before {
@@ -96,13 +96,13 @@
 .page-payment__button--main {
   width: 48%;
 
-  color: var(--text-second-color);
+  color: var(--dark-bgr-text-color);
   background: var(--secondary-color);
 }
 
 .page-payment__button--main:hover {
   color: var(--secondary-color);
-  background: var(--text-second-color);
+  background: var(--white);
 }
 
 .page-payment__link {
@@ -144,20 +144,61 @@
 
 @media (min-width: 1024px) {
   .page-payment {
-    display: flex;
-    justify-content: center;
-    padding-top: 0;
+    min-height: 400px;
+    margin-top: 80px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 0;
+    padding-left: 31.5%;
+  }
+
+  .page-payment::before {
+    top: 32px;
+    left: 0;
+
+    width: 29.6%;
+    height: 374px;
+  }
+
+  .page-payment--fail::after {
+    top: -26px;
+    left: 8.4%;
+
+    width: 23.1%;
+  }
+
+  .page-payment--success::after {
+    top: -22px;
+    left: 10.8%;
+
+    width: 18.8%;
   }
 
   .page-payment__title {
+    margin: 0;
+
     font-size: 86px;
-    margin-bottom: 20px;
+    line-height: 1;
   }
 
   .page-payment__description {
+    width: 70%;
+
     font-size: var(--second-font-size-desktop);
-    letter-spacing: -0.1px;
-    padding-right: 100px;
-    margin-top: 0;
+  }
+
+  .page-payment__links {
+    width: 49%;
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-payment {
+    width: 81.3%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 27.5%;
   }
 }

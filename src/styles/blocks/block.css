@@ -32,7 +32,7 @@
     margin-top: 10px;
     margin-right: 3.8%;
 
-    font-size: 20px;
+    font-size: var(--second-font-size-desktop);
   }
 
   .block__button {

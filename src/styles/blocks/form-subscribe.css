@@ -15,11 +15,11 @@
   padding-left: 4px;
 
   font-family: "gotham pro", "verdana", sans-serif;
-  font-size: 12px;
+  font-size: var(--main-font-size);
   line-height: 1.8;
 
   border: none;
-  border-bottom: 1px solid #B4BDC7;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .form-subscribe__input:hover {
@@ -31,19 +31,19 @@
 }
 
 .form-subscribe__input:-moz-placeholder {
-  color: #B4BDC7;
+  color: var(--border-color);
 }
 
 .form-subscribe__input::-moz-placeholder {
-  color: #B4BDC7;
+  color: var(--border-color);
 }
 
 .form-subscribe__input::-webkit-input-placeholder {
-  color: #B4BDC7;
+  color: var(--border-color);
 }
 
 .form-subscribe__input:-ms-input-placeholder {
-  color: #B4BDC7;
+  color: var(--border-color);
 }
 
 .form-subscribe__input:hover:-moz-placeholder {
@@ -69,25 +69,25 @@
 
   font-family: "gotham pro", "verdana", sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: var(--main-font-size);
   line-height: 1.1;
 
-  color: #B4BDC7;
-  background: white;
-  border: 1px solid #B4BDC7;
+  color: var(--border-color);
+  background: var(--white);
+  border: 1px solid var(--border-color);
   border-radius: 30px;
 }
 
 .form-subscribe__button:focus {
   box-shadow:
-      0 0 0 2px white,
+      0 0 0 2px var(--white),
       0 0 0 4px var(--primary-color);
   outline: none;
 }
 
 .form-subscribe__button:hover {
-  color: var(--text-second-color);
-  background: #B4BDC7;
+  color: var(--dark-bgr-text-color);
+  background: var(--border-color);
 }
 
 @media (min-width: 1024px) {

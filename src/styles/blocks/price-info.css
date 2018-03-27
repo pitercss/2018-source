@@ -14,8 +14,8 @@
   padding-bottom: 10px;
   padding-left: 11px;
 
-  background: white;
-  border: 2px solid #303B40;
+  background: var(--white);
+  border: 2px solid var(--primary-text-color);
 }
 
 .price-info__price-list::before {
@@ -32,9 +32,9 @@
       translateX(-50%)
       rotate(-45deg);
 
-  background: white;
-  border-top: 2px solid #303B40;
-  border-right: 2px solid #303B40;
+  background: var(--white);
+  border-top: 2px solid var(--primary-text-color);
+  border-right: 2px solid var(--primary-text-color);
 }
 
 .price-info__item {
@@ -47,7 +47,7 @@
 }
 
 .price-info__item--future {
-  color: #B4BDC7;
+  color: var(--secondary-text-color);
 }
 
 .price-info__date {
@@ -90,7 +90,7 @@
   width: 2px;
   height: 14px;
 
-  background: #303B40;
+  background: var(--primary-text-color);
 }
 
 .price-info__close::before {

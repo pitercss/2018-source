@@ -16,13 +16,13 @@
 
 .button:focus {
   box-shadow:
-      0 0 0 2px white,
+      0 0 0 2px var(--white),
       0 0 0 4px var(--primary-color);
   outline: none;
 }
 
 .button:hover {
-  color: white;
+  color: var(--white);
   background: var(--secondary-color);
 }
 

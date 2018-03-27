@@ -52,7 +52,7 @@
   font-size: var(--main-font-size);
   text-transform: uppercase;
 
-  color: var(--text-second-color);
+  color: var(--dark-bgr-text-color);
 }
 
 .leader__name {
