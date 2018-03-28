@@ -1,5 +1,5 @@
 .columns--bg .columns__item {
-  background-color: #f6f6f6;
+  background-color: var(--bgr-color);
   padding: 15px 20px;
 }
 

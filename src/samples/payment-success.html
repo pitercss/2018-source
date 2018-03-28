@@ -25,7 +25,7 @@
     <symbol viewBox="0 0 28 23" id="icon-twitter">
       <path d="M28 2.72c-1.026.46-2.137.78-3.298.919A5.84 5.84 0 0 0 27.23.422a11.37 11.37 0 0 1-3.657 1.41A5.704 5.704 0 0 0 19.386 0c-3.17 0-5.741 2.601-5.741 5.806 0 .458.052.898.146 1.323C9.014 6.886 4.786 4.58 1.95 1.062a5.814 5.814 0 0 0-.779 2.922 5.815 5.815 0 0 0 2.555 4.828 5.609 5.609 0 0 1-2.596-.725v.07c0 2.817 1.981 5.166 4.604 5.703a5.865 5.865 0 0 1-2.596.095c.735 2.307 2.852 3.982 5.365 4.035a11.462 11.462 0 0 1-7.135 2.48c-.461 0-.914-.027-1.367-.078A16.125 16.125 0 0 0 8.808 23c10.56 0 16.338-8.848 16.338-16.519l-.018-.752A11.642 11.642 0 0 0 28 2.721z"/>
     </symbol>
-    <symbol viewBox="0 0 31 17" id="icon-vk">
+    <symbol viewBox="0 0 31 17" id="icon-vkontakte">
       <path d="M15.174 16.927h1.854s.558-.057.843-.354c.262-.274.25-.787.25-.787s-.036-2.385 1.116-2.74c1.141-.342 2.602 2.306 4.147 3.333 1.176.776 2.055.605 2.055.605l4.146-.057s2.162-.126 1.14-1.769c-.082-.137-.593-1.21-3.076-3.424-2.602-2.316-2.246-1.94.879-5.945 1.9-2.443 2.661-3.926 2.423-4.565-.225-.605-1.627-.445-1.627-.445L24.667.8s-.345-.045-.606.103c-.25.148-.416.48-.416.48s-.737 1.882-1.723 3.492c-2.079 3.389-2.91 3.56-3.243 3.355-.784-.491-.594-1.963-.594-3.024 0-3.287.523-4.645-1.01-4.999-.51-.114-.879-.194-2.174-.205-1.663-.012-3.077 0-3.873.376-.534.251-.938.81-.689.833.309.034 1.01.183 1.378.662.475.628.464 2.032.464 2.032s.273 3.868-.642 4.348c-.63.33-1.485-.343-3.338-3.413-.95-1.575-1.664-3.31-1.664-3.31s-.142-.319-.38-.501C5.86.824 5.444.756 5.444.756L1.013.779S.348.8.098 1.075c-.214.251-.012.754-.012.754s3.47 7.794 7.402 11.72c3.6 3.618 7.686 3.378 7.686 3.378z"/>
     </symbol>
     <symbol viewBox="0 0 14 26" id="icon-facebook">
@@ -46,31 +46,50 @@
       </time>
     </div>
   </header>
-  <main class="page-payment">
-    <div class="page-payment__content page-payment__content--success">
-      <h1 class="page-payment__title">Now you have a ticket!</h1>
-      <p class="page-payment__description">Please check your email for details.</p>
-      <p><a href="" class="button">Go back</a></p>
+  <main class="page-payment page-payment--success">
+    <h1 class="page-payment__title">Payment successfully!</h1>
+    <p class="page-payment__description">Now, owe have something to eat, and you may open the champagne</p>
+    <p class="page-payment__description">
+      Share it for your friends or
+      <a class="page-payment__link" href="#">go back to main page</a>
+    </p>
+    <ul class="page-payment__social">
+      <li class="page-payment__social-item">
+        <a class="page-payment__social-link page-payment__social-link--twitter" href="https://twitter.com/pitercss_conf" aria-label="twitter">
+          <svg width="33" height="27">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="page-payment__social-item">
+        <a class="page-payment__social-link page-payment__social-link--facebook" href="https://www.facebook.com/pitercssconf/" aria-label="facebook">
+          <svg width="16" height="29">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="page-payment__social-item">
+        <a class="page-payment__social-link page-payment__social-link--vkontakte" href="" aria-label="vkontakte">
+          <svg width="36" height="20">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vkontakte"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </main>
-  <footer class="footer">
-    <div class="footer-info">
-      <ul class="footer-info__list">
-        <li class="footer-info__item">
-          <a href="/call-for-speakers/" class="footer-info__link"><span>Call for speakers</span> </a>
-        </li>
-        <li class="footer-info__item">
-          <a href="/code-of-conduct/" class="footer-info__link"><span>Code of conduct</span></a>
-        </li>
-      </ul>
-      <p class="footer-info__copyright">
-        Interaktivnye Obuchayushhchie Tehnologii LLC ©
-        <span class="footer-info__copyright-years">2016–2018</span>
-      </p>
-    </div>
-    <div class="footer__logo">
-      <a class="footer__logo-link" href="/">
-        <img class="footer__logo-image" src="/images/logo-footer.svg" alt="pitercss_conf" width="37">
-      </a>
+  <footer class="footer footer--payment">
+    <div class="footer__container">
+      <div class="footer-info">
+        <p class="footer-info__copyright">
+          © LLC «Interactive educational technologies»,
+          <span class="footer-info__copyright-years">2016–2018</span>
+        </p>
+      </div>
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="/">
+          <img class="footer__logo-image" src="/images/logo-footer.svg" alt="pitercss_conf" width="37">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

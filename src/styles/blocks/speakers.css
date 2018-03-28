@@ -25,13 +25,13 @@
 
 .speakers__button:focus {
   box-shadow:
-      0 0 0 2px white,
-      0 0 0 4px var(--primary-color);
+      0 0 0 2px var(--white),
+      0 0 0 4px var(--secondary-color);
   outline: none;
 }
 
 .speakers__button:hover {
-  color: var(--text-second-color);
+  color: var(--dark-bgr-text-color);
   background: var(--secondary-color);
 }
 

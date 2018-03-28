@@ -12,12 +12,12 @@ img {
 }
 
 body {
-  min-width: 375px;
+  min-width: 320px;
   margin: 0;
   font-family: var(--font-stack);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
-  color: var(--text-color);
+  color: var(--primary-text-color);
   background: var(--white);
 }
 

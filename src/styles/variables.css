@@ -1,13 +1,33 @@
 :root {
-  --charcoal-grey: #303b40;
-  --neon-pink: #ff0195;
   --aquamarine: #00e2b5;
+  --barbie-pink: #e30083;
+  --blue-magenta-violet: #55359e;
+  --charcoal-grey: #303b40;
+  --coral-reef: #ff6e6e;
+  --fire-opal: #f2613e;
+  --flame: #ef4319;
+  --gainsboro: #d6d8d9;
+  --lavender-grey: #b4bdc7;
+  --neon-pink: #ff0195;
+  --slategrey: #77808a;
   --white: #ffffff;
+  --white-smoke: #f6f6f6;
+  --yellow: #ffdb1a;
 
-  --text-color: var(--charcoal-grey);
+
   --primary-color: var(--aquamarine);
-  --secondary-color: var(--neon-pink);
-  --text-second-color: var(--white);
+  --secondary-color: var(--flame);
+  --secondary-color-hover: var(--fire-opal);
+  --tertiary-color: var(--blue-magenta-violet);
+  --quaternary-color: var(--yellow);
+  --quinary-color: var(--barbie-pink);
+  --bgr-color: var(--white-smoke);
+  --dark-bgr-color: var(--slategrey);
+  --border-color: var(--gainsboro);
+  --primary-text-color: var(--charcoal-grey);
+  --secondary-text-color: var(--lavender-grey);
+  --dark-bgr-text-color: var(--white);
+  --wrong-color: var(--coral-reef);
 
   --main-font-size: 12px;
   --second-font-size: 15px;

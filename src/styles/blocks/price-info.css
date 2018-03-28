@@ -1,22 +1,21 @@
 .price-info {
   position: relative;
 
-  margin-top: 17px;
+  margin-top: 19px;
 }
 
 .price-info__price-list {
   position: relative;
 
   display: flex;
-  width: 100%;
   margin: 0;
   padding-top: 12px;
   padding-right: 11px;
   padding-bottom: 10px;
   padding-left: 11px;
 
-  background: white;
-  border: 2px solid #303B40;
+  background: var(--white);
+  border: 2px solid var(--primary-text-color);
 }
 
 .price-info__price-list::before {
@@ -33,9 +32,9 @@
       translateX(-50%)
       rotate(-45deg);
 
-  background: white;
-  border-top: 2px solid #303B40;
-  border-right: 2px solid #303B40;
+  background: var(--white);
+  border-top: 2px solid var(--primary-text-color);
+  border-right: 2px solid var(--primary-text-color);
 }
 
 .price-info__item {
@@ -48,7 +47,7 @@
 }
 
 .price-info__item--future {
-  color: #B4BDC7;
+  color: var(--secondary-text-color);
 }
 
 .price-info__date {
@@ -77,7 +76,7 @@
 }
 
 .price-info__close:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .price-info__close::before,
@@ -91,7 +90,7 @@
   width: 2px;
   height: 14px;
 
-  background: #303B40;
+  background: var(--primary-text-color);
 }
 
 .price-info__close::before {
@@ -104,8 +103,7 @@
 
 @media (min-width: 1024px) {
   .price-info {
-    margin-top: 26px;
-    margin-left: 8px;
+    margin-top: 38px;
   }
 
   .price-info__price-list {
@@ -119,7 +117,6 @@
 
   .price-info__price-list::before {
     top: -12px;
-    left: 68%;
 
     width: 18px;
     height: 18px;
@@ -139,7 +136,6 @@
   .price-info__price {
     font-size: var(--second-font-size-desktop);
     line-height: 1;
-    white-space: nowrap;
   }
 
   .price-info__close {

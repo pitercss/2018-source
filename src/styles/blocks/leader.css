@@ -1,0 +1,141 @@
+.leader {
+  position: relative;
+
+  padding-top: 1px;
+
+  font-size: 0;
+}
+
+.leader::before {
+  content: '';
+
+  position: absolute;
+  top: -14px;
+  right: 0;
+  z-index: 1;
+
+  width: 35.7%;
+  height: 100%;
+
+  background: transparent url('../images/bgr-leader-mobile.svg') no-repeat 100% 0;
+  background-size: contain;
+}
+
+.leader__container {
+  position: relative;
+
+  margin-top: 15px;
+  margin-right: 5.8%;
+  margin-left: 5.8%;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  padding-left: 6.2%;
+
+  background: var(--quaternary-color);
+}
+
+.leader__container::before {
+  content: '';
+
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+
+  width: 93.2%;
+  height: 164px;
+
+  background: var(--secondary-color);
+}
+
+.leader__caption {
+  font-weight: bold;
+  font-size: var(--main-font-size);
+  text-transform: uppercase;
+
+  color: var(--dark-bgr-text-color);
+}
+
+.leader__name {
+  margin: 0;
+  margin-top: 7px;
+
+  font-size: var(--second-font-size);
+}
+
+.leader__company {
+  margin-left: -3px;
+}
+
+.leader__company::before {
+  content: "_";
+}
+
+.leader__photo {
+  position: relative;
+
+  width: 227px;
+  height: 193px;
+  margin-top: 10px;
+  margin-left: 10.7%;
+}
+
+@media (min-width: 1024px) {
+  .leader {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .leader::before {
+    top: -70px;
+
+    width: 18.8%;
+
+    background-image: url('../images/bgr-leader.svg');
+  }
+
+  .leader__container {
+    margin: 0;
+    margin-top: 30px;
+    padding-top: 55px;
+    padding-bottom: 0;
+    padding-left: 2.9%;
+  }
+
+  .leader__container::before {
+    right: 0;
+
+    width: 44.6%;
+    height: 90px;
+  }
+
+  .leader__container {
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .leader__caption {
+    font-size: var(--second-font-size);
+  }
+
+  .leader__name {
+    margin-top: -2px;
+
+    font-size: 26px;
+  }
+
+  .leader__photo {
+    z-index: 1;
+
+    width: 286px;
+    height: 244px;
+    margin-top: -131px;
+    margin-right: 9%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leader {
+    margin: 0;
+  }
+}

@@ -1,21 +1,19 @@
 .recreation {
   display: flex;
-  min-height: 43px;
+  padding-top: 18px;
+  padding-bottom: 14px;
 
-  color: var(--primary-color);
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid var(--tertiary-color);
 }
 
 .recreation__time {
   width: 14%;
-  margin-top: 11px;
 
   font-weight: bold;
 }
 
 .recreation__heading {
   margin: 0;
-  margin-top: 11px;
 
   font-size: var(--main-font-size);
   text-transform: lowercase;
@@ -23,22 +21,20 @@
 
 @media (min-width: 1024px) {
   .recreation {
-    min-height: 70px;
-    margin-left: 9%;
+    margin-left: 8.7%;
+    padding-top: 23px;
+    padding-bottom: 25px;
 
     border-top-width: 2px;
   }
 
   .recreation__time {
-    width: 18%;
-    margin-top: 24px;
+    width: 195px;
 
     font-size: var(--main-font-size-desktop);
   }
 
   .recreation__heading {
-    margin-top: 26px;
-
     font-size: var(--main-font-size-desktop);
   }
 }

@@ -1,7 +1,7 @@
 window.script = (() => {
   const ENTER = 13;
 
-  // добавление обработчика нажатия мышки или клавиши enter
+  // adding click and enter handlers
 
   const addHandler = (element, action) => {
     element.addEventListener('click', action);
@@ -13,7 +13,7 @@ window.script = (() => {
     });
   };
 
-  // открытие и закрытие дополнительной информации о сессии
+  // opening and closing session information
 
   const sessionToggles = document.querySelectorAll('.session__toggle');
 
@@ -36,7 +36,7 @@ window.script = (() => {
     }
   }
 
-  // слайдер
+  // slider
 
   const slider = document.querySelector('.gallery');
 
@@ -65,25 +65,7 @@ window.script = (() => {
     addHandler(slider, slideImages);
   }
 
-  // открытие блока со стикерами
-
-  const preview = document.querySelector('.preview');
-
-  if (preview) {
-    const stickers = preview.querySelector('.preview__stickers-list');
-    const link = preview.querySelector('.preview__link');
-
-    const turnOnStickers = (evt) => {
-      evt.preventDefault();
-      preview.classList.toggle('preview--stickers');
-      stickers.classList.toggle('preview__stickers-list--show');
-      evt.target.innerHTML = evt.target.innerHTML === 'Add Sticker' ? 'Close' : 'Add Sticker';
-    };
-
-    addHandler(link, turnOnStickers);
-  }
-
-  // закрытие справки о цене
+  // closing price info
 
   const priceInfo = document.querySelector('.price-info');
 
