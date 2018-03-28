@@ -40,7 +40,7 @@
 
 .bgr-block__link:focus {
   border-bottom-color: transparent;
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .bgr-block__link:hover {

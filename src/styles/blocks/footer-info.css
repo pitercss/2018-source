@@ -30,10 +30,7 @@
 }
 
 .footer-info__link:focus {
-  box-shadow:
-      0 0 0 1px var(--white),
-      0 0 0 2px var(--primary-color);
-  outline: none;
+  outline: 1px solid var(--secondary-color);
 }
 
 .footer-info__link:hover {

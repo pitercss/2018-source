@@ -22,7 +22,7 @@
 }
 
 .footer__logo-link:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .footer--margin-top {

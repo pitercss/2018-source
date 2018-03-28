@@ -1,5 +1,5 @@
 .preview {
-  margin-top: 37px;
+  margin-top: 38px;
   padding-top: 1px;
 
   background: var(--primary-color);
@@ -150,7 +150,7 @@
 }
 
 .preview__link:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .preview__footer {

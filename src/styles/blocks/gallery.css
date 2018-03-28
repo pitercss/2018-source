@@ -42,7 +42,7 @@
 }
 
 .gallery__button:focus {
-  background: rgba(0, 226, 181, 0.7);
+  background: rgba(239, 67, 25, 0.7);
   outline: none;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .gallery__link:focus {
-  outline: 4px solid var(--primary-color);
+  outline: 4px solid var(--secondary-color);
 }
 
 .gallery__image {
@@ -96,7 +96,7 @@
 
 .gallery__more:focus {
   border-bottom: none;
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .gallery__note {
@@ -159,7 +159,7 @@
   }
 
   .gallery--transformable .gallery__more:focus {
-    outline: 4px solid var(--primary-color);
+    outline: 4px solid var(--secondary-color);
   }
 
   @supports (display: grid) {

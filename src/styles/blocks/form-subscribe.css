@@ -23,11 +23,11 @@
 }
 
 .form-subscribe__input:hover {
-  border-bottom-color: var(--primary-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 .form-subscribe__input:focus {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--secondary-color);
 }
 
 .form-subscribe__input:-moz-placeholder {
@@ -47,19 +47,19 @@
 }
 
 .form-subscribe__input:hover:-moz-placeholder {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .form-subscribe__input:hover::-moz-placeholder {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .form-subscribe__input:hover::-webkit-input-placeholder {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .form-subscribe__input:hover:-ms-input-placeholder {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .form-subscribe__button {
@@ -81,7 +81,7 @@
 .form-subscribe__button:focus {
   box-shadow:
       0 0 0 2px var(--white),
-      0 0 0 4px var(--primary-color);
+      0 0 0 4px var(--secondary-color);
   outline: none;
 }
 

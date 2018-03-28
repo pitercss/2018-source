@@ -45,7 +45,7 @@
 }
 
 .session--closed .session__container:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .session--closed .session__container:hover {
@@ -63,14 +63,12 @@
 
 .session__company {
   margin-left: -3px;
+
+  text-transform: lowercase;
 }
 
 .session__company::before {
   content: "__";
-}
-
-.session--closed .session__company {
-  text-transform: lowercase;
 }
 
 .session__topic {
@@ -97,7 +95,7 @@
 }
 
 .session__toggle:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .session__toggle::before,
@@ -164,7 +162,7 @@
 
 .session__link:focus {
   border-bottom: none;
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 @media (min-width: 1024px) {

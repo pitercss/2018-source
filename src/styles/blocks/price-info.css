@@ -76,7 +76,7 @@
 }
 
 .price-info__close:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .price-info__close::before,
@@ -104,7 +104,6 @@
 @media (min-width: 1024px) {
   .price-info {
     margin-top: 38px;
-    margin-left: 6px;
   }
 
   .price-info__price-list {

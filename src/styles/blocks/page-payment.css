@@ -111,7 +111,7 @@
 
 .page-payment__link:focus,
 .page-payment__social-link:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--secondary-color);
 }
 
 .page-payment__link:hover {
