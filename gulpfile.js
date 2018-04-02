@@ -16,8 +16,7 @@ const cssnext = require("gulp-cssnext");
 gulp.task('html', () => {
   return gulp.src('src/**/*.html')
     .pipe(htmlmin({
-      removeComments: true,
-      collapseWhitespace: true
+      removeComments: true
     }))
     .pipe(gulp.dest('dest'))
     .pipe(sync.stream({
