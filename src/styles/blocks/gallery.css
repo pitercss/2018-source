@@ -71,7 +71,7 @@
 }
 
 .gallery__link:focus {
-  outline: 4px solid var(--secondary-color);
+  outline: 4px solid var(--aquamarine);
 }
 
 .gallery__image {
@@ -96,7 +96,7 @@
 
 .gallery__more:focus {
   border-bottom: none;
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .gallery__note {
@@ -159,7 +159,7 @@
   }
 
   .gallery--transformable .gallery__more:focus {
-    outline: 4px solid var(--secondary-color);
+    outline: 4px solid var(--aquamarine);
   }
 
   @supports (display: grid) {

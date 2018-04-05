@@ -17,7 +17,7 @@
 .button:focus {
   box-shadow:
       0 0 0 2px var(--white),
-      0 0 0 4px var(--secondary-color);
+      0 0 0 4px var(--aquamarine);
   outline: none;
 }
 

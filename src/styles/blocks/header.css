@@ -95,7 +95,7 @@
 /* Logo */
 
 .header__logo:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 /* Time */
@@ -139,7 +139,7 @@
   }
 
   .header__place:focus {
-    outline: 1px solid var(--secondary-color);
+    outline: 1px solid var(--aquamarine);
   }
 }
 
@@ -217,7 +217,7 @@
 .header__place-link:focus {
   padding-bottom: 6px;
 
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .header__place-link:hover {
@@ -225,7 +225,7 @@
 }
 
 .header__place-link:focus::before {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 @media (min-width: 1024px) {
@@ -361,7 +361,7 @@
 .header__button:focus {
   box-shadow:
     0 0 0 2px var(--white),
-    0 0 0 4px var(--secondary-color);
+    0 0 0 4px var(--aquamarine);
   outline: none;
 }
 
@@ -499,7 +499,7 @@
 }
 
 .header__menu-link:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .header__menu-link:hover {

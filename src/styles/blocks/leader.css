@@ -67,7 +67,7 @@
 }
 
 .leader__company::before {
-  content: "_";
+  content: "__";
 }
 
 .leader__photo {

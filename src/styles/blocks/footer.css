@@ -22,7 +22,7 @@
 }
 
 .footer__logo-link:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .footer--margin-top {

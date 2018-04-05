@@ -8,8 +8,6 @@
 }
 
 .leader + .section__container .session:first-child {
-  padding-top: 21px;
-
   border-top-color: transparent;
 }
 
@@ -45,7 +43,7 @@
 }
 
 .session--closed .session__container:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .session--closed .session__container:hover {
@@ -82,7 +80,7 @@
 
 .session__toggle {
   position: absolute;
-  top: 28px;
+  top: 16px;
   right: 1px;
 
   width: 14px;
@@ -95,7 +93,7 @@
 }
 
 .session__toggle:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .session__toggle::before,
@@ -162,7 +160,7 @@
 
 .session__link:focus {
   border-bottom: none;
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 @media (min-width: 1024px) {
@@ -180,7 +178,9 @@
   }
 
   .session__time {
-    float: left;
+    position: absolute;
+    top: 23px;
+    left: 0;
     width: 199px;
 
     font-size: 26px;
@@ -189,6 +189,7 @@
 
   .session__speaker {
     margin-top: 4px;
+    margin-left: 199px;
 
     font-size: 26px;
   }

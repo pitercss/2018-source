@@ -30,7 +30,7 @@
 }
 
 .footer-info__link:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .footer-info__link:hover {
@@ -85,7 +85,7 @@
 
   .footer-info__item {
     margin-top: 16px;
-    margin-right: 6%;
+    margin-right: 5%;
   }
 
   .footer-info__copyright {
@@ -101,7 +101,7 @@
 
 @media (min-width: 1280px) {
   .footer-info {
-    width: 24%;
+    width: 34%;
     margin: 0;
   }
 

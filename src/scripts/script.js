@@ -64,21 +64,6 @@ window.script = (() => {
 
     addHandler(slider, slideImages);
   }
-
-  // closing price info
-
-  const priceInfo = document.querySelector('.price-info');
-
-  if (priceInfo) {
-    const close = priceInfo.querySelector('.price-info__close');
-
-    const closeInfo = (evt) => {
-      evt.preventDefault();
-      priceInfo.style.display = 'none';
-    }
-
-    addHandler(close, closeInfo);
-  }
 })();
 
 /*

@@ -54,7 +54,7 @@
 }
 
 .social__link:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .social__link:hover {

@@ -76,7 +76,7 @@
 }
 
 .price-info__close:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .price-info__close::before,

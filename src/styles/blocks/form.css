@@ -62,7 +62,7 @@
   position: relative;
 
   border-color: var(--bgr-color);
-  outline: 2px solid var(--secondary-color);
+  outline: 2px solid var(--aquamarine);
 }
 
 .form__radio:checked + .form__label--days-number {
@@ -94,7 +94,7 @@
 
 .form__terms:focus {
   border: none;
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .form__field {
@@ -143,7 +143,7 @@
 }
 
 .form__input:focus {
-  box-shadow: 0 0 0 2px var(--secondary-color);
+  box-shadow: 0 0 0 2px var(--aquamarine);
 
   outline: none;
 }
@@ -227,7 +227,7 @@
   position: relative;
 
   border-color: var(--bgr-color);
-  outline: 2px solid var(--secondary-color);
+  outline: 2px solid var(--aquamarine);
 }
 
 .form__label--payment-options svg {
@@ -266,7 +266,7 @@
 
 .form__link:focus {
   border-bottom-color: transparent;
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .form__link:hover {
@@ -275,7 +275,7 @@
 }
 
 .form__group--payment-options .form__link:focus {
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--aquamarine);
 }
 
 .form__group--payment-options .form__link {
@@ -314,7 +314,7 @@
 .form__button:focus {
   box-shadow:
       0 0 0 2px var(--white),
-      0 0 0 4px var(--secondary-color);
+      0 0 0 4px var(--aquamarine);
   outline: none;
 }
 
@@ -484,12 +484,12 @@
   .form__field--code::before {
     left: 0.9%;
 
-    width: 20%;
+    width: 22%;
   }
 
   .form__field--code .form__input {
     display: inline-block;
-    width: 20%;
+    width: 22%;
     padding-right: 0.9%;
     padding-left: 0.9%;
     box-sizing: content-box;
@@ -497,6 +497,7 @@
 
   .form__tip {
     font-size: var(--second-font-size-desktop);
+    margin-left: 20px;
   }
 
   .form__button {
