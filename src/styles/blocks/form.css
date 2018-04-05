@@ -14,7 +14,7 @@
 }
 
 .form__fieldset {
-  width: 88%;
+  width: 90%;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
@@ -79,7 +79,6 @@
 }
 
 .form__warning {
-  margin: 0;
   margin-top: 12px;
 
   font-size: 11px;
@@ -146,6 +145,15 @@
   box-shadow: 0 0 0 2px var(--aquamarine);
 
   outline: none;
+}
+
+.form__select {
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid;
+  height: 37px;
+  border-bottom-width: 1px;
+  margin-top: 20px;
 }
 
 .form__input:-moz-placeholder {
@@ -328,7 +336,37 @@
   text-align: center;
 }
 
+.section-login .form__input {
+  margin-top: 10px;
+}
+
+.section-login .form__input:-moz-placeholder {
+  color: #b5bdc8;
+}
+
+.section-login .form__input::-moz-placeholder {
+  color: #b5bdc8;
+}
+
+.section-login .form__input::-webkit-input-placeholder {
+  color: #b5bdc8;
+}
+
+.section-login .form__input:-ms-input-placeholder {
+  color: #b5bdc8;
+}
+
+.section-login .form__field::before {
+  width: 100%;
+  left: 0;
+}
+
 @media (min-width: 1024px) {
+
+  .form__select {
+    width: auto;
+  }
+
   .form {
     margin-top: 10px;
   }
