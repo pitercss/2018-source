@@ -1,13 +1,15 @@
 .map {
   position: relative;
   height: var(--map-height);
+  min-height: 500px;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .map iframe {
   border: 0;
   width: 100%;
-  height: var(--map-height);
+  height: 100%;
 }
 
 .map--full-width iframe {

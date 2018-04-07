@@ -269,6 +269,15 @@
 
     font-size: var(--second-font-size-desktop);
   }
+
+  .payment-page .section--badge {
+    margin-top: 0;
+  }
+
+  .payment-page .section__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media (min-width: 1280px) {

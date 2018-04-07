@@ -7,19 +7,22 @@
 }
 
 .form-subscribe__input {
-  width: 69%;
+  width: 65%;
   margin-right: 1%;
   padding-top: 0;
-  padding-right: 4px;
+  padding-right: 8px;
   padding-bottom: 0;
-  padding-left: 4px;
+  padding-left: 8px;
 
   font-family: "gotham pro", "verdana", sans-serif;
   font-size: var(--main-font-size);
   line-height: 1.8;
+  border-radius: 0;
+  box-shadow: none;
 
   border: none;
   border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid transparent;
 }
 
 .form-subscribe__input:hover {
@@ -63,7 +66,7 @@
 }
 
 .form-subscribe__button {
-  width: 28%;
+  width: 30%;
   padding-top: 6px;
   padding-bottom: 4px;
 
@@ -76,6 +79,7 @@
   background: var(--white);
   border: 1px solid var(--secondary-color);
   border-radius: 30px;
+  white-space: nowrap
 }
 
 .form-subscribe__button:focus {
@@ -114,6 +118,7 @@
     font-size: var(--main-font-size-desktop);
 
     border-bottom-width: 2px;
+    border-top-width: 2px;
   }
 
   .form-subscribe__button {

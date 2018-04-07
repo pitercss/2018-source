@@ -53,6 +53,10 @@ a {
   color: var(--secondary-color);
 }
 
+.lang-link {
+  margin-left: 3px;
+}
+
 .paragraph-lead {
   font-size: 21px;
   margin-top: 10px;

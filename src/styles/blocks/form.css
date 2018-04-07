@@ -88,7 +88,8 @@
 }
 
 .form__terms {
-  color: var(--secondary-text-color);
+  color: #636a71;
+  text-decoration: underline;
 }
 
 .form__terms:focus {
@@ -534,7 +535,8 @@
   }
 
   .form__tip {
-    font-size: var(--second-font-size-desktop);
+    font-size: 14px;
+    color: #b4bdc7;
     margin-left: 20px;
   }
 
@@ -556,7 +558,8 @@
   .form__terms {
     display: inline-block;
     margin-bottom: 3px;
-
-    border-bottom: 1px dashed var(--secondary-text-color);
+    color: #636a71;
+    border-bottom: 1px solid #636a71;
+    text-decoration: none;
   }
 }

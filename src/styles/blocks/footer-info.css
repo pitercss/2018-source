@@ -45,6 +45,8 @@
   font-size: 11px;
 
   color: var(--border-color);
+
+  width: 80%;
 }
 
 .footer-info__copyright-years {
@@ -62,6 +64,7 @@
 @media (min-width: 375px) {
   .footer-info__copyright {
     font-size: var(--main-font-size);
+    width: auto;
   }
 }
 

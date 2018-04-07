@@ -136,6 +136,7 @@
     width: 20%;
     height: 100%;
     margin-left: 10%;
+    margin-top: 1px;
   }
 
   .header__place:focus {
@@ -246,7 +247,7 @@
 
 @media (min-width: 1024px) {
   .header__nav {
-    width: auto;
+    width: 50%;
     margin-left: auto;
   }
 }
@@ -389,12 +390,6 @@
   .header__days-number {
     font-size: 13px;
   }
-}
-
-/* Price */
-
-.header__price {
-  color: var(--secondary-color);
 }
 
 /* Menu List */

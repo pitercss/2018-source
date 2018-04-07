@@ -15,25 +15,40 @@ window.script = (() => {
 
   // opening and closing session information
 
-  const sessionToggles = document.querySelectorAll('.session__toggle');
+  // const sessionToggles = document.querySelectorAll('.js-session-toggle');
+  //
+  // if (sessionToggles) {
+  //   if (sessionToggles.length > 0) {
+  //     const toggleSession = (evt) => {
+  //       evt.preventDefault();
+  //       evt.target.parentElement.classList.toggle('session--closed');
+  //       evt.target.classList.toggle('session__toggle--hide');
+  //       evt.target.setAttribute('aria-label', evt.target.getAttribute('aria-label') === 'Open talk description' ? 'Close talk description' : 'Open talk description');
+  //     };
+  //
+  //     const turnOnToggles = (nodeList, i) => {
+  //       addHandler(nodeList[i], toggleSession);
+  //     };
+  //
+  //     sessionToggles.forEach((it, i) => {
+  //       turnOnToggles(sessionToggles, i);
+  //     });
+  //   }
+  // }
+
+  const sessionToggles = document.querySelectorAll('.session');
 
   if (sessionToggles) {
-    if (sessionToggles.length > 0) {
-      const toggleSession = (evt) => {
+    sessionToggles.forEach((it, i) => {
+      it.addEventListener('click', function(evt) {
         evt.preventDefault();
-        evt.target.parentElement.classList.toggle('session--closed');
-        evt.target.classList.toggle('session__toggle--hide');
-        evt.target.setAttribute('aria-label', evt.target.getAttribute('aria-label') === 'Open talk description' ? 'Close talk description' : 'Open talk description');
-      };
-
-      const turnOnToggles = (nodeList, i) => {
-        addHandler(nodeList[i], toggleSession);
-      };
-
-      sessionToggles.forEach((it, i) => {
-        turnOnToggles(sessionToggles, i);
+        it.classList.toggle('session--closed');
+        const sessionToggledButton = it.querySelector('.session__toggle');
+        if (sessionToggledButton) {
+          sessionToggledButton.classList.toggle('session__toggle--hide');
+        }
       });
-    }
+    });
   }
 
   // slider

@@ -12,7 +12,8 @@
 
 .gallery__button {
   position: absolute;
-  top: 91px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
 
   display: none;
@@ -60,10 +61,8 @@
 
 .gallery__item {
   display: none;
-  height: 214px;
   margin: 0;
-
-  background: var(--primary-color);
+  position: relative;
 }
 
 .gallery__item--show {
