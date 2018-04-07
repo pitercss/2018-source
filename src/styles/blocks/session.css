@@ -50,6 +50,11 @@
   color: var(--secondary-color);
 }
 
+.session--anonced .session__container:hover {
+  color: #303b40;
+  cursor: default;
+}
+
 .session__speaker {
   margin: 0;
   margin-top: 4px;
@@ -171,6 +176,10 @@
     padding-bottom: 29px;
 
     border-top-width: 2px;
+  }
+
+  .session--anonced {
+    min-height: 0;
   }
 
   .session--closed {

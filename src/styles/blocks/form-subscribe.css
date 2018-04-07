@@ -9,10 +9,10 @@
 .form-subscribe__input {
   width: 65%;
   margin-right: 1%;
-  padding-top: 0;
   padding-right: 8px;
   padding-bottom: 0;
   padding-left: 8px;
+  padding-top: 2px;
 
   font-family: "gotham pro", "verdana", sans-serif;
   font-size: var(--main-font-size);
@@ -119,6 +119,7 @@
 
     border-bottom-width: 2px;
     border-top-width: 2px;
+    padding-top: 2px;
   }
 
   .form-subscribe__button {
