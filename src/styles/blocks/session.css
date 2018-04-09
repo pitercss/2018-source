@@ -50,7 +50,7 @@
   color: var(--secondary-color);
 }
 
-.session--anonced .session__container:hover {
+.session--announced .session__container:hover {
   color: #303b40;
   cursor: default;
 }
@@ -178,7 +178,7 @@
     border-top-width: 2px;
   }
 
-  .session--anonced {
+  .session--announced {
     min-height: 0;
   }
 

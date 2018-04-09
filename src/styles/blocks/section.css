@@ -157,7 +157,7 @@
     margin-top: 146px;
 
     background: transparent url('../images/bgr-schedule.svg') repeat-y 91.3% 423px;
-    background-size: 25%;
+    background-size: 22%;
   }
 
   .section--schedule::before {
@@ -277,6 +277,12 @@
   .payment-page .section__inner {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section--schedule {
+    background-size: 30%;
   }
 }
 
