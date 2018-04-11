@@ -178,7 +178,6 @@
 }
 
 .form__error {
-  display: none;
 }
 
 .form__field--correct .form__input {
@@ -468,6 +467,7 @@
     margin-top: 40px;
 
     align-items: center;
+    justify-content: flex-start;
   }
 
   .form__label--payment-options {
