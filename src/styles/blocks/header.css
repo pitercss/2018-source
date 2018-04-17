@@ -5,6 +5,11 @@
   margin-top: 10px;
 
   flex-wrap: wrap;
+  border-bottom: 1px solid #d6d8d9;
+}
+
+.header--main {
+  border-bottom: 0;
 }
 
 @media (min-width: 1024px) {

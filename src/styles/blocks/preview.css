@@ -65,6 +65,11 @@
   padding-left: 18%;
 
   list-style: none;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  width: 90%;
 }
 
 .preview__item--name {
@@ -214,6 +219,7 @@
 
   .preview__item--company {
     margin-top: 13px;
+    width: 78%;
   }
 
   .preview__card--empty .preview__card-tip {

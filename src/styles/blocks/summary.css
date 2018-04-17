@@ -96,8 +96,6 @@
 
     font-size: 86px;
     line-height: 1.1;
-
-    border-top: 1px solid var(--border-color);
   }
 
   .summary::before {
