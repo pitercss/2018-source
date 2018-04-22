@@ -110,16 +110,16 @@
 }
 
 .form__field::before {
-  content: '';
+  /* content: '';
 
   position: absolute;
   bottom: -1px;
   left: 1.2%;
 
   width: 97.6%;
-  height: 1px;
+  height: 1px; */
 
-  background: var(--primary-text-color);
+  /* background: var(--primary-text-color); */
 }
 
 .form__input {
@@ -140,12 +140,19 @@
   background: transparent;
   border: none;
   caret-color: var(--secondary-color);
+
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.form__input:hover {
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .form__input:focus {
   box-shadow: 0 0 0 2px var(--aquamarine);
 
   outline: none;
+  border-bottom: 1px solid transparent;
 }
 
 .form__select {
@@ -153,7 +160,6 @@
   width: 100%;
   border: 1px solid;
   height: 37px;
-  border-bottom-width: 1px;
   margin-top: 20px;
 }
 
@@ -173,11 +179,9 @@
   color: transparent;
 }
 
-.form__field:hover .form__input {
-  border-bottom-color: var(--secondary-color);
-}
-
 .form__error {
+  font-size: 14px;
+  margin-top: 8px;
 }
 
 .form__field--correct .form__input {
@@ -186,13 +190,13 @@
 }
 
 .form__field--wrong .form__input {
-  background: transparent url("/images/icon-error.svg") no-repeat 100% 14px;
+  background: transparent url("/images/icon-error.svg") no-repeat 99% 10px;
   background-size: 24px;
   border-bottom-color: var(--wrong-color);
 }
 
-.form__field--wrong:hover .form__input {
-  border-bottom-color: var(--wrong-color);
+.form__field--wrong .form__input:focus {
+  border-bottom: 1px solid transparent;
 }
 
 .form__field--wrong .form__error {
@@ -356,10 +360,10 @@
   color: #b5bdc8;
 }
 
-.section-login .form__field::before {
+/* .section-login .form__field::before {
   width: 100%;
   left: 0;
-}
+} */
 
 @media (min-width: 1024px) {
 
@@ -392,11 +396,11 @@
     width: 47.9%;
   }
 
-  .form__field::before {
+  /* .form__field::before {
     left: 2.2%;
 
     width: 95.6%;
-  }
+  } */
 
   .form__label {
     display: none;
@@ -424,8 +428,6 @@
     line-height: 23px;
 
     font-size: var(--second-font-size-desktop);
-
-    border-bottom-width: 2px;
   }
 
   .form__input:-moz-placeholder {
@@ -454,14 +456,14 @@
 
   .form__field--correct .form__input,
   .form__field--wrong .form__input {
-    background-position: 99% 26px;
+    background-position: 99% 12px;
     background-size: 24px;
   }
 
   .form__field--wrong .form__error {
     margin-left: 8px;
-
-    font-size: var(--second-font-size-desktop);
+    font-size: 14px;
+    margin-top: 8px;
   }
 
   .form__group--payment-options {
