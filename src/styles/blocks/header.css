@@ -173,6 +173,42 @@
   }
 }
 
+.header__mobile-place {
+  margin-left: 6.4%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .header__mobile-place {
+    display: none;
+  }
+}
+
+.header__mobile-place-link {
+  color: #000;
+  font-size: 11px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.header__mobile-place-link::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 28px;
+
+  background: url("../images/icon-place.svg") no-repeat 0 2px;
+  background-size: 12px;
+  border: 2px solid transparent;
+}
+
 /* Place City */
 
 .header__place-city {
