@@ -1,4 +1,4 @@
-.leader {
+.host {
   position: relative;
 
   padding-top: 1px;
@@ -6,7 +6,7 @@
   font-size: 0;
 }
 
-.leader::before {
+.host::before {
   content: '';
 
   position: absolute;
@@ -21,7 +21,7 @@
   background-size: contain;
 }
 
-.leader__container {
+.host__container {
   position: relative;
 
   margin-top: 15px;
@@ -34,7 +34,7 @@
   background: var(--quaternary-color);
 }
 
-.leader__container::before {
+.host__container::before {
   content: '';
 
   position: absolute;
@@ -47,7 +47,7 @@
   background: var(--secondary-color);
 }
 
-.leader__caption {
+.host__caption {
   font-weight: bold;
   font-size: var(--main-font-size);
   text-transform: uppercase;
@@ -55,7 +55,7 @@
   color: var(--dark-bgr-text-color);
 }
 
-.leader__name {
+.host__name {
   margin: 0;
   margin-top: 7px;
   position: relative;
@@ -64,15 +64,15 @@
   font-size: var(--second-font-size);
 }
 
-.leader__company {
+.host__company {
   margin-left: -3px;
 }
 
-.leader__company::before {
+.host__company::before {
   content: "__";
 }
 
-.leader__photo {
+.host__photo {
   position: relative;
 
   width: 227px;
@@ -82,12 +82,12 @@
 }
 
 @media (min-width: 1024px) {
-  .leader {
+  .host {
     margin-right: 30px;
     margin-left: 30px;
   }
 
-  .leader::before {
+  .host::before {
     top: -70px;
 
     width: 18.8%;
@@ -95,7 +95,7 @@
     background-image: url('../images/bgr-leader.svg');
   }
 
-  .leader__container {
+  .host__container {
     margin: 0;
     margin-top: 30px;
     padding-top: 55px;
@@ -103,30 +103,30 @@
     padding-left: 2.9%;
   }
 
-  .leader__container::before {
+  .host__container::before {
     right: 0;
 
     width: 44.6%;
     height: 90px;
   }
 
-  .leader__container {
+  .host__container {
     display: flex;
 
     justify-content: space-between;
   }
 
-  .leader__caption {
+  .host__caption {
     font-size: var(--second-font-size);
   }
 
-  .leader__name {
+  .host__name {
     margin-top: -2px;
 
     font-size: 26px;
   }
 
-  .leader__photo {
+  .host__photo {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -139,7 +139,7 @@
 }
 
 @media (min-width: 1280px) {
-  .leader {
+  .host {
     margin: 0;
   }
 }

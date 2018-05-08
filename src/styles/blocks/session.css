@@ -168,6 +168,17 @@
   outline: 1px solid var(--aquamarine);
 }
 
+.session__twitter {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.session__twitter:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
   .session {
     min-height: 260px;
