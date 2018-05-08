@@ -67,6 +67,22 @@ a {
   font-size: var(--main-font-size);
 }
 
+.old-price {
+  position: relative;
+}
+
+.old-price::after {
+  content: "";
+  top: 45%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 3px;
+  background: #ffffff;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+
 @media (min-width: 460px) {
   .picture-right {
     float: right;

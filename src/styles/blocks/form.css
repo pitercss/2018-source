@@ -300,8 +300,9 @@
   background-size: 20px;
 }
 
-.form__field--code {
-  display: none;
+.form__field--code .form__tip {
+  display: block;
+  margin-top: 10px;
 }
 
 .form__button {
@@ -360,11 +361,6 @@
   color: #b5bdc8;
 }
 
-/* .section-login .form__field::before {
-  width: 100%;
-  left: 0;
-} */
-
 @media (min-width: 1024px) {
 
   .form__select {
@@ -395,12 +391,6 @@
   .form__field {
     width: 47.9%;
   }
-
-  /* .form__field::before {
-    left: 2.2%;
-
-    width: 95.6%;
-  } */
 
   .form__label {
     display: none;
@@ -520,9 +510,7 @@
 
   .form__field--code {
     display: block;
-    width: 110%;
-    margin-top: 25px;
-    margin-left: -1%;
+    width: 100%;
   }
 
   .form__field--code::before {
@@ -533,10 +521,14 @@
 
   .form__field--code .form__input {
     display: inline-block;
-    width: 22%;
+    width: 27%;
     padding-right: 0.9%;
     padding-left: 0.9%;
     box-sizing: content-box;
+  }
+
+  .form__field--code .form__tip {
+    display: inline;
   }
 
   .form__tip {
