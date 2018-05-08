@@ -507,6 +507,8 @@
 
   .form__group--payment-options .form__link span {
     border: none;
+    border-bottom: 1px solid #636a71;
+    padding-bottom: 5px;
   }
 
   .form__group--payment-options .form__link::before {
