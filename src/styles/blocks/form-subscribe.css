@@ -75,9 +75,9 @@
   font-size: var(--main-font-size);
   line-height: 1.1;
 
-  color: var(--secondary-color);
+  color: #b4bdc7;
   background: var(--white);
-  border: 1px solid var(--secondary-color);
+  border: 1px solid #b4bdc7;
   border-radius: 30px;
   white-space: nowrap
 }
@@ -92,6 +92,13 @@
 .form-subscribe__button:hover {
   color: var(--white);
   background: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.form-subscribe:focus-within .form-subscribe__button {
+  color: var(--white);
+  background: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
 }
 
 @media (min-width: 1024px) {
