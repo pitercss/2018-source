@@ -15,14 +15,34 @@ window.script = (() => {
 
   // opening and closing session information
 
-  const sessionToggles = document.querySelectorAll('.js-session');
+  const sessionClose = document.querySelectorAll('.js-session-close');
 
-  if (sessionToggles) {
-    sessionToggles.forEach((it, i) => {
+  if (sessionClose) {
+    sessionClose.forEach((it, i) => {
       it.addEventListener('click', function(evt) {
         evt.preventDefault();
-        it.closest('.session').classList.toggle('session--closed');
-        it.classList.toggle('session__toggle--hide');
+        const session = it.closest('.session');
+
+        if (!session.classList.contains('session--closed')) {
+          session.classList.toggle('session--closed');
+          it.classList.toggle('session__toggle--hide');
+        }
+      });
+    });
+  }
+
+  const sessionOpen = document.querySelectorAll('.js-session-open');
+
+  if (sessionOpen) {
+    sessionOpen.forEach((it, i) => {
+      it.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        const session = it.closest('.session');
+
+        if (session.classList.contains('session--closed')) {
+          session.classList.toggle('session--closed');
+          session.querySelector('.session__toggle').classList.toggle('session__toggle--hide');
+        }
       });
     });
   }
