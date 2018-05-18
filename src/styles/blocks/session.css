@@ -34,7 +34,7 @@
   font-size: var(--second-font-size);
 }
 
-.session--closed .session__container {
+/* .session--closed .session__container {
   cursor: pointer;
 }
 
@@ -48,7 +48,7 @@
 
 .session--closed .session__container:hover {
   color: var(--secondary-color);
-}
+} */
 
 .session--announced .session__container:hover {
   color: #303b40;

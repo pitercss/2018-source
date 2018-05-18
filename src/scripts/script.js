@@ -21,11 +21,8 @@ window.script = (() => {
     sessionToggles.forEach((it, i) => {
       it.addEventListener('click', function(evt) {
         evt.preventDefault();
-        it.classList.toggle('session--closed');
-        const sessionToggledButton = it.querySelector('.session__toggle');
-        if (sessionToggledButton) {
-          sessionToggledButton.classList.toggle('session__toggle--hide');
-        }
+        it.closest('.session').classList.toggle('session--closed');
+        it.classList.toggle('session__toggle--hide');
       });
     });
   }
