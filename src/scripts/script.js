@@ -22,11 +22,8 @@ window.script = (() => {
       it.addEventListener('click', function(evt) {
         evt.preventDefault();
         const session = it.closest('.session');
-
-        if (!session.classList.contains('session--closed')) {
-          session.classList.toggle('session--closed');
-          it.classList.toggle('session__toggle--hide');
-        }
+        session.classList.toggle('session--closed');
+        it.classList.toggle('session__toggle--hide');
       });
     });
   }
