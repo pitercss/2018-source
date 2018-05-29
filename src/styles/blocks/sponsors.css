@@ -6,6 +6,8 @@
 .sponsors__cards {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .sponsors__item {
@@ -13,6 +15,10 @@
   margin-top: 35px;
 
   list-style: none;
+}
+
+.page li.sponsors__item::before {
+  display: none;
 }
 
 .sponsors__link {
