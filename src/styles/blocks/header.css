@@ -1,26 +1,19 @@
 /* Header */
 
+.header-wrapper {
+  border-bottom: 1px solid #d6d8d9;
+}
+
+.header-wrapper--main {
+  border-bottom: 1px solid transparent;
+}
+
 .header {
   display: flex;
   margin-top: 10px;
 
   flex-wrap: wrap;
   position: relative;
-  overflow: hidden;
-}
-
-.header::after {
-  content: '';
-  width: 100vw;
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: 1px solid #d6d8d9;
-}
-
-.header--main .header::after {
-  display: none;
 }
 
 @media (min-width: 1024px) {
