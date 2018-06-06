@@ -163,6 +163,17 @@
   background: var(--quaternary-color);
 }
 
+.preview__footer--empty {
+  background: transparent;
+
+  background-image: url("../images/badge/checkers.svg");
+  background-size: 37px;
+}
+
+.preview__footer--empty .random {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .preview {
     position: relative;
